@@ -1,0 +1,202 @@
+<modtipsy>
+
+	<set xpath="/items/item[contains(@name,'medical')]/property[@name='Stacknumber']/@value">500</set>
+	<set xpath="/items/item[contains(@name,'drug')]/property[@name='Stacknumber']/@value">250</set>
+
+	<append xpath="/items">
+	
+<!-- KITS-->
+	
+	<item name="AdvanceRepairKit">
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="CustomIcon" value="resourceRepairKit"/>
+		<property name="CustomIconTint" value="424bf5" />
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Msteel"/>
+		<property name="Stacknumber" value="50"/> <!-- STK resourceRepairKit -->
+		<property name="EconomicValue" value="300"/>
+		<property name="RepairTime" value="1"/>
+		<property name="RepairAmount" value="32000"/>
+		<property name="Group" value="Resources"/>
+	</item>
+	
+	<item name="GunKit">
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="CustomIcon" value="resourceRepairKit"/>
+		<property name="CustomIconTint" value="424bf5" />
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Msteel"/>
+		<property name="Stacknumber" value="50"/> <!-- STK resourceRepairKit -->
+		<property name="EconomicValue" value="300"/>
+		<property name="RepairTime" value="1"/>
+		<property name="RepairAmount" value="32000"/>
+		<property name="Group" value="Resources"/>
+	</item>
+	
+	<item name="GoDKit">
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="CustomIcon" value="resourceRepairKit"/>
+		<property name="CustomIconTint" value="424bf5" />
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Msteel"/>
+		<property name="Stacknumber" value="50"/> <!-- STK resourceRepairKit -->
+		<property name="EconomicValue" value="300"/>
+		<property name="RepairTime" value="1"/>
+		<property name="RepairAmount" value="32000"/>
+		<property name="Group" value="Resources"/>
+	</item>	
+	
+<!-- RESOURCES-->
+
+	<item name="GunBarrels"> <!-- scrap material -->
+		<property name="DescriptionKey" value="GunSpringsDesc"/>	
+		<property name="CustomIcon" value="resourceDuctTape" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="100"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>
+
+	<item name="GunSprings"> <!-- scrap material -->
+		<property name="DescriptionKey" value="GunSpringsDesc"/>	
+		<property name="CustomIcon" value="resourceDuctTape" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="100"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>
+	
+	<item name="GunTape"> <!-- scrap material -->
+		<property name="DescriptionKey" value="GunTapeDesc"/>	
+		<property name="CustomIcon" value="resourceDuctTape" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="100"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+	
+	<item name="AdvanceMechaParts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="AdvanceMechaPartsDesc"/>	
+		<property name="CustomIcon" value="resourceMechanicalParts" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="100"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>
+	
+	<item name="AdvanceElectricParts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="AdvanceElectricPartsDesc"/>	
+		<property name="CustomIcon" value="resourceElectricParts" />
+		<property name="CustomIconTint" value="424bf5" />
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MelectricParts"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="32"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>
+
+	<item name="AdvanceElectronicParts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="AdvanceElectronicPartsDesc"/>	
+		<property name="CustomIcon" value="resourceElectronicParts" />
+		<property name="CustomIconTint" value="424bf5" />	
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MelectronicParts"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="50"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>
+
+<!--BOOKS-->
+		
+	<item name="TIPSYWorkBenchSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="DescriptionKey" value="TIPSYWorkBenchSchematicDesc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="03fcec"/>
+			<property name="Unlocks" value="TIPSYWorkBench"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSYWorkBenchSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+	</item>
+	
+	<item name="WeaponsMechineSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="DescriptionKey" value="WeaponsMechineSchematicDesc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="03fcec"/>
+			<property name="Unlocks" value="WeaponsTruck"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="WeaponsMechineSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+	</item>
+	
+	</append>
+</modtipsy>

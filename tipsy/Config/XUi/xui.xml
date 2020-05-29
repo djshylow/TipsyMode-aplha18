@@ -1,0 +1,23 @@
+<modtipsy>
+
+	<append xpath="/xui/ruleset">
+		<window_group name="workstation_TIPSYWorkBench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowToolsTIPSYWorkBench" />
+		</window_group>	
+		
+		<window_group name="workstation_WeaponsMechine" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowToolsWeaponsMechine" />
+		</window_group>	
+		
+	</append>
+</modtipsy>	

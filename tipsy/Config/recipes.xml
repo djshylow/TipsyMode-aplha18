@@ -1,0 +1,83 @@
+<modtipsy>
+
+	<append xpath="/recipes">
+
+<!-- IN Game ITEMS -->	
+	
+	<recipe name="ammoArrowStone" count="1">
+		<ingredient name="resourceRockSmall" count="1"/>
+		<ingredient name="resourceWood" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="1"/>
+	</recipe>
+	
+	<recipe name="resourceElectronicParts" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceMechanicalParts" count="1"/>
+		<ingredient name="resourceElectricParts" count="1"/>
+	</recipe>	
+	
+<!-- Kits -->
+
+	<recipe name="AdvanceRepairKit" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="resourceMechanicalParts" count="1"/>
+		<ingredient name="resourceElectricParts" count="1"/>
+		<ingredient name="resourceElectronicParts" count="1"/>
+		<ingredient name="resourceRepairKit" count="1"/>
+	</recipe>		
+
+	<recipe name="GunKit" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="resourceAcid" count="2"/>
+		<ingredient name="resourceRepairKit" count="50"/>
+	</recipe>	
+	
+	<recipe name="GoDKit" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="AdvanceMechaParts" count="50"/>
+		<ingredient name="resourceAcid" count="5"/>
+		<ingredient name="GunSprings" count="50"/>
+		<ingredient name="GunKit" count="5"/>
+	</recipe>	
+
+<!-- RESOURCES -->	
+	
+	<recipe name="GunBarrels" count="1" craft_area="workbench" tags="TIPSYWorkBench">
+		<ingredient name="resourceMetalPipe" count="50"/>
+	</recipe>		
+	
+	<recipe name="GunSprings" count="1" craft_area="workbench" tags="TIPSYWorkBench">
+		<ingredient name="resourceSpring" count="50"/>
+	</recipe>		
+	
+	<recipe name="GunTape" count="1" craft_area="workbench" tags="TIPSYWorkBench">
+		<ingredient name="resourceDuctTape" count="10"/>
+	</recipe>	
+	
+	<recipe name="AdvanceMechaParts" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="resourceMechanicalParts" count="20"/>
+	</recipe>
+	
+	<recipe name="AdvanceElectricParts" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="resourceElectricParts" count="20"/>
+	</recipe>	
+
+	<recipe name="AdvanceElectronicParts" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="resourceElectronicParts" count="5"/>
+	</recipe>
+
+
+	
+<!-- Books -->
+	
+	<recipe name="TIPSYWorkBenchSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+		<ingredient name="resourceMechanicalParts" count="100"/>
+		<ingredient name="resourceElectricParts" count="100"/>
+		<ingredient name="resourceElectronicParts" count="20"/>
+		<ingredient name="resourcePaper" count="1000"/>
+	</recipe>
+	<recipe name="WeaponsMechineSchematic" count="1" craft_area="TIPSYWorkBench" tags="workbenchCrafting">
+		<ingredient name="AdvanceMechaParts" count="100"/>
+		<ingredient name="AdvanceElectronicParts" count="100"/>
+		<ingredient name="AdvanceElectricParts" count="20"/>
+		<ingredient name="resourcePaper" count="1000"/>
+	</recipe>	
+	
+	</append>
+</modtipsy>
