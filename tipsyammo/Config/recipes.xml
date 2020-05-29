@@ -1,0 +1,15 @@
+<modtipsyammo>
+
+	<append xpath="/recipes">
+
+<!-- TOOLS 
+	
+	<recipe name="quickaxe" count="1" craft_area="TIPSYWorkBench" tags="perkMiner69r">
+		<ingredient name="resourceForgedIron" count="1000"/>
+		<ingredient name="resourceWood" count="1000"/>
+		<ingredient name="meleeToolPickaxeIron" count="1"/>
+		<ingredient name="modGunRodAndSpring" count="1"/>
+	</recipe> -->	
+	
+	</append>
+</modtipsyammo>

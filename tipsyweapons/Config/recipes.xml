@@ -14,19 +14,19 @@
 		<ingredient name="GunKit" count="1"/>
 	</recipe>
 	
-	<recipe name="Colt Blueprint" count="1" craft_area="WeaponsMechine">
+<!-- 	<recipe name="Colt Blueprint" count="1" craft_area="WeaponsMechine">
 		<ingredient name="gunPistolParts" count="10"/>
 		<ingredient name="AdvanceMechaParts" count="20"/>
 		<ingredient name="GunBarrels" count="20"/>
 		<ingredient name="GunKit" count="1"/>
-	</recipe>	
+	</recipe>	-->	
 	
 	<recipe name="The Colt" count="1" craft_area="WeaponsMechine">
 		<ingredient name="AdvanceMechaParts" count="50"/>
 		<ingredient name="Colt Parts" count="500"/>
 		<ingredient name="GunTape" count="20"/>
 		<ingredient name="Colt Barrel" count="5"/>
-		<ingredient name="Colt Blueprint" count="1"/>
+<!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
 	</recipe>	
 	
 	</append>

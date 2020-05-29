@@ -56,7 +56,7 @@
 
 	<item name="GunBarrels"> <!-- scrap material -->
 		<property name="DescriptionKey" value="GunSpringsDesc"/>	
-		<property name="CustomIcon" value="resourceDuctTape" />
+		<property name="CustomIcon" value="resourceMetalPipe" />
 		<property name="CustomIconTint" value="424bf5" />		
 		<property name="HoldType" value="45"/>
 		<property name="Tags" value="junk"/>
@@ -74,7 +74,7 @@
 
 	<item name="GunSprings"> <!-- scrap material -->
 		<property name="DescriptionKey" value="GunSpringsDesc"/>	
-		<property name="CustomIcon" value="resourceDuctTape" />
+		<property name="CustomIcon" value="resourceSpring" />
 		<property name="CustomIconTint" value="424bf5" />		
 		<property name="HoldType" value="45"/>
 		<property name="Tags" value="junk"/>

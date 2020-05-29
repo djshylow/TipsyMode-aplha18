@@ -38,15 +38,15 @@
 
 <!-- RESOURCES -->	
 	
-	<recipe name="GunBarrels" count="1" craft_area="workbench" tags="TIPSYWorkBench">
+	<recipe name="GunBarrels" count="1" craft_area="TIPSYWorkBench">
 		<ingredient name="resourceMetalPipe" count="50"/>
 	</recipe>		
 	
-	<recipe name="GunSprings" count="1" craft_area="workbench" tags="TIPSYWorkBench">
+	<recipe name="GunSprings" count="1" craft_area="TIPSYWorkBench">
 		<ingredient name="resourceSpring" count="50"/>
 	</recipe>		
 	
-	<recipe name="GunTape" count="1" craft_area="workbench" tags="TIPSYWorkBench">
+	<recipe name="GunTape" count="1" craft_area="TIPSYWorkBench">
 		<ingredient name="resourceDuctTape" count="10"/>
 	</recipe>	
 	
@@ -62,8 +62,22 @@
 		<ingredient name="resourceElectronicParts" count="5"/>
 	</recipe>
 
-
+<!-- WorkStation -->	
+	<recipe name="TIPSYWorkBench" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="100"/>
+		<ingredient name="resourceMechanicalParts" count="1000"/>
+		<ingredient name="meleeToolWrench" count="1"/>
+		<ingredient name="meleeToolClawHammer" count="1"/>
+		<ingredient name="resourceWood" count="6000"/>
+	</recipe>
 	
+	<recipe name="WeaponsMechine" count="1" craft_area="TIPSYWorkBench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="500"/>
+		<ingredient name="resourceMechanicalParts" count="1000"/>
+		<ingredient name="meleeToolWrench" count="1"/>
+		<ingredient name="meleeToolClawHammer" count="1"/>
+		<ingredient name="resourceElectricParts" count="1000"/>
+	</recipe>
 <!-- Books -->
 	
 	<recipe name="TIPSYWorkBenchSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">

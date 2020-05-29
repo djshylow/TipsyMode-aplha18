@@ -22,7 +22,7 @@
 
 	<item name="Colt Barrel"> <!-- scrap material -->
 		<property name="DescriptionKey" value="ColtBarrelDesc"/>	
-		<property name="CustomIcon" value="gun44MagnumParts" />
+		<property name="CustomIcon" value="resourceMetalPipe" />
 		<property name="CustomIconTint" value="424bf5" />		
 		<property name="HoldType" value="45"/>
 		<property name="Tags" value="junk"/>
@@ -69,7 +69,7 @@
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
 			<property name="Delay" value=".34"/> <!-- obsolete if rounds per minute exists -->
-			<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+			<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,Colt Rounds"/>
 			<property name="Reload_time" value="2"/>
 			<property name="Sound_start" value="44magnum_fire"/>
 			<property name="Sound_repeat" value=""/>
