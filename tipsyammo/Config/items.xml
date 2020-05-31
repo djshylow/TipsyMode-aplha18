@@ -3,49 +3,48 @@
 	<append xpath="/items">
 	
 	<!-- AMMO-->	
+	
 	<item name="Colt Rounds">
-		<property name="Extends" value="ammoBundle44MagnumBulletBall"/>
-		<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
-		<property name="CustomIconTint" value="1cfc03" />
-		<property name="EconomicValue" value="1500"/>
-		<property class="Action0">
-			<property name="Create_item" value="Colt Rounds"/>
-			<property name="Create_item_count" value="100"/>
-		</property>
-		<effect_group name="Colt Rounds" tiered="false"> <!-- ammoArrowFlaming -->
-			<passive_effect name="EntityDamage" operation="base_set" value="25"/>
-			<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-			<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
-			<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
-			<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
-			<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+	<property name="Extends" value="ammo44MagnumBulletBall"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
+	<property name="CustomIconTint" value="1cfc03" />
+	<property name="DisplayType" value="ammoBulletAP"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+	<property name="UnlockedBy" value="perkEnforcerAPAmmo"/>
+	<effect_group name="Colt Rounds" tiered="false"> <!-- ammoArrowFlaming -->
+		<passive_effect name="EntityDamage" operation="base_set" value="25"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
 
-			<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14">
-				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
-			<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="15">
-				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="15">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
 
-			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffBurningFlamingArrow"/>
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffBurningFlamingArrow"/>
 
-			<display_value name="dEntityDamageFire" value="120"/>
-			<display_value name="dDuration" value="14"/>
-		</effect_group>
-		<effect_group tiered="false">
-			<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
-			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
-				<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
-				<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
-			</triggered_effect>
-			<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
-			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
-				<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
-				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
-				<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
-				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-			</triggered_effect>
-		</effect_group>
-	</item>	
-	
-	
+		<display_value name="dEntityDamageFire" value="120"/>
+		<display_value name="dDuration" value="14"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+			<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+		</triggered_effect>
+		<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		</triggered_effect>
+	</effect_group>
+	</item>
+
 	</append>
 </modtipsyammo>
