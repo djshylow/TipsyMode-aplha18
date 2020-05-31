@@ -1,0 +1,15 @@
+<configs>
+    <append xpath="//lootgroup[@name='rareBooks']">
+        <item group="FarmingTool" count="1" prob="12"/>
+		
+    </append>
+    <insertBefore xpath="//lootgroup[@name='rareBooks']">
+	<lootgroup name="FarmingTool">
+	    <item name="Farming Machete Schematic"/>
+	
+		
+	</lootgroup>
+
+    </insertBefore>
+
+</configs>

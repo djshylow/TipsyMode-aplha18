@@ -1,0 +1,69 @@
+<configs>
+  <append xpath="/items">
+     <item name="Ultimate Tool">
+	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,selfLoading,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic,admin"/>
+	<property name="DisplayType" value="adminRanged"/>
+	<property name="HoldType" value="6"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
+	<Property name="TintColor" value="#FF0000"/>
+	<property name="CustomIcon" value="gunSMG5"/>
+	<property name="CustomIconTint" value="02FF3F"/>
+	<property name="ItemTypeIcon" value="star"/>
+	<property name="Material" value="Morganic"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="CrosshairUpAfterShot" value="false"/>
+	<property name="CrosshairOnAim" value="true"/>
+	<property name="ShowQuality" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Delay" value=".150"/>
+		<property name="Range" value="25"/>
+		<property name="Single_magazine_usage" value="true"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="ammo9mmBulletBall"/>
+		<property name="Reload_time" value="4.1"/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="mp5_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="SupportHarvesting" value="true"/>
+		<property name="ToolCategory.harvestingTools" value="1.5" param1="1.5"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="55"/>
+		<property name="Zoom_max_in" value="55"/>
+	</property>
+	<effect_group tiered="false">
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="300"/>
+		<passive_effect name="MaxRange" operation="base_set" value="25"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0"/>
+		<passive_effect name="SpreadMultiplierHip" operation="base_set" value="0"/>
+		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="0"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="0"/>
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="0"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="0"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="ModSlots" operation="base_set" value="1"/>
+	</effect_group>
+	</item>
+
+
+
+
+
+  </append>
+</configs>

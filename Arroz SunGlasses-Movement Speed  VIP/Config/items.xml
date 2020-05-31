@@ -1,0 +1,46 @@
+<configs>
+  <append xpath="/items">
+    <item name="SunGlassses VIP">
+	<property name="ItemTypeIcon" value="Star"/>
+	<property name="Tags" value="head,clothing,canHaveCosmetic"/>
+	<property name="DisplayType" value="clothingShades"/>
+	<property name="CustomIcon" value="apparelShades"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Encumbrance" value="0"/>
+	<property name="Weight" value="5"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="EquipSlot" value="Eyes"/>
+	<property name="Group" value="Clothing"/>
+	<property class="UMA">
+		<property name="Mesh" value="gear_shades"/>
+		<property name="Overlay0" value="gear_shades"/>
+		<property name="Layer" value="1"/>
+		<property name="UISlot" value="Eyewear"/>
+	</property>
+	<effect_group tiered="false">
+	    <passive_effect name="RunSpeed" operation="perc_add" value="0.8"/>
+		<display_value name="dRunSpeed" value="0.8"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+		<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+		<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+		<passive_effect name="LootGamestage" operation="base_add" value="10"/>
+		<passive_effect name="TreasureRadius" operation="base_add" value="-1"/>
+		<display_value name="dTreasureRadius" value="-1"/>
+		<passive_effect name="CraftingTime" operation="perc_add" value="-.1"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value=".1"/>
+		<display_value name="dCraftingTime" value="-.1"/>
+		<display_value name="dPlayerExpGain" value=".1"/>
+	</effect_group>
+</item>
+
+
+  </append>
+</configs>

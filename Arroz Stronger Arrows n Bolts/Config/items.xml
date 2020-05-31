@@ -1,0 +1,527 @@
+<configs>
+    <append xpath="/items">
+	  <item name="ammoArrowStone">
+		<property name="DisplayType" value="ammoArrow"/>
+		<property name="Tags" value="ammo,ranged,attAgility,perkArchery"/>
+		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/arrowPrefab"/>
+		<property name="HoldType" value="45"/>
+		<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="IsSticky" value="true"/>
+		<property name="StickyOffset" value=".5"/>
+		<property name="StickyColliderUp" value="2"/>
+		<property name="StickyColliderRadius" value=".05"/>
+		<property name="StickyColliderLength" value="1"/>
+		<property name="Material" value="Mwood"/>
+		<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+		<property name="FuelValue" value="25"/>
+		<property name="EconomicValue" value="12"/>
+		<property name="EconomicBundleSize" value="5"/>
+		<property name="Group" value="Ammo/Weapons,Basics"/>
+		<property class="Action1">
+			<property name="Class" value="Projectile"/>
+			<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
+			<property name="FlyTime" value="0"/>
+			<property name="Gravity" value="-4"/>
+			<property name="LifeTime" value="14"/>
+		</property>
+
+		<effect_group name="ammoArrowStone" tiered="false"> <!-- ammoArrowStone -->
+			<passive_effect name="EntityDamage" operation="base_set" value="50"/>
+			<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+			<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
+		</effect_group>
+		<effect_group tiered="false">
+			<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+				<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+				<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+			</triggered_effect>
+			<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group tiered="false">
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.1">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.35">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4"/></passive_effect>
+		</effect_group>
+     </item>
+     
+	  <item name="ammoArrowIron">
+		<property name="Extends" value="ammoArrowStone"/>
+		<property name="Material" value="Mmetal"/>
+		<property name="EconomicValue" value="25"/>
+		<property name="EconomicBundleSize" value="5"/>
+		<property name="Group" value="Ammo/Weapons"/>
+		<property class="Action1">
+			<property name="Gravity" value="-3.5"/>
+		</property>
+
+		<effect_group name="ammoArrowIron" tiered="false"> <!-- ammoArrowIron -->
+			<passive_effect name="EntityDamage" operation="base_set" value="56"/>
+			<passive_effect name="BlockDamage" operation="base_set" value="3"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+			<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
+		</effect_group>
+		<effect_group tiered="false">
+			<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+				<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+				<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+			</triggered_effect>
+			<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group tiered="false">
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.1">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.35">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4"/></passive_effect>
+		</effect_group>
+	</item>
+	 
+	  <item name="ammoArrowSteelAP">
+	<property name="Extends" value="ammoArrowIron"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+	<property name="StickyMeshFile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="StickyOffset" value=".5"/>
+	<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+	<effect_group name="ammoArrowSteelAP" tiered="false"> <!-- ammoArrowSteelAP -->
+		<passive_effect name="EntityDamage" operation="base_set" value="62"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+		<display_value name="dTargetArmor" value="-.2"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+			<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+		</triggered_effect>
+		<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		</triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.35">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4"/></passive_effect>
+	</effect_group>
+</item>
+	  
+	  <item name="ammoArrowFlaming">
+	<property name="Extends" value="ammoArrowIron"/>
+	<property name="DisplayType" value="ammoArrowFlaming"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab.prefab"/>
+	<property name="StickyMeshFile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab.prefab"/>
+	<property name="UsableUnderwater" value="false"/>
+	<property name="FuelValue" value="27"/>
+	<property name="EconomicValue" value="44"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Damage_type" value="Heat"/>
+	<property name="StickyOffset" value=".7"/>
+	<property name="UnlockedBy" value="perkRangersFlamingArrows"/>
+	<property class="Action1">
+		<property name="Gravity" value="-5"/>
+		<property name="DamageBonus.wood" value="2"/>
+	</property>
+
+	<effect_group name="ammoArrowFlaming" tiered="false"> <!-- ammoArrowFlaming -->
+		<passive_effect name="EntityDamage" operation="base_set" value="100"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+
+		<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="15">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffBurningFlamingArrow"/>
+
+		<display_value name="dEntityDamageFire" value="120"/>
+		<display_value name="dDuration" value="14"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+			<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+		</triggered_effect>
+		<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+	  
+	  <item name="ammoArrowExploding">
+	<property name="Extends" value="ammoArrowIron"/>
+	<property name="DisplayType" value="ammoArrowExploding"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/explodingArrowPrefab.prefab"/>
+	<property name="IsSticky" value="false"/>
+	<property name="Stacknumber" value="75"/>
+	<property name="FuelValue" value="27"/>
+	<property name="EconomicValue" value="65"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkRangersExplodingBolts"/>
+	<property class="Action1">
+		<!--<property name="Explosion.ParticleIndex" value="0"/>  no expl. -->
+		<property name="Gravity" value="-5"/>
+		<property name="Explosion.ParticleIndex" value="11"/>
+		<property name="Explosion.RadiusBlocks" value="3"/>
+		<property name="Explosion.RadiusEntities" value="4"/>
+		<property name="Explosion.DamageBonus.stone" value=".3"/>
+		<property name="Explosion.DamageBonus.metal" value=".1"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+		<property name="Explosion.DamageBonus.wood" value=".5"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+	</property>
+	<effect_group name="ammoArrowExploding" tiered="false"> <!-- ammoArrowExploding -->
+		<passive_effect name="BlockDamage" operation="base_set" value="2"/><display_value name="dExDamageBlock" value="2"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="180"/><display_value name="dExDamageEntity" value="360"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,water"/>
+			<!-- do we have damage modifiers for explosions? -->
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+		<display_value name="dExRadius" value="4"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+			<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+		</triggered_effect>
+		<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+	  
+	  <item name="ammoCrossbowBoltStone">
+	<property name="Tags" value="ammo,ranged,attAgility,perkArchery"/>
+	<property name="DisplayType" value="ammoArrow"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltStonePrefab.prefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mwood"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".1"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".75"/>
+	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="FuelValue" value="8"/>
+	<property name="EconomicValue" value="12"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Explosion.ParticleIndex" value="0"/>
+		<property name="Gravity" value="-3"/>
+		<property name="FlyTime" value="0"/>
+		<property name="LifeTime" value="14"/>
+		<!-- <property name="DamageBonus.earth" value="0"/>
+		<property name="DamageBonus.metal" value="0"/>
+		<property name="DamageBonus.cloth" value="0"/> -->
+	</property>
+
+	<effect_group name="ammoCrossbowBoltStone" tiered="false"> <!-- ammoCrossbowBoltStone -->
+		<passive_effect name="EntityDamage" operation="base_set" value="64"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="67.5"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+			<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+		</triggered_effect>
+		<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+			<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		</triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.35">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4"/></passive_effect>
+	</effect_group>
+</item>
+
+	  <item name="ammoCrossbowBoltIron">
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery"/>
+			<property name="DisplayType" value="ammoArrow"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
+				<property name="Gravity" value="-2.5"/>
+				<property name="FlyTime" value="0"/>
+				<property name="LifeTime" value="14"/>
+			</property>
+			<property class="Attributes">
+				<property name="GetQualityFromWeapon" value="true"/>
+			</property>
+			<effect_group name="ammoCrossbowBoltIron" tiered="false"> <!-- ammoCrossbowBoltIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="76"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="75"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+				</triggered_effect>
+				<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.35">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4"/></passive_effect>
+			</effect_group>
+		</item>
+
+	  <item name="ammoCrossbowBoltSteelAP">
+			<property name="Extends" value="ammoCrossbowBoltIron"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab.prefab"/>
+			<property name="EconomicValue" value="57"/>
+			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<effect_group name="ammoCrossbowBoltSteelAP" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="90"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+				</triggered_effect>
+				<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.35">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4"/></passive_effect>
+			</effect_group>
+		</item>
+
+	  <item name="ammoCrossbowBoltFlaming">
+			<property name="Extends" value="ammoCrossbowBoltIron"/>
+			<property name="DisplayType" value="ammoArrowFlaming"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/CrossbowBoltFlamingPrefab.prefab"/>
+			<property name="StickyMeshFile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/CrossbowBoltFlamingPrefab.prefab"/>
+			<property name="UsableUnderwater" value="false"/>
+			<property name="FuelValue" value="27"/>
+			<property name="EconomicValue" value="44"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Damage_type" value="Heat"/>
+			<property name="StickyOffset" value=".7"/>
+			<property name="UnlockedBy" value="perkRangersFlamingArrows"/>
+			<property class="Action1">
+				<property name="Gravity" value="-5"/>
+				<property name="DamageBonus.wood" value="2"/>
+			</property>
+
+			<effect_group name="ammoCrossbowBoltFlaming" tiered="false"> <!-- ammoCrossbowBoltFlaming -->
+				<passive_effect name="EntityDamage" operation="base_set" value="100"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
+				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="15">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffBurningFlamingArrow"/>
+
+				<display_value name="dEntityDamageFire" value="120"/>
+				<display_value name="dDuration" value="14"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+				</triggered_effect>
+				<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+
+	  <item name="ammoCrossbowBoltExploding">
+			<property name="Extends" value="ammoCrossbowBoltIron"/>
+			<property name="DescriptionKey" value="ammoArrowExplodingDesc"/>
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery"/>
+			<property name="DisplayType" value="ammoArrowExploding"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltExplosivePrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="IsSticky" value="false"/>
+			<property name="Stacknumber" value="75"/>
+			<property name="FuelValue" value="27"/>
+			<property name="EconomicValue" value="80"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="UnlockedBy" value="perkRangersExplodingBolts"/>
+			<property class="Action1">
+				<!--<property name="Explosion.ParticleIndex" value="0"/>  no expl. -->
+				<property name="Gravity" value="-5"/>
+				<property name="Explosion.ParticleIndex" value="11"/>
+				<property name="Explosion.RadiusBlocks" value="3"/>
+				<property name="Explosion.RadiusEntities" value="4"/>
+				<property name="Explosion.DamageBonus.stone" value=".3"/>
+				<property name="Explosion.DamageBonus.metal" value=".1"/>
+				<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+				<property name="Explosion.DamageBonus.wood" value=".5"/>
+				<property name="Explosion.DamageBonus.water" value="0"/>
+			</property>
+			<effect_group name="ammoCrossbowBoltExploding" tiered="false"> <!-- ammoCrossbowBoltExploding -->
+				<passive_effect name="BlockDamage" operation="base_set" value="2"/><display_value name="dExDamageBlock" value="2"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="250"/><display_value name="dExDamageEntity" value="500"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,water"/>
+					<!-- do we have damage modifiers for explosions? -->
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
+				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+				<display_value name="dExRadius" value="4"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+				</triggered_effect>
+				<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+	  
+	  
+	  
+	  
+	 </append>
+
+</configs>
