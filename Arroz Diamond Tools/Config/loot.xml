@@ -1,0 +1,21 @@
+<configs>
+    <append xpath="//lootgroup[@name='rareBooks']">
+        <item group="DiamondTools" count="1" prob="12"/>
+		
+    </append>
+    <insertBefore xpath="//lootgroup[@name='rareBooks']">
+	<lootgroup name="DiamondTools">
+	    <item name="Diamond Fireaxe Schematic"/>
+	    <item name="Diamond Pickaxe Schematic"/>
+		<item name="Diamond NailGun Schematic"/>
+		<item name="Diamond Auger Schematic"/>
+		<item name="Diamond Chainsaw Schematic"/>
+		<item name="Diamond Wrench Schematic"/>
+		<item name="Diamond Shovel Schematic"/>
+	
+		
+	</lootgroup>
+
+    </insertBefore>
+
+</configs>

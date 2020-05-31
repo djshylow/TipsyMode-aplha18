@@ -1,0 +1,24 @@
+<configs>
+    <append xpath="recipes">
+	
+	    <recipe name="Farming Machete" count="1" craft_area="workbench" craft_time="60" tags="learnable,perkDeepCuts">
+	<ingredient name="meleeToolKnifeMacheteParts" count="10"/>
+	<ingredient name="resourceForgedSteel" count="20"/>
+	<ingredient name="resourceWood" count="10"/>
+	<ingredient name="resourceLeather" count="3"/>
+	<ingredient name="resourceDuctTape" count="3"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolKnifeMacheteParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+	</effect_group>
+</recipe>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</append>
+</configs>

@@ -1,0 +1,586 @@
+<configs>
+ <append xpath="items">
+    
+	<item name="Diamond Fireaxe"> <!-- T3 Tools -->
+	<property name="Extends" value="meleeToolFireaxeIron"/>
+	<property name="CustomIcon" value="meleeToolFireaxeIron"/> <!-- xxx model to be replaced -->
+	<property name="CustomIconTint" value="8B00FF"/>
+	<property name="ItemTypeIcon" value="star"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/fireaxePrefab.prefab"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="UnlockedBy" value="Diamond Fireaxe Schematic"/>
+	<property name="Material" value="MmeleeToolAllSteel"/> <property name="Weight" value="6"/>
+
+	<effect_group name="Diamond Fireaxe">
+		<passive_effect name="EntityDamage" operation="base_set" value="40"/> <!-- meleeToolFireaxeSteel -->
+		<passive_effect name="BlockDamage" operation="base_set" value="125"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,2100" tier="1,6" tags="perkMiner69r"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+
+		<passive_effect name="HarvestCount" operation="base_set" value=".7" tags="butcherHarvest"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="40" tags="secondary"/>
+	</effect_group>
+</item>
+ 
+    <item name="Diamond Pickaxe"> <!-- T2 Tools -->
+	<property name="Tags" value="melee,grunting,medium,tool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
+	<property name="CustomIcon" value="meleeToolPickaxeSteel"/>
+    <property name="CustomIconTint" value="8B00FF"/>
+	<property name="ItemTypeIcon" value="star"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="63"/>
+	<property name="Meshfile" value="#Other/Items?Tools/pickaxe_steelPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="FuelValue" value="250"/>
+	<property name="EconomicValue" value="20000"/>
+	<property name="UnlockedBy" value="Diamond Pickaxe Schematic"/>
+	<property name="ShowQuality" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value=".15"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+
+		<property name="GrazeStart" value=".25"/>
+		<property name="GrazeEnd" value=".35"/>
+		<property name="SwingDegrees" value="65"/>
+		<property name="SwingAngle" value="180"/>
+		<property name="UseGrazingHits" value="true"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value=".15"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+
+		<property name="UseGrazingHits" value="true"/>
+		<property name="GrazeStart" value=".3"/>
+		<property name="GrazeEnd" value=".4"/>
+		<property name="SwingDegrees" value="70"/>
+		<property name="SwingAngle" value="130"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<effect_group name="Diamond Pickaxe">
+		<passive_effect name="EntityDamage" operation="base_set" value="50"/> 
+		<passive_effect name="BlockDamage" operation="base_set" value="450"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/><!-- Gazz change 55 to 65 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.9" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000,1500" tier="1,6" tags="perkMiner69r"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="4" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="1,6"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="1,6"/> <!-- tier bonus -->
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="25.8" tags="secondary"/>
+	</effect_group>
+	<property name="PickupJournalEntry" value="miningTip"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+    <item name="Diamond Nailgun"> <!-- T3 Tools -->
+		<property name="CustomIcon" value="gunToolNailgun" />
+		<property name="CustomIconTint" value="8B00FF" />
+		<property name="ItemTypeIcon" value="star"/>
+	 	<property name="Tags" value="tool,nailgun,sideAttachments,selfLoading,canHaveCosmetic"/>
+		<property name="DisplayType" value="meleeRepairTool"/>
+		<property name="HoldType" value="37"/>
+		<property name="Meshfile" value="#Other/Items?Tools/nailgunPrefab.prefab"/>
+		<property name="Material" value="MmechanicalParts"/>
+		<property name="RepairTools" value="resourceRepairKit"/>
+		<property name="DegradationBreaksAfter" value="false"/>
+		<property name="SoundJammed" value="weapon_jam"/>
+		<property name="CrosshairUpAfterShot" value="true"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="UnlockedBy" value="Diamond NailGun Schematic"/>
+		<property name="ShowQuality" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="Launcher"/>
+		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Delay" value=".3"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Magazine_items" value="resourceNail"/>
+		<property name="Instantiate_on_load" value="false"/>
+		<property name="Reload_time" value="2"/>
+		<property name="Sound_start" value="nailgun_fire"/>
+		<property name="Particles_muzzle_fire" value="nailgunfire"/>
+	<!-- <property name="Particles_muzzle_smoke" value="nozzlesmoke"/> -->
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="nailgun_reload"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".50"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="1000"/>
+		<property name="Upgrade_hit_offset" value="-5"/>
+		<property name="Repair_action_sound" value="nailgun_fire"/>
+		<property name="Upgrade_action_sound" value="nailgun_fire"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="EconomicValue" value="40000"/>
+	<effect_group name="Diamond Nailgun" tiered="false"> <!-- gunToolNailgun -->
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="3"/>
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
+		<passive_effect name="MaxRange" operation="base_set" value="10"/>
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.3"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.3"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".4"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
+
+		<display_value name="dBlockRepairAmount" value="1000"/>
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value=".7"/> <!-- crosshair reset speed -->
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="200"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/> <!-- for the Launcher class this instantly fires BurstRoundCount projectiles on pulling the trigger -->
+		<passive_effect name="MagazineSize" operation="base_set" value="10"/>
+		<!-- <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>  does not work at all on the nailgun -->
+
+		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.7"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".7"/>
+
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.6"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000" tags="nailgun"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="nailgun"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+	</effect_group>
+</item>
+
+    <item name="Diamond Auger"> <!-- T4 Tools -->
+	<property name="Tags" value="melee,heavy,tool,motorTool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
+	<property name="DisplayType" value="motorTool"/>
+	<property name="CustomIcon" value="meleeToolAuger"/>
+    <property name="CustomIconTint" value="8B00FF"/>
+	<property name="ItemTypeIcon" value="star"/>
+	<property name="HoldType" value="20"/>
+	<property name="Meshfile" value="#Other/Items?Tools/augerPrefab.prefab"/>
+	<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="SoundIdle" value="Auger_Idle"/>
+	<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="EconomicValue" value="35000"/>
+	<property name="UnlockedBy" value="Diamond Auger Schematic"/>
+	<property name="ShowQuality" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="UseMeleeCrosshair" value="true"/>
+		<property name="Single_magazine_usage" value="false"/>
+		<property name="Magazine_items" value="ammoGasCan"/>
+		<property name="Bullet_material" value="metal"/>
+		<property name="Reload_time" value="4.1"/>
+		<property name="Sound_start" value="Auger_Fire_Start"/>
+		<property name="Sound_repeat" value="Weapons/Motorized/Auger/auger_fire_lp"/>
+		<property name="Sound_end" value="Weapons/Motorized/Auger/auger_fire_end"/>
+		<property name="Sound_empty" value="auger_empty"/>
+		<property name="Sound_reload" value="Auger_Reload"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
+		<!-- <property name="DamageBonus.wood" value=".25"/> -->
+		<!-- <property name="DamageBonus.head" value="3"/> -->
+		<property name="SupportHarvesting" value="true"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+	</property>
+
+	<effect_group name="Diamond Auger">
+		<passive_effect name="EntityDamage" operation="base_set" value="10"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.35"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+		<passive_effect name="SphereCastRadius" operation="base_set" value=".1"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.3" tags="Harvesting"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/> <!-- random DegMax -->
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+		<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
+		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
+
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="300"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 3.5s -->
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".5"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".5"/>
+		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.35"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".35"/>
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.35"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".35"/>
+
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="5"/>
+	</effect_group>
+</item>
+
+    <item name="Diamond Chainsaw"> <!-- T4 Tools -->
+	<property name="Tags" value="melee,heavy,tool,motorTool,attStrength,perkMiner69r,perkMotherLode,chainsaw,canHaveCosmetic"/>
+	<property name="DisplayType" value="motorTool"/>
+	<property name="CustomIcon" value="meleeToolChainsaw"/>
+    <property name="CustomIconTint" value="8B00FF"/>
+    <property name="ItemTypeIcon" value="star"/>
+	<property name="HoldType" value="19"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Chainsaw/chainsaw.fbx"/>
+	<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="SoundIdle" value="chainsaw_idle"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="EconomicValue" value="10000"/>
+	<property name="UnlockedBy" value="Diamond Chainsaw Schematic"/>
+	<property name="ShowQuality" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Hitmask_override" value="Melee"/> <!-- "Class" value="Ranged" is hardcoded to never collide with grass regardless -->
+		<property name="UseMeleeCrosshair" value="true"/>
+		<property name="Single_magazine_usage" value="false"/>
+		<property name="Magazine_items" value="ammoGasCan"/>
+		<property name="Bullet_material" value="metal"/>
+		<property name="Reload_time" value="4.1"/>
+		<property name="Sound_start" value="chainsaw_fire_start"/>
+		<property name="Sound_empty" value="chainsaw_empty"/>
+		<property name="Sound_repeat" value="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_lp"/>
+		<property name="Sound_end" value="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_end"/>
+		<property name="Sound_reload" value="chainsaw_reload"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
+		<!-- <property name="DamageBonus.wood" value="10"/>
+		<property name="DamageBonus.head" value="5"/> -->
+		<property name="SupportHarvesting" value="true"/>
+		<property name="ToolCategory.harvestingTools" value="1.5" param1="1.5"/>
+	</property>
+
+	<effect_group name="Diamond Chainsaw"> <!-- meleeToolChainsaw -->
+		<passive_effect name="EntityDamage" operation="base_set" value="80"/><!-- meleeToolChainsaw -->
+		<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.35"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+		<passive_effect name="SphereCastRadius" operation="base_set" value=".1"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.3" tags="Harvesting"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/> <!-- random DegMax -->
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+		<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
+		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
+
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.85" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.85" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.85" tags="metal"/>
+
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="300"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 3.5s -->
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".5"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".5"/>
+		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.25"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".25"/>
+		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.45"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".45"/>
+
+		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1"/>
+		<passive_effect name="WeaponHandling" operation="base_set" value="5"/>
+	</effect_group>
+</item>
+
+    <item name="Diamond Wrench"> <!-- T2 Salvage -->
+	<property name="Tags" value="blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic"/>
+	<property name="DisplayType" value="melee"/>
+	<property name="CustomIcon" value="meleeToolWrench"/>
+    <property name="CustomIconTint" value="8B00FF"/>
+    <property name="ItemTypeIcon" value="star"/>
+	<property name="HoldType" value="29"/>
+	<property name="Meshfile" value="#Other/Items?Tools/wrenchPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy"/>
+	<property name="EconomicValue" value="10000"/>
+	<property name="UnlockedBy" value="Diamond Wrench Schematic"/>
+	<property name="ShowQuality" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="2" param1="1"/>
+		<property name="ToolCategory.Disassemble" value="2" param1="1"/>
+		<property name="Sound_harvesting" value="wrench_harvest"/>
+		<property name="Particle_harvesting" value="true" param1="metal"/>
+
+		<property name="UseGrazingHits" value="true"/>
+		<property name="GrazeStart" value=".25"/>
+		<property name="GrazeEnd" value=".3"/>
+		<property name="SwingDegrees" value="50"/>
+		<property name="SwingAngle" value="180"/>
+	</property>
+
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="2" param1="1"/>
+		<!-- <property name="UsePowerAttackAnimation" value="true"/> -->
+	</property>
+
+	<effect_group name="meleeToolWrench">
+		<passive_effect name="EntityDamage" operation="base_set" value="40"/> <!-- meleeToolWrench -->
+		<passive_effect name="BlockDamage" operation="base_set" value="100"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="16.8" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6" tags="perkSalvageOperations"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkSalvageOperations"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+
+		<passive_effect name="HarvestCount" operation="base_set" value="2" tags="salvageHarvest"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="25.2" tags="secondary"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+    <item name="Diamond Shovel"> <!-- T3 Tools -->
+	<property name="Extends" value="meleeToolShovelSteel"/>
+	<property name="Tags" value="melee,grunting,medium,tool,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
+	<property name="Meshfile" value="#Other/Items?Tools/shovel_steelPrefab.prefab"/>
+	<property name="CustomIcon" value="meleeToolShovelIron"/>
+	<property name="CustomIconTint" value="8B00FF"/>
+	<property name="ItemTypeIcon" value="star"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="Material" value="MmeleeToolAllSteel"/> <property name="Weight" value="6"/>
+	<property name="UnlockedBy" value="Diamond Shovel Schematic"/>
+
+	<effect_group name="Diamond Shovel">
+		<passive_effect name="EntityDamage" operation="base_set" value="35"/> <!-- meleeToolShovelSteel -->
+		<passive_effect name="BlockDamage" operation="base_set" value="140"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="15.8" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,2100" tier="1,6" tags="perkMiner69r"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="31.6" tags="secondary"/>
+	</effect_group>
+</item>
+
+
+
+    
+	
+	
+	
+	
+	<!--Schematics-->
+	
+	<item name="Diamond Fireaxe Schematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIconTint" value="8B00FF"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="meleeToolFireaxeIron"/>
+	<property name="Unlocks" value="Diamond Pickaxe"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Diamond Fireaxe" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+	
+	<item name="Diamond Pickaxe Schematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIconTint" value="8B00FF"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="meleeToolPickaxeSteel"/>
+	<property name="Unlocks" value="Diamond Pickaxe"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Diamond Pickaxe" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+    
+	<item name="Diamond NailGun Schematic">
+	<property name="Extends" value="schematicNoQualityMaster"/>
+	<property name="CustomIconTint" value="8B00FF"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="gunToolNailgun"/>
+	<property name="Unlocks" value="Diamond Nailgun"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Diamond Nailgun" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+    <item name="Diamond Auger Schematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIconTint" value="8B00FF"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="meleeToolAuger"/>
+	<property name="Unlocks" value="Diamond Auger"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Diamond Auger" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+    <item name="Diamond Chainsaw Schematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIconTint" value="8B00FF"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="meleeToolChainsaw"/>
+	<property name="Unlocks" value="Diamond Chainsaw"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Diamond Chainsaw" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+    <item name="Diamond Wrench Schematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIconTint" value="8B00FF"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="meleeToolWrench"/>
+	<property name="Unlocks" value="Diamond Wrench"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Diamond Wrench" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+    <item name="Diamond Shovel Schematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIconTint" value="8B00FF"/>
+	<property name="CustomIcon" value="meleeToolShovelIron"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Unlocks" value="Diamond Shovel"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Diamond Shovel" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+
+
+
+
+
+  </append>
+</configs>
