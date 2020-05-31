@@ -3,31 +3,34 @@
 
 	<block name="TIPSYWorkBench">
 		<property name="Class" value="Workstation"/>
-		<property name="CustomIcon" value="workbench" />
-		<property name="CustomIconTint" value="34eb4c" />	
-		<property name="Material" value="Mwood"/>
-		<property name="DescriptionKey" value="TIPSYWorkBenchDesc"/>
+		<property name="Material" value="Mmetal"/>
 		<property name="MaxDamage" value="800"/>
 		<property name="StabilitySupport" value="false"/>
 		<property name="Shape" value="ModelEntity"/>
 		<property name="Model" value="Entities/Crafting/workbenchPrefab"/>
+		<property name="ModelOffset" value=".5,.5,0"/>
 		<property name="DisplayType" value="blockMulti"/>
-		<property name="UnlockedBy" value="TIPSYWorkbenchSchematic"/>
+		<property name="UnlockedBy" value="perkAdvancedEngineering,workbenchSchematic"/>
 		<property name="MultiBlockDim" value="2,2,1"/>
 		<property name="ImposterDontBlock" value="true"/>
 		<property name="Place" value="TowardsPlacerInverted"/>
 		<property name="OnlySimpleRotations" value="true"/>
 		<property name="IsTerrainDecoration" value="true"/>
-		<property name="HeatMapStrength" value="1"/>
-		<property name="HeatMapTime" value="600"/>
-		<property name="HeatMapFrequency" value="60"/>
+		<property name="HeatMapStrength" value="2"/>
+		<property name="HeatMapTime" value="5000"/>
+		<property name="HeatMapFrequency" value="1000"/>
+		<!--<property name="RecipeList" value="backpack, workbench"/>-->
+		<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
 		<property name="Stacknumber" value="1"/>
+
 		<property class="Workstation">
-			<property name="Modules" value="output,input"/>
-			</property>
+			<property name="Modules" value="output"/>
+		</property>
 		<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
 		<property name="OpenSound" value="open_workbench"/>
 		<property name="CloseSound" value="close_workbench"/>
+		<property name="WorkstationJournalTip" value="workbenchTip"/>
+
 		<property class="RepairItems">
 			<property name="resourceForgedIron" value="25"/>
 			<property name="resourceMechanicalParts" value="20"/>
@@ -49,7 +52,7 @@
 		<property name="SortOrder1" value="70i0"/>
 	</block>
 	
-		<block name="WeaponsMechine">
+	<block name="WeaponsMechine">
 		<property name="Class" value="Workstation"/>
 		<property name="CustomIcon" value="cntVendingMachineTrader" />
 		<property name="CustomIconTint" value="34eb4c" />	
