@@ -71,6 +71,42 @@
 		<!-- <property name="RepairTime" value="2"/>
 		<property name="RepairAmount" value="400"/> -->
 	</item>
+	
+	<item name="steel"> <!-- scrap material -->
+		<property name="DescriptionKey" value="PerfectSteelDesc"/>	
+		<property name="CustomIcon" value="resourceForgedSteel" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="100"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>
+
+	<item name="lofe"> <!-- scrap material -->
+		<property name="DescriptionKey" value="PerfectIronDesc"/>	
+		<property name="CustomIcon" value="resourceForgedIron" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="100"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
 
 	<item name="GunSprings"> <!-- scrap material -->
 		<property name="DescriptionKey" value="GunSpringsDesc"/>	
