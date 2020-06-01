@@ -37,6 +37,14 @@
 	</recipe>	
 
 <!-- RESOURCES -->	
+
+	<recipe name="steel" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="resourceForgedSteel" count="100"/>
+	</recipe>
+	
+	<recipe name="lofe" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="resourceForgedIron" count="200"/>
+	</recipe>
 	
 	<recipe name="GunBarrels" count="1" craft_area="TIPSYWorkBench">
 		<ingredient name="resourceMetalPipe" count="50"/>

@@ -4,7 +4,7 @@
 	 
 	<append xpath="/recipes">
 	
-	<recipe name="meleeToolFireaxeSteel" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
+	<recipe name="meleeToolFireaxeSteel" count="1" craft_area="Blacksmith" craft_time="600" tags="learnable,perkMiner69r">
 		<ingredient name="resourceRawDiamond" count="5"/>
 		<ingredient name="meleeToolAllSteelParts" count="10"/>
 		<ingredient name="resourceForgedSteel" count="20"/>
@@ -16,7 +16,7 @@
 		</effect_group>
 	</recipe>
 				 
-	<recipe name="Diamond Pickaxe" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
+	<recipe name="Diamond Pickaxe" count="1" craft_area="TIPSYWorkBench" craft_time="600" tags="learnable,perkMiner69r">
 		<ingredient name="resourceRawDiamond" count="20"/>
 		<ingredient name="meleeToolAllSteelParts" count="40"/>
 		<ingredient name="resourceForgedSteel" count="100"/>
@@ -27,7 +27,7 @@
 		</effect_group>
 	</recipe>
 	
-	<recipe name="Diamond Nailgun" count="1" craft_area="workbench" craft_time="600" tags="learnable,workbenchCrafting">
+	<recipe name="Diamond Nailgun" count="1" craft_area="TIPSYWorkBench" craft_time="600" tags="learnable,workbenchCrafting">
 		<ingredient name="resourceRawDiamond" count="40"/>	
 		<ingredient name="resourceForgedSteel" count="100"/>
 		<ingredient name="resourceMechanicalParts" count="40"/>
@@ -35,7 +35,7 @@
 		<ingredient name="resourceSpring" count="20"/>
 	</recipe>
 		
-	<recipe name="Diamond Auger" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
+	<recipe name="Diamond Auger" count="1" craft_area="Blacksmith" craft_time="600" tags="learnable,perkMiner69r">
 		<ingredient name="resourceRawDiamond" count="35"/>	
 		<ingredient name="meleeToolChainsawParts" count="10"/>
 		<ingredient name="vehicleBicycleHandlebars" count="1"/>
@@ -46,7 +46,7 @@
 		</effect_group>
 	</recipe>
 	   
-	<recipe name="Diamond Chainsaw" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
+	<recipe name="Diamond Chainsaw" count="1" craft_area="Blacksmith" craft_time="600" tags="learnable,perkMiner69r">
 		<ingredient name="resourceRawDiamond" count="10"/>
 		<ingredient name="meleeToolChainsawParts" count="10"/>
 		<ingredient name="vehicleBicycleHandlebars" count="1"/>
@@ -57,7 +57,7 @@
 		</effect_group>
 	</recipe>
 	
-	<recipe name="Diamond Wrench" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkSalvageOperations">
+	<recipe name="Diamond Wrench" count="1" craft_area="Blacksmith" craft_time="600" tags="learnable,perkSalvageOperations">
 		<ingredient name="resourceRawDiamond" count="10"/>
 		<ingredient name="resourceForgedIron" count="100"/>
 		<ingredient name="resourceMechanicalParts" count="10"/>
@@ -67,7 +67,7 @@
 		</effect_group>
 	</recipe>
 	
-	<recipe name="Diamond Shovel" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
+	<recipe name="Diamond Shovel" count="1" craft_area="Blacksmith" craft_time="600" tags="learnable,perkMiner69r">
 		<ingredient name="resourceRawDiamond" count="5"/>
 		<ingredient name="meleeToolAllSteelParts" count="10"/>
 		<ingredient name="resourceForgedSteel" count="20"/>
