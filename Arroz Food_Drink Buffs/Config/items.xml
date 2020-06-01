@@ -1,0 +1,37 @@
+<configs>
+  <append xpath="/items">
+  
+    <item name="GottaGoFast">
+	<property name="Extends" value="drinkJarRedTea"/>
+	<property name="DisplayType" value="waterMegaCrush"/>
+	<property name="CustomIcon" value="drinkCanMegaCrush"/>
+    <property name="CustomIconTint" value="FF0000"/>
+    <property name="ItemTypeIcon" value="star"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action0">
+	</property>
+
+	<effect_group tiered="false">
+		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="60"/>
+			<display_value name="dStaminaRegen" value=".15"/>
+			<display_value name="dRunSpeed" value="1"/>
+			<display_value name="dDuration" value="600"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGottaGoFast" operation="add" value="600"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGottaGoFast" operation="set" value="3600">
+				<requirement name="CVarCompare" cvar="$buffGottaGoFast" operation="GT" value="3600"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffGottaGoFast"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<requirement name="HasBuff" buff="buffIsOnFire"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+	</effect_group>
+</item>
+
+
+
+
+
+  </append>
+</configs>

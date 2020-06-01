@@ -1,0 +1,38 @@
+<Configs>
+
+    <append xpath="/buffs">
+	
+	<buff name="buffGottaGoFast" name_key="buffMegaCrushName" description_key="buffMegaCrushDesc" tooltip_key="buffMegaCrushTooltip" icon="ui_game_symbol_pills">
+		<stack_type value="replace"/><duration value="0"/>
+		<display_value value=".buffGottaGoFastDisplay"/><display_value_format value="time"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffGottaGoFast" operation="subtract" value="@$MetabolismDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffGottaGoFastDisplay" operation="set" value="@$buffGottaGoFast"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffGottaGoFastDisplay" operation="divide" value="@$MetabolismDuration"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="$buffGottaGoFast" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffGottaGoFastDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffGottaGoFast" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffGottaGoFast"/>
+		</effect_group>
+
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_add" value="1"/>
+			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="1.2"/> <!-- regening stamina costs you water -->
+			<passive_effect name="StaminaLossMaxMult" operation="perc_add" value="1.2"/> <!-- regening stamina costs food, blacks out the stamina bar -->
+		</effect_group>
+	</buff>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</append>
+
+</Configs>

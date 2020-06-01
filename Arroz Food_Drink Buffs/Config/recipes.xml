@@ -1,0 +1,16 @@
+<configs>
+    <append xpath="/recipes">
+	
+	<recipe name="GottaGoFast" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="resourceAcid" count="1"/>
+	<ingredient name="resourceGoldNugget" count="5"/>
+	<ingredient name="resourceSilverNugget" count="5"/>
+	<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+	
+	
+	
+	
+	</append>
+
+</configs>
