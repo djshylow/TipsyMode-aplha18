@@ -2,7 +2,7 @@
 
     <append xpath="/buffs">
 	
-	<buff name="buffGottaGoFast" name_key="buffMegaCrushName" description_key="buffMegaCrushDesc" tooltip_key="buffMegaCrushTooltip" icon="ui_game_symbol_pills">
+	<buff name="buffGottaGoFast" name_key="buffMegaCrushName" description_key="buffMegaCrushDesc" tooltip_key="buffGottaGoFastTooltip" icon="ui_game_symbol_pills">
 		<stack_type value="replace"/><duration value="0"/>
 		<display_value value=".buffGottaGoFastDisplay"/><display_value_format value="time"/>
 		<effect_group>
@@ -23,13 +23,8 @@
 			<passive_effect name="StaminaLossMaxMult" operation="perc_add" value="1.2"/> <!-- regening stamina costs food, blacks out the stamina bar -->
 		</effect_group>
 	</buff>
-	
-	
-	
-	
-	
-	
-	
+
+
 	
 	
 	

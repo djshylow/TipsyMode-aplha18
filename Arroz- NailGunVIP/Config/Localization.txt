@@ -1,3 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english
-gunToolNailgunVIP,Items,meleeRepairTool,,,"VIP Nail Gun"
-gunToolNailgunVIPDesc,Items,meleeRepairTool,,,"Thank You for Supporting the Server. Builds/Repair Blocks Super Fast"
