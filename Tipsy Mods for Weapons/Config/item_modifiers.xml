@@ -1,4 +1,7 @@
 <configs>
+
+<append xpath="/items/item[@name='vehicleBicyclePlaceable']"><property name="Tags" value="vehicle"/></append>
+
   <append xpath="/item_modifiers">
 
         <!--  Burned To Ashes -->
@@ -31,7 +34,7 @@
 		</effect_group>
 	</item_modifier>
 	
-	<item_modifier name="Testing Fire" installable_tags="aweapon" modifier_tags="elemental" type="attachment">
+<!-- 	<item_modifier name="Testing Fire" installable_tags="aweapon" modifier_tags="elemental" type="attachment">
 		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
@@ -42,8 +45,29 @@
 			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffBurningMolotov"/>
 			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffBurningMolotov"/>
 		</effect_group>
-	</item_modifier>
+	</item_modifier>  -->
 
+
+	<item_modifier name="Head Lamps" installable_tags="vehicle" modifier_tags="light" type="attachment">
+        <property name="UnlockedBy" value="modVehicleHeadlightsSchematic"/>
+        <property name="CustomIcon" value="resourceHeadlight"/>
+        <property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+        <effect_group tiered="false">
+            <passive_effect name="LightIntensity" operation="perc_set" value="3.0"/>
+        </effect_group>
+    </item_modifier>
+
+	<item_modifier name="Turbo" installable_tags="vehicle" modifier_tags="speed" type="attachment">
+        <property name="CustomIcon" value="toolAndDieSet"/>
+        <property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+        <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+        <effect_group tiered="false">
+	<passive_effect name="VehicleFuelUsePer" operation="perc_set" value="1.0"/>
+            <passive_effect name="VehicleVelocityMaxPer" operation="perc_set" value="1.4"/>
+            <passive_effect name="VehicleVelocityMaxTurboPer" operation="perc_set" value="1.4"/>
+        </effect_group>
+    </item_modifier>
 
   </append>
 </configs>
