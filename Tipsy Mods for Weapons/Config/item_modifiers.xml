@@ -31,7 +31,7 @@
 		</effect_group>
 	</item_modifier>
 	
-	<item_modifier name="Testing Fire" installable_tags="The Colt" modifier_tags="elemental" type="attachment">
+	<item_modifier name="Testing Fire" installable_tags="aweapon" modifier_tags="elemental" type="attachment">
 		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>

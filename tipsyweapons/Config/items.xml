@@ -41,7 +41,7 @@
 	
 <!-- KITS-->
 	<item name="The Colt"> <!-- T3 pistols -->
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,canHaveCosmetic"/>
+		<property name="Tags" value="aweapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="44"/>
 		<property name="CustomIcon" value="gun44Magnum"/>

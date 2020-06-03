@@ -38,11 +38,11 @@
 
 <!-- RESOURCES -->	
 
-	<recipe name="steel" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="Perfect Steel" count="1" craft_area="TIPSYWorkBench">
 		<ingredient name="resourceForgedSteel" count="100"/>
 	</recipe>
 	
-	<recipe name="lofe" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="Perfect Iron" count="1" craft_area="TIPSYWorkBench">
 		<ingredient name="resourceForgedIron" count="200"/>
 	</recipe>
 	
