@@ -1,0 +1,15 @@
+<bhwCompleteCollection>
+
+<!-- bhwIndoorPlumbing Edits Start -->
+
+	<insertAfter xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Focused_blockname_5']">
+		<property name="Focused_blockname_6" value="faucet02"/>
+		<property name="Focused_blockname_7" value="faucet04"/>
+		<property name="Focused_blockname_8" value="faucetBrass02"/>
+		<property name="Focused_blockname_9" value="faucetBrass04"/>
+		<property name="Focused_blockname_10" value="cntMedicineCabinetFaucetOpen"/>
+	</insertAfter>
+
+<!-- bhwIndoorPlumbing Edits End -->
+
+</bhwCompleteCollection>

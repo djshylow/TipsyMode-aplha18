@@ -1,0 +1,79 @@
+<configs>
+	<!-- Zombies night -->
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+		<entity name="zombieBanshee" prob="0.1" />
+		<entity name="zombieGeist" prob="0.1" />
+		<entity name="zombieParasite" prob="0.1" />
+		<entity name="ZombieBomber" prob="0.1" />
+		<entity name="zombieSiren" prob="0.1" />
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+		<entity name="zombieParasite" prob="0.1" />
+		<entity name="ZombieBomber" prob="0.1" />
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesBurntForest']">
+		<entity name="zombieCowhead" prob="0.1" />
+		<entity name="zombieScorcher" prob="0.1" />
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='SnowZombies']">
+		<entity name="zombieWendigo" prob="0.01" />
+	</append>
+	<append xpath="/entitygroups">
+		<entitygroup name="ZombiesWastelandNightHard">
+			<entity name="zombieFarmer" prob="0.3"/>
+			<entity name="zombieStripper" prob="0.3"/>
+			<entity name="zombieUtilityWorker" prob="0.3"/>
+			<entity name="zombieNurse" prob="0.3"/>
+			<entity name="zombieSteveCrawler"/>
+			<entity name="zombieFatHawaiian" prob="0.3"/>
+			<entity name="ZombieUndertaker" prob="0.1" />
+		</entitygroup>
+		<entitygroup name="ZombiesPineForest">
+			<entity name="zombieBoe"/>
+			<entity name="zombieJoe"/>
+			<entity name="zombieSteve"/>
+			<entity name="zombieMoe"/>
+			<entity name="zombieYo"/>
+			<entity name="zombieBusinessMan"/>
+			<entity name="zombieArlene"/>
+			<entity name="zombieDarlene"/>
+			<entity name="zombieMarlene"/>
+			<entity name="zombieSkateboarder"/>
+			<entity name="zombieCheerleader" prob="0.3"/>
+			<entity name="zombieOldTimer" prob="0.3"/>
+			<entity name="zombieBiker" prob="0.3"/>
+			<entity name="zombieFarmer" prob="0.3"/>
+			<entity name="zombieStripper" prob="0.3"/>
+			<entity name="zombieUtilityWorker" prob="0.3"/>
+			<entity name="zombieNurse" prob="0.3"/>
+			<entity name="zombieSteveCrawler"/>
+			<entity name="zombieFatHawaiian" prob="0.3"/>
+			<entity name="zombieCowhead" prob="0.1" />
+			<entity name="zombieMantis" prob="0.1" />
+		</entitygroup>
+		<entitygroup name="ZombiesPineForestNight">
+			<entity name="zombieWightFeral"/>
+			<entity name="zombieMarleneFeral"/>
+			<entity name="zombieYoFeral"/>
+			<entity name="zombieSteveFeral"/>
+			<entity name="zombieSteveCrawlerFeral"/>
+			<entity name="zombieSpiderFeral"/>
+			<entity name="zombieNurseFeral"/>
+			<entity name="zombieMantis" prob="0.1" />
+		</entitygroup>
+		<entitygroup name="ZombiesDesertNight">
+			<entity name="zombieCheerleader" prob="0.3"/>
+			<entity name="zombieOldTimer" prob="0.3"/>
+			<entity name="zombieBiker" prob="0.3"/>
+			<entity name="zombieFarmer" prob="0.3"/>
+			<entity name="zombieStripper" prob="0.3"/>
+			<entity name="zombieUtilityWorker" prob="0.3"/>
+			<entity name="zombieNurse" prob="0.3"/>
+			<entity name="zombieSteveCrawler"/>
+			<entity name="zombieFatHawaiian" prob="0.3"/>
+			<entity name="ZombieUndertaker" prob="0.1" />
+		</entitygroup>
+	</append>
+</configs>
+
+

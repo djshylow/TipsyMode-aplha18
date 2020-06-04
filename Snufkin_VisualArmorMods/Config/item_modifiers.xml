@@ -1,0 +1,794 @@
+<configs>
+	<append xpath="/item_modifiers" >
+		<item_modifier name="HazmatJacket Visual Mod" installable_tags="armorChest" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelHazmatJacket"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_hazmat_chest"/>
+				<property name="UMA.Overlay0" value="armor_hazmat_chest"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="HazmatGloves Visual Mod" installable_tags="hands" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelHazmatGloves"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_hazmat_hands"/>
+				<property name="UMA.Overlay0" value="armor_hazmat_gloves"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="HazmatMask Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelHazmatMask"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_hazmat_head"/>
+				<property name="UMA.Overlay0" value="armor_hazmat_hood"/>
+				<property name="UMA.ShowAltHair" value="true"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="HazmatPants Visual Mod" installable_tags="legs" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelHazmatPants"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_hazmat_legs"/>
+				<property name="UMA.Mask0" value="legs" param1="inner"/>
+				<property name="UMA.Mask1" value="legs" param1="middle"/>
+				<property name="UMA.Mask2" value="legs" param1="outer"/>
+				<property name="UMA.Overlay0" value="armor_hazmat_pants"/>
+				<property name="UMA.Layer" value="3"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="HazmatBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelHazmatBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_hazmat_feet"/>
+				<property name="UMA.Overlay0" value="armor_hazmat_boots"/>
+				<property name="UMA.Layer" value="3"/>
+				<property name="UMA.Mask0" value="feet" param1="outer"/>
+				<property name="UMA.Mask1" value="feet" param1="middle"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="Shades Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelShades"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_shades"/>
+				<property name="UMA.Overlay0" value="gear_shades"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="AviatorGoggles Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelAviatorGoggles"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="aviator_goggles"/>
+				<property name="UMA.Overlay0" value="aviator_goggles"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SkiGoggles Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelSkiGoggles"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_goggles"/>
+				<property name="UMA.Overlay0" value="gear_goggles"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="NerdGlasses Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelNerdGlasses"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="specs"/>
+				<property name="UMA.Overlay0" value="specs"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="NightvisionGoggles Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelNightvisionGoggles"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_nightvision_goggles"/>
+				<property name="UMA.Overlay0" value="gear_nightvision_goggles"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="Cigar Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelCigar"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_cigar"/>
+				<property name="UMA.Overlay0" value="gear_cigar"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="Cigarette Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelCigarette"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="cigarette"/>
+				<property name="UMA.Overlay0" value="cigarette"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="FacialPiercings Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelFacialPiercings"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="piercings"/>
+				<property name="UMA.Overlay0" value="piercings"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="Bandana Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelBandana"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_bandana"/>
+				<property name="UMA.Overlay0" value="gear_bandana"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="WornBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelWornBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="worn_boots"/>
+				<property name="UMA.Overlay0" value="worn_boots"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="RunningShoesRegular Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelRunningShoesRegular"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="running_shoes"/>
+				<property name="UMA.Overlay0" value="running_shoes"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="CowboyBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelCowboyBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="boot02"/>
+				<property name="UMA.Overlay0" value="boot02"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="GothBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelGothBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="goth_boots"/>
+				<property name="UMA.Overlay0" value="goth_boots"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="InvisibleHeadArmor Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="terrWaterPOI"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="InvisibleChestArmor Visual Mod" installable_tags="armorChest" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="terrWaterPOI"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="InvisibleHandsArmor Visual Mod" installable_tags="hands" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="terrWaterPOI"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="InvisibleLegArmor Visual Mod" installable_tags="armorLegs" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="terrWaterPOI"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="InvisibleOvercoat Visual Mod" installable_tags="jacket" modifier_tags="rare" blocked_tags="armor" type="attachment">
+			<property name="CustomIcon" value="terrWaterPOI"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+				<property name="UMA.Mask0" value="" />
+				<property name="UMA.Mask1" value="" />
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="CoatLeatherPoncho Visual Mod" installable_tags="Chest,jacket" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelCoatLeatherPoncho"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="clothes_hide_poncho"/>
+				<property name="UMA.Overlay0" value="clothes_hide_poncho"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="CoatLeatherDuster Visual Mod" installable_tags="Chest,jacket" modifier_tags="rare"  type="attachment">
+			<property name="CustomIcon" value="apparelCoatLeatherDuster"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="clothes_leather_duster"/>
+				<property name="UMA.Overlay0" value="clothes_leather_duster"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="CoatPufferCoat Visual Mod" installable_tags="Chest,jacket" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelCoatPufferCoat"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="coats_puffer_coat"/>
+				<property name="UMA.Overlay0" value="coat_puffer_coat"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="CoatJacketGeneric Visual Mod" installable_tags="Chest,jacket" modifier_tags="rare"  type="attachment">
+			<property name="CustomIcon" value="apparelCoatJacketGeneric"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="jacket"/>
+				<property name="UMA.Overlay0" value="jacket"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SuitJacket Visual Mod" installable_tags="jacket" modifier_tags="rare" type="attachment">
+			<property name="CustomIcon" value="apparelSuitJacket"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="clothes_suit_jacket"/>
+				<property name="UMA.Overlay0" value="unisex_clothes_suit_jacket"/>
+				<property name="UMA.Overlay1" value="unisex_clothes_suit_jacket_shirt"/>
+				<property name="UMA.Layer" value="3"/>
+				<property name="UMA.Mask0" value="chest" param1="base"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SuitDressShoes Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="apparelSuitDressShoes"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="clothes_dress_shoes"/>
+				<property name="UMA.Overlay0" value="unisex_clothes_dress_shoes"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ClothHelmet Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorClothHat"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_cloth_hood"/>
+				<property name="UMA.Overlay0" value="armor_cloth_hood"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SantaHat Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorSantaHat"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_santa_hat"/>
+				<property name="UMA.Overlay0" value="gear_santa_hat"/>
+				<property name="UMA.ShowAltHair" value="true"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ClothJacket Visual Mod" installable_tags="chest" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorClothJacket"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_cloth_chest"/>
+				<property name="UMA.Overlay0" value="armor_cloth_chest"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ClothGloves Visual Mod" installable_tags="hands" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorClothGloves"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_cloth_hands"/>
+				<property name="UMA.Overlay0" value="armor_cloth_hands"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ClothPants Visual Mod" installable_tags="legs" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorClothPants"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_cloth_legs"/>
+				<property name="UMA.Overlay0" value="armor_cloth_legs"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ClothBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorClothBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_cloth_feet"/>
+				<property name="UMA.Overlay0" value="armor_cloth_feet"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="LeatherHelmet Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorLeatherHood"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_leather_hood"/>
+				<property name="UMA.Overlay0" value="armor_leather_hood"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="LeatherChest Visual Mod" installable_tags="chest" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorLeatherChest"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_leather_chest"/>
+				<property name="UMA.Overlay0" value="armor_leather_chest"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="LeatherGloves Visual Mod" installable_tags="hands" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorLeatherGloves"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_leather_gloves"/>
+				<property name="UMA.Overlay0" value="armor_leather_gloves"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="LeatherPants Visual Mod" installable_tags="legs" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorLeatherPants"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_leather_pants"/>
+				<property name="UMA.Overlay0" value="armor_leather_pants"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="LeatherBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorLeatherBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_leather_feet"/>
+				<property name="UMA.Overlay0" value="armor_leather_boots"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="MilitaryHelmet Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorMilitaryHelmet"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_kevlar_helmet"/>
+				<property name="UMA.Overlay0" value="gear_kevlar_helmet"/>
+				<property name="UMA.ShowAltHair" value="true"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="MilitaryVest Visual Mod" installable_tags="chest" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorMilitaryVest"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_kevlar_vest"/>
+				<property name="UMA.Overlay0" value="armor_kevlar_vest"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="MilitaryGloves Visual Mod" installable_tags="hands" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorMilitaryGloves"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_kevlar_gloves"/>
+				<property name="UMA.Overlay0" value="armor_kevlar_gloves"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="MilitaryLegs Visual Mod" installable_tags="legs" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorMilitaryLegs"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_kevlar_legarmor"/>
+				<property name="UMA.Overlay0" value="armor_kevlar_legarmor"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="MilitaryBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorMilitaryBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_kevlar_boots"/>
+				<property name="UMA.Overlay0" value="armor_kevlar_boots"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ScrapHelmet Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorScrapHelmet"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_scrapmetal_helmet"/>
+				<property name="UMA.Overlay0" value="armor_scrapmetal_helmet"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ScrapChest Visual Mod" installable_tags="chest" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorScrapChest"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_scrap_metal_chest"/>
+				<property name="UMA.Overlay0" value="scrap_metal_armor"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ScrapGloves Visual Mod" installable_tags="hands" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorScrapGloves"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_scrap_metal_hands"/>
+				<property name="UMA.Overlay0" value="scrap_metal_armor"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ScrapLegs Visual Mod" installable_tags="legs" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorScrapLegs"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_scrap_metal_legs"/>
+				<property name="UMA.Overlay0" value="scrap_metal_armor"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="ScrapBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorScrapBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_scrap_metal_feet"/>
+				<property name="UMA.Overlay0" value="armor_scrap_metal_feet"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="IronHelmet Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorIronHelmet"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_heavy_bandit_gasmask"/>
+				<property name="UMA.Overlay0" value="bandit_armor"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="IronChest Visual Mod" installable_tags="chest" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorIronChest"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="male_armor_heavy_bandit_chest"/>
+				<property name="UMA.Overlay0" value="bandit_armor"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="IronGloves Visual Mod" installable_tags="hands" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorIronGloves"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_heavy_bandit_gloves"/>
+				<property name="UMA.Overlay0" value="bandit_armor"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="IronLegs Visual Mod" installable_tags="legs" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorIronLegs"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_heavy_bandit_legarmor"/>
+				<property name="UMA.Overlay0" value="bandit_armor"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="IronBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorIronBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_heavy_bandit_feet"/>
+				<property name="UMA.Overlay0" value="bandit_armor"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SteelHelmet Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorSteelHelmet"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_iron_helmet"/>
+				<property name="UMA.Overlay0" value="armor_iron_helmet"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SteelChest Visual Mod" installable_tags="chest" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorSteelChest"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_iron_chest"/>
+				<property name="UMA.Overlay0" value="armor_iron_chest"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SteelGloves Visual Mod" installable_tags="hands" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorSteelGloves"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_iron_gloves"/>
+				<property name="UMA.Overlay0" value="armor_iron_gloves"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SteelLegs Visual Mod" installable_tags="legs" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorSteelLegs"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_iron_pants"/>
+				<property name="UMA.Overlay0" value="armor_iron_pants"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SteelBoots Visual Mod" installable_tags="feet" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorSteelBoots"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="armor_iron_boots"/>
+				<property name="UMA.Overlay0" value="armor_iron_boots"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="MiningHelmet Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorMiningHelmet"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_mining_helmet"/>
+				<property name="UMA.Overlay0" value="gear_mining_helmet"/>
+				<property name="UMA.ShowAltHair" value="true"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="SwatHelmet Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorSwatHelmet"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_swat_helmet"/>
+				<property name="UMA.Overlay0" value="gear_swat_helmet"/>
+				<property name="UMA.ShowAltHair" value="true"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="FootballHelmet Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="armorFootballHelmet"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value="gear_football_helmet"/>
+				<property name="UMA.Overlay0" value="gear_football_helmet"/>
+				<property name="UMA.ShowAltHair" value="false"/>
+			</item_property_overrides>
+		</item_modifier>
+		<item_modifier name="PumpkinHead Visual Mod" installable_tags="head" modifier_tags="rare" blocked_tags="clothing" type="attachment">
+			<property name="CustomIcon" value="decoPumpkinJackOLantern"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="440"/>
+			<property name="DisplayType" value="clothing"/>
+			<item_property_overrides name="*">
+				<property name="UMA.Mesh" value=""/>
+				<property name="UMA.Overlay0" value=""/>
+			</item_property_overrides>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLight" prefab="Entities/Plants/pumpkinJackoLanternPrefab" parentTransform="Spotlight" localPos=".2,0,0" localRot="0,0,90"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLight"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+</configs>

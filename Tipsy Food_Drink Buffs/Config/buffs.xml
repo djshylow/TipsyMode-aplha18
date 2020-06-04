@@ -23,11 +23,82 @@
 			<passive_effect name="StaminaLossMaxMult" operation="perc_add" value="1.2"/> <!-- regening stamina costs food, blacks out the stamina bar -->
 		</effect_group>
 	</buff>
+	
+	
+	<buff name="BuffInstant Splint Potion" name_key="Calcium Supplement" description_key="Arr! me arms are fixed!" icon="ui_game_symbol_splintarm">
+		<stack_type value="replace"/>
+		<duration value="1"/>
+		<effect_group>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.2,0" duration="0"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_subtract" value="0.2,0" duration="0"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" value="0.2,0" duration="0" tags="melee,ranged"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffArmBroken"/>
+		</effect_group>
+	</buff>
+	
+	
+	
+	
+	<buff name="BuffInstant Splint 2 Potion" name_key="Calcium Supplement" description_key="Arr! me legs are fixed!" tooltip_key="buffLegSplintedTooltip" icon="ui_game_symbol_splint">
+		<damage_type value="sprain"/>
+		<duration value="1"/>
+		<effect_group>
+			<passive_effect name="RunSpeed" operation="perc_subtract" value="0.15, 0" duration="0" />
+			<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.15, 0" duration="0" />
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.15, 0" duration="0" />
+			<passive_effect name="JumpStrength" operation="perc_subtract" value="0.06, 0" duration="0" />
+            <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffLegBroken"/>
+		</effect_group>
+	     </buff>
+		 
+		 
+		        
+		
+		
+		<buff name="BuffHP Potion" name_key="HP Power Up 100!" description_key="HP Power Up 100!">
+		<stack_type value="ignore"/>
+		<duration value="600"/>
+		<effect_group>
+		<passive_effect name="HealthMax" operation="base_add" value="100"/>
+		<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff"  target="self" buff="HP Potion" />
+</effect_group>
+	</buff>
+	
+	
+	
+		<buff name="BuffStamina Potion" name_key="Stamina Power Up 100!" description_key="Stamina Power Up 100!">
+		<stack_type value="ignore"/>
+		<duration value="600"/>
+		<effect_group>
+		<passive_effect name="StaminaMax" operation="base_add" value="100"/>
+		<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff"  target="self" buff="Stamina Potion" />
 
 
+
+		</effect_group>
+		</buff>
+		<buff name="BuffJump Potion" name_key="Hello Grasshopper!" description_key="Power Jump!">
+		<stack_type value="ignore"/>
+		<duration value="600"/>
+		<effect_group>
+				<passive_effect name="JumpStrength" operation="base_set" value="0.50"/>
+		</effect_group>
+		</buff>
+
+
+
+		<buff name="BuffSonic Speed" name_key="meep, meep!" description_key="Run for your life!">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<effect_group>
+				<passive_effect name="RunSpeed" operation="base_set" value="2.50"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff"  target="self" buff="Sonic Speed" />
+					<passive_effect name="StaminaLoss" operation="base_set" value="10"/>
+		</effect_group>
+		</buff>
 	
-	
-	
+
+
 	</append>
 
 </Configs>

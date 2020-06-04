@@ -9,6 +9,43 @@
 </recipe>
 	
 	
+	<recipe name="Bone Healing Potion" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="resourceBone" count="2"/>
+	<ingredient name="medicalBloodBag" count="1"/>
+	<ingredient name="drinkJarPureMineralWater" count="1"/>
+</recipe>
+	
+
+
+
+    <recipe name="HP +100 Potion" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="foodRottingFlesh" count="1"/>
+	<ingredient name="medicalBloodBag" count="1"/>
+	<ingredient name="drinkJarPureMineralWater" count="1"/>
+</recipe>
+
+
+    <recipe name="Stamina +100 Potion" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="foodRottingFlesh" count="2"/>
+	<ingredient name="medicalBloodBag" count="2"/>
+	<ingredient name="drinkJarPureMineralWater" count="1"/>
+</recipe>
+
+
+    <recipe name="Jump Potion" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceSpring" count="5"/>
+	<ingredient name="drinkJarPureMineralWater" count="1"/>
+</recipe>
+
+	
+	<recipe name="Sonic Speed Potion" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="apparelRunningShoesRegular" count="1"/>
+	<ingredient name="modDyeBlue" count="1"/>
+	<ingredient name="drinkJarPureMineralWater" count="1"/>
+</recipe>
+	
+	
 	
 	
 	</append>

@@ -1,0 +1,50 @@
+<config>
+	<append xpath="/controls">
+		<casino_ingredient>
+			<rect name="row" width="447" height="50" controller="IngredientEntry">
+				<rect depth="2" width="140" height="48" pos="307,0" visible="${visible|false}">
+					<label depth="3" name="haveCount" pos="70,-25" width="500" height="60" font_size="48" color="[white]" justify="left" pivot="center" text="{havecount}"/>
+					<label depth="3" name="needCount" pos="-380,-115" width="500" height="60" font_size="60" color="{hasingredientsstatecolor}" justify="left" pivot="center" text="{needcount}"/>
+				</rect>
+			</rect>
+		</casino_ingredient>
+		<casino_entry>
+			<rect depth="-11" width="250" height="100" style="press, hover" foregroundlayer="false" controller="RecipeEntry" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]" sound_play_on_hover="[default_hover]" >
+				<sprite depth="-11" name="background" width="125" height="100" pos="0,1" type="sliced" />
+			</rect>
+		</casino_entry>
+		<spin_button>
+			<rect width="150" height="160" controller="ItemActionEntry" disabled_font_color="[red]" default_font_color="[green]"  disableautobackground="true" >
+				<label depth="5" name="Name" pivot="center" pos="87,-75" width="160" height="160" color="{statuscolor}" text="SPIN" font_size="144" />
+				<texture depth="4" color="[white]" border="[transparent]" globalopacity="false" pivot="center" width="356" height="268" pos="100,-94" texture="@https://i.imgur.com/lYJOwMr.png" />
+				<sprite depth="3" pivot="center" name="background" color="[mediumGrey]" pos="80,-80" type="sliced" on_press="true" on_hover="true" width="200" height="150"  sound_play_on_hover="[default_hover]"/>
+				<sprite depth="-11" name="Icon" size="0,0"  pos="0,0" />
+				<gamepad_icon depth="-11" name="gamepadIcon" pos="0,0" pivot="Right" />
+				<label depth="-11" name="keyboardButton" pos="0,0" width="0" height="0" font_size="0" />
+			</rect>
+		</spin_button>
+		<casino_stack>
+			<rect depth="12" controller="RecipeStack" width="35" height="35" collider_scale="1.0">
+				<sprite depth="-11" name="backgroundMain" pos="0,0" width="0" height="0" />	
+				<sprite depth="-11" name="background" sprite="ui_game_symbol_x" type="sliced" style="press" on_hover="true"/>
+				<sprite depth="-11" name="lockIcon" width="0" height="0"  pos="0,0" visible="false" foregroundlayer="false"/>
+				<label depth="-11" name="count" pos="0,0" width="0" height="0" text="Test" font_size="0" />
+				<label depth="-11" name="timer" pos="0,0" width="0" height="0" font_size="0" justify="center" pivot="center" color="[beige]"/>
+				<sprite depth="-11" name="overlay" width="0" height="0" color="0,0,0,0" type="sliced"/>
+				<sprite depth="-11" name="itemIcon" width="0" height="0" sprite="ui_game_symbol_x" pos="36,-35" pivot="center" foregroundlayer="false"/>
+				<sprite depth="3" name="cancel" sprite="ui_game_symbol_x" width="35" height="35" color="255,0,0,0" type="sliced" visible="false" foregroundlayer="false"/>
+			</rect>
+		</casino_stack>
+		
+		
+		<bj_generic_stat_entry>
+			<rect height="33">
+				<label depth="3" pos="305,-3" width="88" font_size="26" text="${valuecontent}" justify="right" color="[selectedColor]" pivot="topright" />
+			</rect>
+		</bj_generic_stat_entry>
+		
+		<bj_generic_stat>
+			<bj_generic_stat_entry backgroundcolor="${backgroundcolor}" textcontent="{playerstattitle${index}|once}" valuecontent="{playerstat${index}}" />
+		</bj_generic_stat>
+	</append>
+</config>

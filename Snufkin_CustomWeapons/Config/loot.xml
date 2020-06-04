@@ -1,0 +1,21 @@
+<configs>
+<append xpath="/lootcontainers/lootgroup[@name='groupHeroChestLoot']">
+	<item group="SnufkinCustomWeapons" count="1" prob="0.005"/>
+</append>
+<insertBefore xpath="/lootcontainers/lootgroup[@name='groupHeroChestLoot']" >
+	<lootgroup name="SnufkinCustomWeapons" loot_quality_template="questTierFlexibleTemplate">
+		<item name="Vampire Gauntlets" loot_prob_template="GradeCLoot"/>
+		<item name="turretAuger" loot_prob_template="GradeCLoot"/>
+		<item name="Kronos XII" loot_prob_template="GradeCLoot"/>
+		<item name="Vulcan" loot_prob_template="GradeCLoot"/>
+		<item name="CrimsonHunter" loot_prob_template="GradeCLoot"/>
+		<item name="Savery" loot_prob_template="GradeCLoot"/>
+		<item name="PP-19 Bizon" loot_prob_template="GradeCLoot"/>
+		<item name="Polearm" loot_prob_template="GradeCLoot"/>
+		<item name="QuadShotgun" loot_prob_template="GradeCLoot"/>
+		<item name="Railgun" loot_prob_template="GradeCLoot"/>
+		<item name="Thor Hammer" loot_prob_template="GradeCLoot"/>
+		<item name="CrossbowMag" loot_prob_template="GradeCLoot"/>
+	</lootgroup>
+</insertBefore> 
+</configs>

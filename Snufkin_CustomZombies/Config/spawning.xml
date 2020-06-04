@@ -1,0 +1,14 @@
+<configs>
+	<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="ZombiesPineForest" />
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesPineForestNight" />
+	</append>
+	<append xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesDesertNight" />
+	</append>
+	<append xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNightHard" />
+	</append>
+</configs>
+
+

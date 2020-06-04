@@ -1,0 +1,185 @@
+<configs>
+
+    <append xpath="/recipes">
+    
+
+    
+	<recipe name="Working Porch Light 01" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="4"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="Working Porch Light 04" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="4"/>
+		  <ingredient name="resourceForgedIron" count="5"/>
+		  <ingredient name="resourceBrokenGlass" count="9"/>
+		</recipe>
+
+		<recipe name="Working Porch Light 04 Brass" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="4"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceScrapBrass" count="4"/>
+		  <ingredient name="resourceBrokenGlass" count="9"/>
+		</recipe>
+
+		<recipe name="Working Ceiling Light 01" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="Working Ceiling Light 02" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="4"/>
+		  <ingredient name="resourceForgedIron" count="4"/>
+		  <ingredient name="resourceBrokenGlass" count="5"/>
+		</recipe>
+
+		<recipe name="Working Ceiling Light 02 Brass" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="4"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceScrapBrass" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="5"/>
+		</recipe>
+
+		<recipe name="Working Ceiling Light 04" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="Working Ceiling Light 05" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="2"/>
+		  <ingredient name="resourceBrokenGlass" count="6"/>
+		</recipe>
+
+		<recipe name="Working Ceiling Light 05 Brass" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceScrapBrass" count="1"/>
+		  <ingredient name="resourceBrokenGlass" count="6"/>
+		</recipe>
+
+		<recipe name="Working Wall Light" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="3"/>
+		  <ingredient name="resourceForgedIron" count="6"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="Working Fluorescent Light" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="8"/>
+		  <ingredient name="resourceForgedIron" count="5"/>
+		  <ingredient name="resourceBrokenGlass" count="10"/>
+		</recipe>
+
+		<recipe name="Working Street Light 01" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="10"/>
+		  <ingredient name="resourceForgedIron" count="25"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="Working Street Light Classic" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="9"/>
+		  <ingredient name="resourceForgedIron" count="20"/>
+		  <ingredient name="resourceBrokenGlass" count="5"/>
+		</recipe>
+
+		<recipe name="Working Industrial Light" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="8"/>
+		  <ingredient name="resourceForgedIron" count="5"/>
+		  <ingredient name="resourceBrokenGlass" count="10"/>
+		</recipe>
+
+		<recipe name="Working Sconce Light" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="Working Sconce Light Shadow" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="Working Industrial Light 02" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="Working Industrial Light 02 Red" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="Working Ceiling Fan Light" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="6"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		  <ingredient name="resourceWood" count="4"/>
+		</recipe>
+
+		<recipe name="Working Chandelier Light" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceScrapBrass" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="Working Exit Sign" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="Working Road Barricade" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="8"/>
+		  <ingredient name="resourceForgedIron" count="10"/>
+		  <ingredient name="resourceBrokenGlass" count="6"/>
+		  <ingredient name="resourceWood" count="8"/>
+		</recipe>
+
+		<recipe name="Working Desk Lamp" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceScrapBrass" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="Working Table Lamp" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		  <ingredient name="resourceClayLump" count="2"/>
+		  <ingredient name="resourceCloth" count="1"/>
+		</recipe>
+
+		<recipe name="Working Work Light" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="6"/>
+		  <ingredient name="resourceBrokenGlass" count="10"/>
+		</recipe>
+
+		<recipe name="Working Sign Shop Open" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="Working Fuse Box" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		</recipe>
+
+		<recipe name="Working Fuse Block" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+
+ 
+
+</append>
+
+</configs>

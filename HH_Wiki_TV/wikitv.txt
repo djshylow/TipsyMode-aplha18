@@ -1,0 +1,27 @@
+1. Go into recipes.xml enable which mod you plan to add an image to if you want players to be able to craft them.
+
+   If not then you can just cm them into the game or lobby.
+
+
+
+
+
+2. want to edit wiki tv title texts? go to windows.xml
+
+   I have labled every wiki tv so it's easy go to text="TEXT HERE" for the tv you want and just edit that text here part nothing else.
+
+   leave the quatations etc the same only edit the text!
+
+
+
+
+
+3. Make an image you want placed into the tv via adobe etc w.e save it as a small file the smaller the better.
+   IMAGE SIZE width="1048" height="628" 
+
+
+4. go to windows.xml again find the tv you want and edit the  URL. Find a place to host your image free there is lots google it. 
+
+
+
+5. Save and done!

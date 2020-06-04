@@ -1,0 +1,40 @@
+<configs>
+<append xpath="/lootcontainers/lootgroup[@name='dyes']" >
+<item name="Dye: Red"/>
+<item name="Dye: Green"/>
+<item name="Dye: Black"/>
+<item name="Dye: Blue"/>
+<item name="Dye: Brown"/>
+<item name="Dye: Purple"/>
+<item name="Dye: Yellow"/>
+<item name="Dye: Orange"/>
+<item name="Dye: Beige"/>
+<item name="Dye: Tan"/>
+<item name="Dye: Silver"/>
+<item name="Dye: Gray"/>
+<item name="Dye: Charcoal"/>
+<item name="Dye: NavyBlue"/>
+<item name="Dye: RoyalBlue"/>
+<item name="Dye: Azure"/>
+<item name="Dye: Cyan"/>
+<item name="Dye: Aquamarine"/>
+<item name="Dye: Teal"/>
+<item name="Dye: ForestGreen"/>
+<item name="Dye: Olive"/>
+<item name="Dye: Chartreuse"/>
+<item name="Dye: Lime"/>
+<item name="Dye: Golden"/>
+<item name="Dye: Coral"/>
+<item name="Dye: Salmon"/>
+<item name="Dye: HotPink"/>
+<item name="Dye: Fuchsia"/>
+<item name="Dye: Puce"/>
+<item name="Dye: Mauve"/>
+<item name="Dye: Lavender"/>
+<item name="Dye: Plum"/>
+<item name="Dye: Indigo"/>
+<item name="Dye: Maroon"/>
+<item name="Dye: Crimson"/>
+		 
+		 </append>
+		 </configs>

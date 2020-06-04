@@ -1,0 +1,74 @@
+<configs>
+
+ <append xpath="/recipes" >
+
+<!-- ###############ENABLE THEM  TO BE CRAFTED BY REMOVING THE  < ! - -  and - - > in the end ################# -->
+<!-- ########### TO DISABLE RE-ADD THEM ################ -->
+
+
+
+
+<recipe name="Wiki - Server Info" count="1" craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> 
+
+
+<!-- <recipe name="Wiki - Server Rules" count="1"  craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> -->
+
+
+<!-- <recipe name="Wiki - Wiki - Donor Support" count="1"  craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> -->
+
+
+<!-- <recipe name="Wiki - Server Events" count="1"  craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> -->
+
+
+<!-- <recipe name="Wiki - Gimmehell Arena" count="1"  craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> -->
+
+
+<!-- <recipe name="Wiki - Server Mods" count="1"  craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> -->
+
+
+<!-- <recipe name="Wiki - Server Commands" count="1"  craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> -->
+
+
+<!-- <recipe name="Wiki - Server Admins" count="1"  craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> -->
+
+
+<!-- <recipe name="Wiki - Server Map" count="1"  craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> -->
+
+
+<!-- <recipe name="Wiki - Server Bosses" count="1"  craft_time="1">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="casinoCoin" count="25"/>
+</recipe> -->
+
+
+ </append>
+
+</configs>
+

@@ -1,0 +1,28 @@
+<configs>
+ <append xpath="/quests" >
+
+
+<quest id="starterkit">
+		<property name="name_key" value="Welcome to the server" />
+		<property name="subtitle_key" value="Starter Items" />
+		<property name="description_key" value="Begin your journey!" />
+		<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="shareable" value="false" />
+		<property name="difficulty" value="hard" />
+
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="Welcome to our server have fun.
+
+Hey we found you on the side of the road. looks like you were riding your bike and most of fallen off 
+and hit your head. So we brought you back to the city called Tipsy. You are very lucky that zombies didnt eat you.
+I'll leave some items for when you wakeup. Good Luck out there!" />
+		<reward type="Item" id="drinkJarBoiledWater" value="3" isfixed="true"/>
+		<reward type="Item" id="foodCanChili" value="3" isfixed="true"/>
+		<reward type="Item" id="medicalFirstAidBandage" value="3" isfixed="true"/>
+		<reward type="Item" id="meleeToolTorch" value="1" isfixed="true"/>
+		<reward type="Item" id="vehicleBicyclePlaceable" value="1" isfixed="true"/>
+	</quest>
+
+       </append>
+</configs>

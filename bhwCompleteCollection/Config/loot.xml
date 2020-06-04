@@ -1,0 +1,76 @@
+<bhwCompleteCollection>
+
+<!-- bhwHoarder Edits Start -->
+	<!-- Add New Loot Container for Store Shelves -->
+	<append xpath="/lootcontainers">
+		<lootcontainer id="650" count="0" size="8,6" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
+			<item name="cobweb" count="1,2"/>
+		</lootcontainer>
+	<!-- Closing Append tag for all Added Loot Containers -->
+	</append>
+
+<!-- All set xpath edits below here -->
+
+	<set xpath="/lootcontainers/lootcontainer[@id='6']/@size">8,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='8']/@size">7,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='10']/@size">8,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='11']/@size">8,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='13']/@size">7,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='14']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='16']/@size">6,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='17']/@size">8,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='18']/@size">8,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='24']/@size">8,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='36']/@size">6,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='40']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='42']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='43']/@size">7,5</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='44']/@size">6,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='46']/@size">8,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='47']/@size">9,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='49']/@size">7,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='52']/@size">8,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='54']/@size">8,6</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='55']/@size">6,3</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='58']/@size">6,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='64']/@size">9,8</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='99']/@size">7,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='106']/@size">9,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='117']/@size">8,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='119']/@size">7,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='121']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='123']/@size">7,4</set>
+	<set xpath="/lootcontainers/lootcontainer[@id='124']/@size">8,6</set>
+
+<!-- bhwHoarder Edits End -->
+
+<!-- bhwFashionista Edits Start -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='dyes']">
+		<item name="modDyeHotPink"/>
+		<item name="modDyeFireEngineRed"/>
+		<item name="modDyeOrange"/>
+		<item name="modDyeGold"/>
+		<item name="modDyeBronze"/>
+		<item name="modDyeLimeGreen"/>
+		<item name="modDyeSpringGreen"/>
+		<item name="modDyeCyan"/>
+		<item name="modDyeTurquoise"/>
+		<item name="modDyeBrightSkyBlue"/>
+		<item name="modDyeFuchsia"/>
+		<item name="modDyeRoyalPurple"/>
+		<item name="modDyeBubblegum"/>
+		<item name="modDyeLightCoral"/>
+		<item name="modDyePaleOrange"/>
+		<item name="modDyeKhaki"/>
+		<item name="modDyeSienna"/>
+		<item name="modDyePaleGreen"/>
+		<item name="modDyeBabyBlue"/>
+		<item name="modDyeSteelBlue"/>
+		<item name="modDyePlum"/>
+		<item name="modDyeGray"/>	
+	</append>
+
+<!-- bhwFashionista Edits End -->
+
+</bhwCompleteCollection>

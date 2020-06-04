@@ -1,0 +1,93 @@
+<configs>
+	<append xpath="/xui/ruleset">
+
+<window_group name="workstation_Wiki - Server Info" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikiserverinfo" />
+</window_group>
+
+<window_group name="workstation_Wiki - Server Rules" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikiserverrules" />
+</window_group>
+
+
+<window_group name="workstation_Wiki - Donor Support" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikidonorsupport" />
+</window_group>
+
+
+<window_group name="workstation_Wiki - Server Events" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikiserverevents" />
+</window_group>
+
+
+<window_group name="workstation_Wiki - Gimmehell Arena" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikigimmehellarena" />
+</window_group>
+
+
+<window_group name="workstation_Wiki - Server Mods" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikiservermods" />
+</window_group>
+
+
+
+<window_group name="workstation_Wiki - Server Commands" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikiservercommands" />
+</window_group>
+
+<window_group name="workstation_Wiki - Server Admins" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikiserveradmins" />
+</window_group>
+
+<window_group name="workstation_Wiki - Server Map" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikiservermap" />
+</window_group>
+
+<window_group name="workstation_Wiki - Server Bosses" controller="XUiC_WorkstationWindowGroup" actionSet="false">
+<window name="windowNonPagingHeader" />
+<window name="windowCraftingList"/>
+<window name="craftingInfoPanel"/>
+<window name="windowNonPagingHeader" />
+<window name="wikiserverbosses" />
+</window_group>
+
+
+	</append>
+
+</configs>

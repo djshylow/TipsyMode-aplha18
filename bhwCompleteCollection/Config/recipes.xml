@@ -1,0 +1,89 @@
+<bhwCompleteCollection>
+
+<!-- bhwModernCooking Edits Start -->
+	<append xpath="/recipes">
+
+		<recipe name="modernCookingHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+		</recipe>
+
+	<!-- Closing Append tag for all Added Recipes -->
+	</append>
+
+	<!-- All set xpath edits below here -->
+
+<!-- bhwModernCooking Edits End -->
+
+<!-- bhwReinforcedDoors Edits Start -->
+	<append xpath="/recipes">
+
+	<!-- Reinforced Entry Doors -->
+		<recipe name="reinforcedEntryDoorHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="12"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>
+	<!-- Rolling Garage Door Brown -->
+		<recipe name="rollingGarageDoorBrown" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="90"/>
+			<ingredient name="resourceSpring" count="12"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+		</recipe>
+	<!-- Reinforced Garage Doors -->
+		<recipe name="reinforcedGarageDoor" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="60"/>
+			<ingredient name="resourceSpring" count="12"/>
+			<ingredient name="resourceMechanicalParts" count="24"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedSteel,resourceSpring,resourceMechanicalParts,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		<recipe name="reinforcedGarageDoorBrown" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="60"/>
+			<ingredient name="resourceSpring" count="12"/>
+			<ingredient name="resourceMechanicalParts" count="24"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedSteel,resourceSpring,resourceMechanicalParts,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+	<!-- Jail Door -->
+		<recipe name="jailDoorDynamic" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="12"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>
+
+	</append>
+<!-- bhwReinforcedDoors Edits End -->
+
+<!-- bhwSignage Edits Start -->	
+	<append xpath="/recipes">
+		<recipe name="signRoadHelper" count="1" craft_area="workbench">
+			<ingredient name="resourceScrapIron" count="20"/>
+		</recipe>
+		<recipe name="signShopLitHelper" count="1" craft_area="workbench">
+			<ingredient name="resourceScrapIron" count="20"/>
+			<ingredient name="resourceElectricParts" count="6"/>
+			<ingredient name="resourceScrapPolymers" count="6"/>
+		</recipe>
+		<recipe name="signShopDarkHelper" count="1" craft_area="workbench">
+			<ingredient name="resourceScrapIron" count="20"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+		</recipe>
+		<recipe name="signTraderJoelHelper" count="1" craft_area="workbench">
+			<ingredient name="resourceWood" count="15"/>
+		</recipe>
+
+	<!-- Closing Append tag for all Added Recipes -->
+	</append>
+
+	<!-- All set xpath edits below here -->
+
+<!-- bhwSignage Edits End -->	
+
+</bhwCompleteCollection>

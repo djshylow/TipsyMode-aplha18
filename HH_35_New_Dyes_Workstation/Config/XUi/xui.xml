@@ -1,0 +1,15 @@
+<configs>
+         <append xpath="/xui/ruleset" >
+			<window_group name="workstation_Artisan Lab" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowCombine" />
+			<window name="windowFuel" />
+
+		</window_group>	
+
+		 		 </append>
+</configs>

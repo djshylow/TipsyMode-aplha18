@@ -1,0 +1,5 @@
+<configs>
+<append xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+	<item name="qc_killjuggernaut"/>
+</append>
+</configs>

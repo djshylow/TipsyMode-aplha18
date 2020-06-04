@@ -1,0 +1,4 @@
+<configs>
+<set xpath="/blocks/block/property[@class='Explosion']/property[@name='BlockDamage']/@value">10</set>
+</configs>
+

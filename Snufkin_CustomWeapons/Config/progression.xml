@@ -1,0 +1,37 @@
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="Railgun">
+				<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="1"/>
+			</passive_effect>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="RailgunAmmo">
+				<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkArchery']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="CrossbowMag"/>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="crossbowmag"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkSkullCrusher']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="Thor Hammer">
+				<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="GTE" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkElectrocutioner']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="thorhammer"/>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="railgun"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkJavelinMaster']">
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="1,2,3,4,5" value="2,3,4,5,6" tags="Polearm"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="Polearm"/>
+		</effect_group>
+	</append>
+</configs>

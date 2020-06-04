@@ -1,0 +1,284 @@
+<configs>
+
+<!-- drop chance -->
+<set xpath="/blocks/block/drop[@name='treePlantedMountainPine1m']/@count">1</set>
+<setattribute xpath="/blocks/block/drop[@name='treePlantedMountainPine1m']" name="prob">0.10</setattribute>
+
+<set xpath="/blocks/block/drop[@name='treePlantedOak1m']/@count">1</set>
+<setattribute xpath="/blocks/block/drop[@name='treePlantedOak1m']" name="prob">0.10</setattribute>
+
+<set xpath="/blocks/block/drop[@name='treePlantedWinterPine1m']/@count">1</set>
+<setattribute xpath="/blocks/block/drop[@name='treePlantedWinterPine1m']" name="prob">0.10</setattribute>
+
+
+<insertAfter xpath="/blocks/block[@name='treePlantedMountainPine12m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treePlantedMountainPine19m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<setattribute xpath="/blocks/block/drop[@name='treePlantedMountainPine1m']" name="prob">0.03</setattribute>
+<!-- drop chance end -->
+
+<insertAfter xpath="/blocks/block[@name='treePlantedMountainPine27m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treePlantedMountainPine41m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeWinterEverGreen']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeWinterPine13m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeWinterPine19m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeWinterPine28m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treePlantedWinterPine6m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treePlantedWinterPine13m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treePlantedWinterPine19m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treePlantedWinterPine28m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedWinterPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeMountainPine12m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+
+<insertAfter xpath="/blocks/block[@name='treeMountainPine19m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeMountainPine27m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeMountainPine31m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeMountainPine41m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeMountainPine48m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeMountainPineDry21m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+
+<insertAfter xpath="/blocks/block[@name='treeOakSml01']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedOak1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+
+<insertAfter xpath="/blocks/block[@name='treeOakMed01']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedOak1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeOakMed02']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedOak1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeOakLrg01']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedOak1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treePlantedOak08m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedOak1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treePlantedOak16m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedOak1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treePlantedOak27m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedOak1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treePlantedOak41m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedOak1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeBurntMaple01']/property[@name='Extends']">
+<property name="DowngradeBlock" value="burnttreesairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeBurntMaple02']/property[@name='Extends']">
+<property name="DowngradeBlock" value="burnttreesairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeBurntMaple03']/property[@name='Extends']">
+<property name="DowngradeBlock" value="burnttreesairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeDeadTree01']/property[@name='Extends']">
+<property name="DowngradeBlock" value="burnttreesairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeDeadTree02']/property[@name='Extends']">
+<property name="DowngradeBlock" value="burnttreesairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='treeJuniper4m']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treePlantedMountainPine1m"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+
+<insertAfter xpath="/blocks/block[@name='treePlainsTree2']/property[@name='Extends']">
+<property name="DowngradeBlock" value="treeplainstreeairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treePlainsTree']/property[@name='IsTerrainDecoration']">
+<property name="DowngradeBlock" value="treeplainstreeairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+
+
+
+          <append xpath="/blocks" >
+<block name="cactusairstage">
+    <property name="CustomIcon" value="treeBurntMaple03" />
+	<property name="Material" value="airEnhanced"/>
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Weight" value="125" />    
+	<property name="Shape" value="ModelEntity"/>
+	<property name="MultiBlockDim" value="2,9,2"/>
+	<property name="Model" value="#Entities/Trees?MountainPineSeed01Prefab.prefab"/><property name="ModelOffset" value="0,0,0"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<property name="MaxDamage" value="2000"/>
+
+    <property name="Texture" value="250" />
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="treeCactus01" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+<block name="burnttreesairstage">
+    <property name="CustomIcon" value="treeBurntMaple03" />
+	<property name="Material" value="airEnhanced"/>
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Weight" value="125" />    
+	<property name="Shape" value="ModelEntity"/>
+	<property name="MultiBlockDim" value="2,9,2"/>
+	<property name="Model" value="#Entities/Trees?MountainPineSeed01Prefab.prefab"/><property name="ModelOffset" value="0,0,0"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="BigDecorationRadius" value="4"/>
+    <property name="Texture" value="250" />
+    <property name="CanMobsSpawnOn" value="false" />
+	<property name="MaxDamage" value="2000"/>
+
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="treeBurntMaple03" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+<block name="treeplainstreeairstage">
+    <property name="CustomIcon" value="treeBurntMaple03" />
+	<property name="Material" value="airEnhanced"/>
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Weight" value="125" />    
+	<property name="Shape" value="ModelEntity"/>
+	<property name="MultiBlockDim" value="2,9,2"/>
+	<property name="Model" value="#Entities/Trees?MountainPineSeed01Prefab.prefab"/><property name="ModelOffset" value="0,0,0"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="BigDecorationRadius" value="4"/>
+	<property name="MaxDamage" value="2000"/>
+
+    <property name="Texture" value="250" />
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="treePlainsTree2" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+</append>
+<insertAfter xpath="/blocks/block[@name='treeCactus01']/property[@name='Class']">
+<property name="DowngradeBlock" value="cactusairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeCactus02']/property[@name='Extends']">
+<property name="DowngradeBlock" value="cactusairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeCactus03']/property[@name='Extends']">
+<property name="DowngradeBlock" value="cactusairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeCactus04']/property[@name='Extends']">
+<property name="DowngradeBlock" value="cactusairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeCactus05']/property[@name='Extends']">
+<property name="DowngradeBlock" value="cactusairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+<insertAfter xpath="/blocks/block[@name='treeCactus06']/property[@name='Extends']">
+<property name="DowngradeBlock" value="cactusairstage"/>
+	<property name="FallOver" value="false"/>
+</insertAfter>
+
+</configs>

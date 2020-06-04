@@ -1,0 +1,230 @@
+<configs>
+         <append xpath="/recipes" >
+ <recipe name="Artisan Lab" count="1" craft_area="workbench" craft_time="1200"> 
+	<ingredient name="toolBeaker" count="2"/>
+	<ingredient name="burningBarrelPlayer" count="2"/>
+	<ingredient name="toolCookingPot" count="3"/>
+	<ingredient name="resourceMetalPipe" count="50"/>
+	<ingredient name="resourceWood" count="20000"/>
+</recipe>
+		 <recipe name="Dye: Red" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+
+<recipe name="Dye: Green" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+</recipe>
+<recipe name="Dye: Black" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Blue" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/> 
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Brown" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Purple" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Yellow" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Orange" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Beige" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Tan" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Silver" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Gray" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Charcoal" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: NavyBlue" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: RoyalBlue" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: RoyalBlue" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>	
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Azure" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Cyan" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Aquamarine" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Teal" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: ForestGreen" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Olive" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Chartreuse" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Lime" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Golden" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Coral" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Salmon" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: HotPink" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Fuchsia" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Puce" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Mauve" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+
+<recipe name="Dye: Lavender" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Plum" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Indigo" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+<recipe name="Dye: Maroon" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+
+<recipe name="Dye: Crimson" count="1" craft_area="Artisan Lab" craft_time="180"> 
+	<ingredient name="resourceOil" count="1"/> 
+	<ingredient name="resourcePaint" count="1"/>
+	<ingredient name="casinoCoin" count="1500"/>
+
+</recipe>
+
+		 </append>
+</configs>

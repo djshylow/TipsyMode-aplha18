@@ -28,7 +28,181 @@
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 	</effect_group>
 </item>
+    
+	<!-- HigHope moddlets-->
+	
+	<item name="Bone Healing Potion">
+	<property name="Tags" value="BoneMending"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CustomIcon" value="drinkJarPureMineralWater"/>
+	<property name="CustomIconTint" value="C0C0C1" />
+	<property name="HoldType" value="16"/>
+	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mwood"/>
+	<property name="Stacknumber" value="10"/> <!-- STK loot -->
+	<property name="FuelValue" value="40"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Science,Basics"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/> <!-- obsolete? -->
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
+	</property>
+
+	<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="BuffInstant Splint Potion">
+			<requirement name="HasBuff" target="self" buff="buffLegBroken"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="BuffInstant Splint 2 Potion">
+			<requirement name="HasBuff" target="self" buff="buffArmBroken"/>
+		</triggered_effect>
+	</effect_group>
+
+	<effect_group name="Secondary Action" tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="BuffInstant Splint 2 Potion">
+			<requirement name="HasBuff" target="other" buff="buffLegBroken"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="other" buff="BuffInstant Splint Potion">
+			<requirement name="HasBuff" target="other" buff="buffArmBroken"/>
+		</triggered_effect>
+	</effect_group>
+</item>
+
+
+
+
+<item name="HP +100 Potion">
+	<property name="Tags" value="100HPPowerUp"/>
+	<property name="SellableToTrader" value="false"/>
+
+<property name="CustomIcon" value="drinkJarPureMineralWater"/>
+		<property name="CustomIconTint" value="FF0000" />
+	<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="Stacknumber" value="100"/> <!-- STK medical -->
+	<property name="FuelValue" value="1"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
+		<property name="Gain_health" value="200"/>
+
+	</property>
+	<property name="Group" value="Science,Basics"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+
+<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="BuffHP Potion">
+		</triggered_effect>
+	</effect_group>
+
+</item>
+
+<item name="Stamina +100 Potion">
+	<property name="Tags" value="100STAPowerUp"/>
+	<property name="SellableToTrader" value="false"/>
+
+<property name="CustomIcon" value="drinkJarPureMineralWater"/>
+		<property name="CustomIconTint" value="6468FF" />
+	<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="Stacknumber" value="100"/> <!-- STK medical -->
+	<property name="FuelValue" value="1"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
+	</property>
+	<property name="Group" value="Science,Basics"/>
+	<property name="DescriptionKey" value="medicalBandageDesc"/>
+	<property name="ActionSkillGroup" value="Medicine"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="PickupJournalEntry" value="firstAidTip"/>
+
+<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="BuffStamina Potion">
+		</triggered_effect>
+	</effect_group>
+
+</item>
+<item name="Jump Potion">
+	<property name="Tags" value="PowerJump"/>
+	<property name="SellableToTrader" value="false"/>
+
+<property name="CustomIcon" value="drinkJarPureMineralWater"/>
+		<property name="CustomIconTint" value="32,231,116" />
+	<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="Stacknumber" value="100"/> <!-- STK medical -->
+	<property name="FuelValue" value="1"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
+	</property>
+	<property name="Group" value="Science,Basics"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+
+<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="BuffJump Potion">
+		</triggered_effect>
+	</effect_group>
+</item>
+
+
+
+<item name="Sonic Speed Potion">
+<property name="CustomIcon" value="drinkJarPureMineralWater"/>
+	<property name="SellableToTrader" value="false"/>
+
+		<property name="CustomIconTint" value="0007FF" />
+	<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="Stacknumber" value="100"/> <!-- STK medical -->
+	<property name="FuelValue" value="1"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Create_item" value="drinkJarEmpty"/>
+
+	</property>
+	<property name="Group" value="Science,Basics"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+<effect_group name="Primary Action" tiered="false"> <!-- splint -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="BuffSonic Speed">
+		</triggered_effect>
+	</effect_group>
+
+</item>
 
   </append>
 </configs>

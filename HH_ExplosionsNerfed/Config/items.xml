@@ -1,0 +1,7 @@
+<configs>
+<set xpath="/items/item/property[@name='DisplayType' and @value='ammoLauncher']/../effect_group/passive_effect[@name='BlockDamage']/@value">333</set>
+<set xpath="/items/item/property[@name='Class' and @value='ItemClassTimeBomb']/../effect_group/passive_effect[@name='BlockDamage']/@value">10</set>
+
+</configs>
+
+

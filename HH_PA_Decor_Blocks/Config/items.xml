@@ -1,0 +1,87 @@
+<configs>
+
+ <append xpath="/items" >
+
+<item name="Admin: Battery">
+	<property name="CustomIcon" value="carBattery" />
+	<property name="SellableToTrader" value="false"/>
+
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="VehicleSlotType" value="battery"/>
+	<property name="Material" value="MresourceScrapLeadLarge"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Weight" value="160"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Resources"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="100000,100000"/> <!-- needed for electrical calculations -->
+		<property name="BatteryMaxLoadInVolts" value="240, 360"/>
+		<property name="BatteryDischargeTimeInMinutes" value="9000,9000"/>
+	</property>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="100000,100000" tier="1,6"/>
+	</effect_group>
+</item>
+
+<item name="Admin: Tool">
+    <property name="CustomIcon" value="meleeToolStoneAxe" />
+    <property name="CustomIconTint" value="173,0,0" />
+	<property name="SellableToTrader" value="false"/>
+
+	<property name="Tags" value="knife,axe,melee,light,tool,perkMotherLode,perkDeepCuts,perkTheHuntsman"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="32"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/stone_axePrefab.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="RepairTools" value="resourceRockSmall"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="50"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Damage_type" value="Slashing"/>
+
+		<property name="Sphere" value="2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="100"/>
+		<property name="Upgrade_hit_offset" value="0"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="Admin: CubeTorch,Admin: CubeCandle,Admin: CubeGlass,Admin: PyramidSteelTorch,Admin: Rally Marker,Admin: Tool"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="30"/>
+		<passive_effect name="BlockRange" operation="base_set" value="30"/>
+
+		<passive_effect name="EntityDamage" operation="base_set" value="5000"/> <!-- meleeToolStoneAxe -->
+		<passive_effect name="BlockDamage" operation="base_set" value="2000000"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="3000"/> <!-- A16 .8 -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="100" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="100" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="100" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="100" tags="metal"/>
+
+		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="10000" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+	</effect_group>
+</item>
+
+</append>
+
+</configs>

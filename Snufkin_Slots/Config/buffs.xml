@@ -1,0 +1,86 @@
+<configs>
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="CasinoCheck">
+			<requirement name="NotHasBuff" buff="CasinoCheck"/>
+		</triggered_effect>
+		<!--triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BlackjackCheck">
+			<requirement name="NotHasBuff" buff="BlackjackCheck"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BlackjackCheckB">
+			<requirement name="NotHasBuff" buff="BlackjackCheckB"/
+		</triggered_effect-->
+	</append>
+	<append xpath="/buffs">
+		<buff name="CasinoCheck" hidden="true">
+			<update_rate value="1"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$casinoyield" operation="setvalue" value="randomint(-20,200)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$casinoyield" operation="multiply" value="0.01"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$casinoyield" operation="setvalue" value="0.1">
+					<requirement name="CVarCompare" cvar="$casinoyield" operation="LTE" value="0"/>
+				</triggered_effect>
+				<passive_effect name="CraftingOutputCount" operation="perc_set" value="@$casinoyield" tags="casinoslot"/>
+			</effect_group>
+		</buff>
+			<!--BJ_previousscore = current score
+				BJ_playerscore = current score
+				BJ_playernextscore = score + next hit
+				BJ_hit = next hit value
+				BJ_dealerscore = current dealer score
+				BJ_dealernextscore = dealer score + next hit
+				BJ_yield = will get paid if == 1 
+				BJ_CARD = the card item
+			-->
+		<buff name="BlackjackCheck" hidden="true">
+			<update_rate value=".1"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BJ_hit" operation="setvalue" value="randomint(1,13)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BJ_playernextscore" operation="setvalue" value="@$BJ_playerscore"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BJ_playernextscore" operation="add" value="@$BJ_hit"/>
+				<passive_effect name="CraftingOutputCount" operation="base_set" value="@$BJ_hit" tags="BJ_card"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$BJ_playernextscore"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BlackjackDealerScore">
+					<requirement name="PlayerItemCount" item_name="BJ_CARD" operation="Equals" value="0"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$BJ_playernextscore" operation="GT" value="21"/>
+				<passive_effect name="CraftingOutputCount" operation="perc_set" value="0" tags="BJ_card"/>
+				<passive_effect name="CraftingIngredientCount" operation="base_add" value="@$BJ_playerscore" tags="BJ_card"/>
+			</effect_group>
+		</buff>
+		<buff name="BlackjackCheckB" hidden="true">
+			<update_rate value=".05"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<requirement name="PlayerItemCount" item_name="BJ_CARD" operation="NotEquals" value="@$BJ_playerscore"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BJ_playerscore" operation="add" value="1">
+					<requirement name="PlayerItemCount" item_name="BJ_CARD" operation="GT" value="@$BJ_playerscore"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BJ_playerscore" operation="add" value="-1">
+					<requirement name="PlayerItemCount" item_name="BJ_CARD" operation="LT" value="@$BJ_playerscore"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="BlackjackDealerScore" hidden="true">
+			<update_rate value=".1"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$BJ_dealerscore" operation="setvalue" value="randomint(1,13)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BJ_dealernextscore" operation="setvalue" value="@$BJ_dealerscore"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BJ_dealernextscore" operation="add" value="randomint(1,13)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$BJ_dealerscore" operation="setvalue" value="@$BJ_dealernextscore">
+					<requirement name="CVarCompare" cvar="$BJ_dealernextscore" operation="LTE" value="21"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BlackjackDealerScore">
+					<requirement name="CVarCompare" cvar="$BJ_dealernextscore" operation="GT" value="21"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		
+	</append>
+</configs>

@@ -1,0 +1,349 @@
+<configs>
+
+<!--cntCar03SedanDamage0v01-->
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2v01']/property[@name='Model']">
+<property name="DowngradeBlock" value="carairstageDamage0v01"/>
+</insertAfter>
+<!--cntCar03SedanDamage0v02-->
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2v02']/property[@name='Model']">
+<property name="DowngradeBlock" value="carairstageDamage0v02"/>
+</insertAfter>
+<!--cntCar03SedanDamage0v03-->
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2v03']/property[@name='Model']">
+<property name="DowngradeBlock" value="carairstageDamage0v03"/>
+</insertAfter>
+<!--cntCar03SedanDamage0v04-->
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2v04']/property[@name='Model']">
+<property name="DowngradeBlock" value="carairstageDamage0v04"/>
+</insertAfter>
+<!--cntCar03SedanDamage0v05-->
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2v05']/property[@name='Model']">
+<property name="DowngradeBlock" value="carairstageDamage0v05"/>
+</insertAfter>
+<!--cntCar03SedanDamage0v06-->
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2v06']/property[@name='Model']">
+<property name="DowngradeBlock" value="carairstageDamage0v06"/>
+</insertAfter>
+<!--cntCar03SedanDamage0v07-->
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2v07']/property[@name='Model']">
+<property name="DowngradeBlock" value="carairstageDamage0v07"/>
+</insertAfter>
+<!--cntCar03SedanDamage0v08-->
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2v08']/property[@name='Model']">
+<property name="DowngradeBlock" value="carairstageDamage0v08"/>
+</insertAfter>
+
+<!--crushedCars-->
+<insertAfter xpath="/blocks/block[@name='crushedCars']/property[@name='Model']">
+<property name="DowngradeBlock" value="crushedcarairstage"/>
+</insertAfter>
+
+
+<insertAfter xpath="/blocks/block[@name='cntBusSchool']/property[@name='Model']">
+<property name="DowngradeBlock" value="longschoolbusairstage"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='cntBusSchoolShort']/property[@name='Model']">
+<property name="DowngradeBlock" value="shortschoolbusairstage"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='cntBusShuttle']/property[@name='Model']">
+<property name="DowngradeBlock" value="shuttlebusairstage"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='cntBusCity']/property[@name='Model']">
+<property name="DowngradeBlock" value="citybusairstage"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='cntArmyTruckOpen']/property[@name='Model']">
+<property name="DowngradeBlock" value="openarmytruckairstage"/>
+</insertAfter>
+
+<insertAfter xpath="/blocks/block[@name='cntArmyTruckOpen']/property[@name='Model']">
+<property name="DowngradeBlock" value="closedarmytruckairstage"/>
+</insertAfter>
+
+
+         <append xpath="/blocks" >
+<!--cntCar03SedanDamage0v01-->
+<block name="carairstageDamage0v01">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+    <property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntCar03SedanDamage0v01" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+<!--cntCar03SedanDamage0v02-->
+<block name="carairstageDamage0v02">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+    <property name="Weight" value="125" />    
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntCar03SedanDamage0v02" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+<!--cntCar03SedanDamage0v03-->
+<block name="carairstageDamage0v03">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+    <property name="Weight" value="125" />    
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntCar03SedanDamage0v03" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+<!--cntCar03SedanDamage0v04-->
+<block name="carairstageDamage0v04">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+    <property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntCar03SedanDamage0v04" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+
+<!--cntCar03SedanDamage0v05-->
+<block name="carairstageDamage0v05">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+    <property name="Weight" value="125" />    
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntCar03SedanDamage0v05" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+<!--cntCar03SedanDamage0v06-->
+<block name="carairstageDamage0v06">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+    <property name="Weight" value="125" />    
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntCar03SedanDamage0v06" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+<!--cntCar03SedanDamage0v07-->
+<block name="carairstageDamage0v07">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+    <property name="Weight" value="125" />    
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntCar03SedanDamage0v07" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+<!--cntCar03SedanDamage0v08-->
+<block name="carairstageDamage0v08">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+ 	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+    <property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntCar03SedanDamage0v08" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+<!--crushedCars-->
+<block name="crushedcarairstage">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+    <property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="carsRandomHelper" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+<block name="longschoolbusairstage">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntBusSchool" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+
+<block name="shortschoolbusairstage">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntBusSchoolShort" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+<block name="shuttlebusairstage">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntBusShuttle" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+<block name="citybusairstage">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntBusCity" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+<block name="openarmytruckairstage">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntArmyTruckOpen" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+<block name="closedarmytruckairstage">
+    <property name="CustomIcon" value="sidingBluePlasterMiddleBlock" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="Weight" value="125" />    
+    <property name="CanMobsSpawnOn" value="false" />
+    <drop event="Destroy" count="0" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="PlantGrowing.Next" value="cntArmyTruckClosed" />
+    <property name="PlantGrowing.GrowthRate" value="300" />
+    <!-- amount of days for respawn 60 equals 1 day-->
+    <property name="PlantGrowing.FertileLevel" value="0" />
+    <property name="PlantGrowing.IsRandom" value="false" />
+  </block>
+
+</append>
+
+</configs>

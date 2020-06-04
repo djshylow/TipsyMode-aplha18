@@ -1,0 +1,213 @@
+<delmod>
+	<append xpath="/xui/ruleset">
+		<window_group name="workstation_BJ" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowStatsBJ" />
+			<window name="windowCraftingList"/>
+			<window name="windowSlidersA"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutputBJ" />
+			<window name="windowNonPagingHeader" />
+		</window_group>				
+		<window_group name="workstation_Slot01" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl01"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot02" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl02"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot03" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl03"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot04" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl04"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot05" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl05"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot06" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl06"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot07" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl07"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot08" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl08"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot09" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl09"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot10" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl10"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot11" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl11"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot12" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl12"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot13" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl13"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot14" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl14"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot15" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl15"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot16" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl16"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot17" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl17"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot18" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl18"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot19" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl19"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+		<window_group name="workstation_Slot20" controller="XUiC_WorkstationWindowGroup">
+			<window name="Background" />
+			<window name="windowNonPagingHeader" />
+			<window name="SlotMain"/>
+			<window name="Girl20"/>
+			<window name="windowCraftingQueue"/>
+			<window name="SlotInfoPanel"/>
+			<window name="SlotOutput" />
+			<window name="SlotBetOverlay" />
+		</window_group>	
+	</append>
+</delmod>

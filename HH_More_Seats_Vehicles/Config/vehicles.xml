@@ -1,0 +1,57 @@
+<configs>
+
+
+
+
+<insertAfter xpath="/vehicles/vehicle[@name='vehicleGyrocopter']/property[@class='seat0']">
+<property class="seat1">
+  <property name="position" value="0, .05, 0.77"/>
+  <property name="rotation" value="-25, 0, 0"/>
+  <property name="exit" value="-1.3,0,.9 ~ 1.3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
+</property>
+</insertAfter>
+
+<insertAfter xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@class='seat0']">
+		<property class="seat1">
+			<property name="position" value="0, 0.14, -.498"/>
+			<property name="rotation" value="0, 0, 0"/>
+			<property name="exit" value="-.9,0,0 ~ .9,0,0 ~ 0,0,-1.5 ~ 0,0,1.6 ~ 0,1.5,0"/>
+		</property>
+</insertAfter>
+    <insertAfter xpath="/vehicles/vehicle[@name='vehicleBicycle']/property[@class='seat0']">
+        <property class="seat1">
+            <property name="position" value="0, .1, -.6" />
+            <property name="rotation" value="0, -190, 0" />
+            <property name="exit" value="-.8,0,0 ~ .8,0,0 ~ 0,0,-1.4 ~ 0,0,1.4 ~ 0,1.5,0" />
+        </property>
+    </insertAfter>
+    <insertAfter xpath="/vehicles/vehicle[@name='vehicleMinibike']/property[@class='seat0']">
+        <property class="seat1">
+            <property name="position" value="0, 0, -.55" />
+            <property name="rotation" value="0, 0, 0" />
+            <property name="exit" value="-.8,0,0 ~ .8,0,0 ~ 0,0,-1.2 ~ 0,0,1.2 ~ 0,1.3,0" />
+        </property>
+    </insertAfter>
+<insertAfter xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@class='seat1']">
+        <property class="seat2">
+            <property name="position" value="-.2, .5, -1.6" />
+            <property name="rotation" value="-25, 90, 0" />
+            <property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0" />
+        </property>
+        <property class="seat3">
+            <property name="position" value=".2, .5, -1.6" />
+            <property name="rotation" value="-25, -90, 0" />
+            <property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0" />
+        </property>
+        <property class="seat4">
+            <property name="position" value="-.34, .7, -2.5" />
+            <property name="rotation" value="-25, 180, 0" />
+            <property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0" />
+        </property>
+        <property class="seat5">
+            <property name="position" value=".34, .7, -2.5" />
+            <property name="rotation" value="-25, 180, 0" />
+            <property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0" />
+        </property>
+    </insertAfter>
+</configs>

@@ -1,0 +1,223 @@
+<config>
+	<append xpath="/windows">
+		<window name="SlotMain" depth="12" anchor="RightCenter" controller="CraftingListInfo" cursor_area="true" >
+			<panel name="content" on_scroll="true" disableautobackground="true">
+				<rect name="background"/>
+				<rect depth="0" name="categorySelector">
+					<grid name="categories" controller="CategoryList">
+						<category_icon />
+					</grid>
+				</rect>
+				<rect name="searchControls" >
+					<button name="favorites"/>
+					<panel pos="0,0" disableautobackground="true">
+						<sprite name="searchIcon" />
+						<recipe_search name="searchInput"/>
+					</panel>
+					<panel  disableautobackground="true">
+						<button name="pageDown"/>
+						<label name="pageNumber"/>
+						<button name="pageUp"/>
+					</panel>
+				</rect>
+				<grid depth="12" name="recipes" pos="-320,50" pivot="right" rows="4" cols="1"  width="100" height="552" cell_width="250" cell_height="110" foregroundlayer="false" controller="RecipeList" repeat_content="true" arrangement="vertical" >
+					<casino_entry name="0"/>
+				</grid>
+			</panel>
+		</window>
+
+		<window name="SlotBetOverlay" anchor="RightCenter" depth="50" >
+			<texture pos="0,0" pivot="right" width="353" height="486" texture="@https://i.imgur.com/UG6hf1c.png" />
+		</window>
+		<window name="SlotInfoPanel"  controller="CraftingInfoWindow" style="crafting.info.window" anchor="RightCenter" cursor_area="true" >
+			<!--#$-IGS END.-$#-->
+			<panel name="header" height="0" depth="-1" >
+				<sprite depth="-1" name="windowIcon" pos="0,0" />
+				<label style="header.name" text="{itemname}" />
+				<rect pos="0,0" name="requiredToolOverlay">
+					<sprite size="0,0" depth="-1" name="requiredToolCheckmark" pos="0,0" />
+				</rect>
+			</panel>
+			<rect name="contentCraftingInfo" height="381" depth="11" pos="0,-46">
+				<rect depth="-1" name="preview">
+					<sprite name="backgroundMain"  />
+					<sprite color="[darkGrey]"  />
+					<sprite name="itemPreview" />
+					<sprite name="itemtypeicon" />
+					<sprite name="durabilityBackground" />
+					<filledsprite name="durabilityBar"  />
+					<label name="durabilityValue" />
+					<sprite name="clockIcon" />
+					<label name="craftingTime" />
+				</rect>
+				<sprite depth="-11" name="backgroundMain"/>
+				<grid name="itemActions" rows="4" cols="1" pivot="right" pos="-276,-245" cell_width="0" cell_height="0" controller="ItemActionList">
+					<rect depth="1" name="actions" width="147" height="225">
+						<sprite color="[mediumGrey]" type="sliced" pos="0,0" width="0" height="0" />
+						<rect name="recipeCraftCountControl" depth="-1" width="0" height="0" pos="-2000,-2000" controller="RecipeCraftCount">
+							<button depth="-1" name="countDown" style="icon30px, press" pos="-10,-20" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+							<count_control_input name="count_input" depth="-1" pos="5,-5" />
+							<button depth="-1" name="countUp" style="icon30px, press" pos="64,-20" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+							<button depth="-1" name="countMax" style="icon30px, press" pos="96,-20" sprite="ui_game_symbol_arrow_max" pivot="center" sound="[paging_click]"/>
+						</rect>
+					</rect>
+					<spin_button />
+				</grid>
+				<rect depth="-1" name="searchControls" width="448" height="43" pos="152,0">
+					<sprite depth="1" color="[mediumGrey]" type="sliced" globalopacity="true" />
+					<button depth="4" name="ingredientsButton" style="icon30px, press" pos="22,-22" sprite="ui_game_symbol_resource" pivot="center" tooltip_key="ingredient" sound="[paging_click]" selected="true" />
+					<button depth="4" name="descriptionButton" style="icon30px, press" pos="65,-22" sprite="ui_game_symbol_book" pivot="center" tooltip_key="lblBookDesc" sound="[paging_click]" />
+					<button depth="4" name="showunlocksButton" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_unlock" pivot="center" tooltip_key="xuiSkillUnlocks" sound="[paging_click]" visible="{showunlockedbytab}" />
+				</rect>
+				<rect depth="-1" pos="153,-43" name="description" width="447" height="328" visible="{showdescription}">
+
+					<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="453" height="303" color="[black]" type="sliced" fillcenter="false" />
+
+					<rect visible="true">
+						<sprite depth="-1" color="[darkGrey]" type="sliced" globalopacity="true" height="301" />
+						<label depth="-1" name="descriptionText" pos="6,-5" text="{itemdescription}"  width="440" height="294" />
+					</rect>
+
+				</rect>
+				<rect depth="2" pos="-400,447" name="ingredients" width="447" height="264" visible="true">
+					<grid rows="1" width="447" depth="11" height="231" cell_height="50" cell_width="447" controller="IngredientList" arrangement="vertical">
+						<casino_ingredient name="1"/> 
+					</grid> 
+				</rect>
+			</rect>
+		</window>
+		
+		
+		<window name="SlotOutput" width="228" height="198" anchor="CenterBottom" cursor_area="true" >
+			<!--#$-IGS END.-$#-->
+			<rect name="content" depth="11" pos="-10,180" height="150" disablefallthrough="true" on_press="true">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+				<label depth="11" pos="3,3" width="100" height="100" text="{currencyamount}" color="[mediumGrey]" justify="right" />
+				<grid name="inventory" rows="1" cols="6" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+			</rect>
+		</window>
+		
+		
+		
+		<window name="Background" anchor="CenterCenter" depth="10">
+			<texture depth="10" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/YZmIOIf.jpg" />
+			<button depth="10" pivot="center" width="1842" height="1036"/>
+		</window>
+		<window name="Girl01" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/0Slc4HJ.jpg" />
+		</window>
+		<window name="Girl02" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/538mE2v.jpg" />
+		</window>
+		<window name="Girl03" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/uhaFDBo.jpg" />
+		</window>
+		<window name="Girl04" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/Xno6qTL.jpg" />
+		</window>
+		<window name="Girl05" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/cz060eZ.jpg" />
+		</window>
+		<window name="Girl06" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/YgfVnwS.jpg" />
+		</window>
+		<window name="Girl07" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/vGrYK4i.png" />
+		</window>
+		<window name="Girl08" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/AGwz1s5.png" />
+		</window>
+		<window name="Girl09" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/kSehhJi.png" />
+		</window>
+		<window name="Girl10" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/NVCMccD.png" />
+		</window>
+		<window name="Girl11" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/s6nJd6q.png" />
+		</window>
+		<window name="Girl12" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/gUVQkSq.png" />
+		</window>
+		<window name="Girl13" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/6PotgZF.png" />
+		</window>
+		<window name="Girl14" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/yn4Jwa5.png" />
+		</window>
+		<window name="Girl15" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/FJpRhuf.png" />
+		</window>
+		<window name="Girl16" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/5ZL6xtn.png" />
+		</window>
+		<window name="Girl17" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/L5Uf6Yb.png" />
+		</window>
+		<window name="Girl18" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/aDUdtTa.png" />
+		</window>
+		<window name="Girl19" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/uWxeNuf.png" />
+		</window>
+		<window name="Girl20" anchor="CenterCenter" depth="11">
+			<texture depth="11" pivot="center" width="1842" height="1036" texture="@https://i.imgur.com/2AIwMJE.png" />
+		</window>
+		
+		
+		<window name="windowOutputBJ" width="228" height="198" anchor="CenterTop"  cursor_area="true" >
+			<!--#$-IGS END.-$#-->
+			<panel style="header.panel">
+				<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+				<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
+			</panel>
+			<rect name="slider" depth="12" controller="Slider" pos="5,-302" width="1800" height="62" >
+				<rect pos="2,-34">
+					<sprite name="bar" controller="SliderBar" depth="1" pos="4, -5" color="[mediumGrey]" width="1800" height="20" type="sliced" style="press, scroll" />
+					<label depth="12" pos="0, -6"  width="390" height="28" text="{value}" />
+					<sprite depth="2" pos="4, -5" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" width="262" height="20" foregroundlayer="true" />		
+					<sprite name="thumb" controller="SliderThumb" depth="2" pos="262, -15" color="[lightGrey]" width="16" height="30" style="press, hover, drag, scroll" pivot="center">
+						<sprite depth="2" pos="${2+height|32},0" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" width="16" height="30" pivot="center"/>
+						<label depth="12" pos="0, -6"  width="390" height="28" text="{value}" />
+					</sprite>
+				</rect>
+			</rect>
+			<rect width="327" height="104" controller="CharacterFrameWindow" cursor_area="true" >
+				<panel name="header" pos="99999,99999" width="0" height="0"  depth="1">
+					<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_character"/>
+					<label depth="2" name="characterName" pos="42,-6" width="150" height="32" text="" font_size="32" />
+					<sprite depth="2" name="windowIcon" width="26" height="26" pos="200,-8" sprite="ui_game_symbol_trophy" color="[mediumGrey]"/>
+					<label depth="2" name="levelNumber" pos="240,-10" width="80" height="28" text="" color="[lightGrey]"/>
+				</panel>
+
+				<rect depth="2" name="searchControls" width="327" height="43" pos="0,-46">
+					<sprite depth="8" name="backgroundMain" pos="99999,99999" width="0" height="0" />
+					<button depth="4" name="characterButton" pos="99999,99999" width="0" height="0" selected="true"/>
+					<button depth="4" name="statButton" pos="99999,99999" width="0" height="0" />
+					<button depth="4" name="coreStatButton" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_trophy" pivot="center" sound="[paging_click]"/>
+				</rect>
+				<rect>
+					<panel name="previewFrame" depth="0" pos="99999,99999" height="0" width="0">
+						<rect>
+							<sprite depth="8" name="backgroundMain"/>
+							<texture depth="2" name="playerPreview" size="1,1"/>
+						</rect>
+					</panel>
+					<panel name="equipment" pos="99999,99999" width="0" height="0" >
+						<grid name="inventory" rows="0" cols="0" cell_width="0" cell_height="0" controller="EquipmentStackGrid"/>
+					</panel>
+				</rect>
+				<grid visible="{showcore}" depth="0" pos="0,-86" width="327" cols="1" cell_height="30" repeat_content="false" arrangement="vertical">
+					<bj_generic_stat backgroundcolor="[darkestGrey]" index="17" />
+				</grid>
+			</rect>
+		</window>
+
+
+
+
+
+	</append>
+</config>

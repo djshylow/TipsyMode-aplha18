@@ -1,0 +1,8 @@
+<configs>
+	<append xpath="/entity_classes/entity_class[@name='turretJunk']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity"  local_offset=".01,0,.05" local_rotation="0,180,-90" prefab="#Other/Items?Mods/Sides/side_attachment_flashlightPrefab.prefab" parent_transform="Muzzle" />
+			<triggered_effect trigger="onSelfFirstSpawn" action="SetTransformActive" active="true"  parent_transform="Muzzle" transform_path="lightSource"/>
+		</effect_group>
+	</append>
+</configs>

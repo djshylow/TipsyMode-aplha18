@@ -1,0 +1,78 @@
+<configs>
+
+ <append xpath="/recipes" >
+
+<recipe name="Decor: Bathtub Gore" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="drinkJarRiverWater" count="5"/>
+	<ingredient name="foodRottingFlesh" count="5"/>
+	<ingredient name="resourceAnimalFat" count="5"/>
+	<ingredient name="resourceForgedIron" count="5"/>
+
+</recipe>
+
+<recipe name="Decor: Bathtub Empty" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="5"/>
+
+</recipe>
+
+<recipe name="birdBathPlanter" count="1" craft_time="30" craft_area="cementMixer">
+	<ingredient name="resourceCement" count="20"/>
+</recipe>
+
+
+<recipe name="Decor: Cube Glass Candle" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="glassBulletproofBlockVariantHelper" count="1"/>
+	<ingredient name="candle" count="1"/>
+</recipe>
+
+
+<recipe name="Decor: Cube Glass Torch" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="glassBulletproofBlockVariantHelper" count="1"/>
+	<ingredient name="meleeToolTorch" count="1"/>
+</recipe>
+
+<recipe name="Decor: Fire Place Fire" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="resourceCoal" count="20"/>
+	<ingredient name="campfire" count="1"/>
+	<ingredient name="resourceWood" count="10"/>
+
+</recipe>
+
+<recipe name="Decor: Land Claim Flag" count="1" craft_time="15">
+	<ingredient name="keystoneBlock" count="1"/>
+	<ingredient name="pouredConcreteBlockVariantHelper" count="4"/> <!-- concretePillar50 used to be here -->
+	<ingredient name="resourceMetalPipe" count="10"/>
+
+</recipe>
+
+<recipe name="Decor: Land Claim Stop Sign" count="1" craft_time="15">
+	<ingredient name="keystoneBlock" count="1"/>
+	<ingredient name="flagstoneBlockVariantHelper" count="1"/> <!-- flagstonepole used to be here -->
+</recipe>
+
+
+<recipe name="Decor: Pyramid Steel Torch" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="meleeToolTorch" count="1"/>
+	<ingredient name="resourceForgedSteel" count="10"/>
+</recipe>
+
+<recipe name="Decor: Planter Torch" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="birdBathPlanter" count="1"/>
+	<ingredient name="meleeToolTorch" count="10"/>
+</recipe>
+
+<recipe name="Decor: Pillar50 Glass Candle Light" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="glassBulletproofBlockVariantHelper" count="1"/>
+	<ingredient name="candle" count="1"/>
+</recipe>
+
+<recipe name="Decor: Table Lamp Candle Light" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="glassBulletproofBlockVariantHelper" count="1"/>
+	<ingredient name="candle" count="1"/>
+</recipe>
+
+
+
+
+</append>
+</configs>

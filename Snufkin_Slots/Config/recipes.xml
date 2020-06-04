@@ -1,0 +1,20 @@
+<config>
+	<append xpath="/recipes">
+		<recipe name="casinoCoin" count="10" craft_area="Slot01" craft_time="1" tags="casino10,casinoslot">
+			<ingredient name="casinoCoin" count="10"/>
+		</recipe>
+		<recipe name="casinoCoin" count="100" craft_area="Slot01" craft_time="1" tags="casino100,casinoslot">
+			<ingredient name="casinoCoin" count="100"/>
+		</recipe>
+		<recipe name="casinoCoin" count="1000" craft_area="Slot01" craft_time="1" tags="casino1000,casinoslot">
+			<ingredient name="casinoCoin" count="1000"/>
+		</recipe>
+		<recipe name="casinoCoin" count="10000" craft_area="Slot01" craft_time="1" tags="casino10000,casinoslot">
+			<ingredient name="casinoCoin" count="10000"/>
+		</recipe>
+		<recipe name="BJ_CARD" count="1" craft_area="BJ" craft_time="1" tags="BJ_card">
+			<ingredient name="BJ_CARD" count="0" tags="BJ_bust"/>
+		</recipe>
+		
+	</append>
+</config>
