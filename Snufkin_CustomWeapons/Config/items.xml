@@ -1198,7 +1198,9 @@
 			<property name="Material" value="MleatherKnuckles"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Melee/KnuckleWraps/knuckleWrapsRight_Prefab.prefab"/>
 			<property name="HoldType" value="70"/>
+			<property name="CustomIcon" value="armorLeatherGloves"/>
 			<property name="CustomIconTint" value="200, 0, 0"/>
+			<property name="ItemTypeIcon" value="star"/>
 			<property name="RepairTools" value="resourceLeather"/>
 			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -1774,6 +1776,9 @@
 		</item>
 		<item name="CrimsonGrenade">
 			<property name="Tags" value="ammo"/>
+			<property name="CustomIcon" value="thrownGrenadeContact"/>
+			<property name="CustomIconTint" value="132,105,84"/>
+			<property name="ItemTypeIcon" value="star"/>
 			<property name="DisplayType" value="ammoLauncher"/>
 			<property name="Meshfile" value="#Other/Items?Food/redTeaPrefab.prefab"/>
 			<property name="HoldType" value="45"/>
