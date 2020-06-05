@@ -40,7 +40,7 @@
 	<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mwood"/>
-	<property name="Stacknumber" value="10"/> <!-- STK loot -->
+	<property name="Stacknumber" value="1000"/> <!-- STK loot -->
 	<property name="FuelValue" value="40"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="Group" value="Science,Basics"/>
@@ -86,7 +86,7 @@
 		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mcloth"/>
-	<property name="Stacknumber" value="100"/> <!-- STK medical -->
+	<property name="Stacknumber" value="1000"/> <!-- STK medical -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="500"/>
@@ -119,7 +119,7 @@
 		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mcloth"/>
-	<property name="Stacknumber" value="100"/> <!-- STK medical -->
+	<property name="Stacknumber" value="1000"/> <!-- STK medical -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="500"/>
@@ -152,7 +152,7 @@
 		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mcloth"/>
-	<property name="Stacknumber" value="100"/> <!-- STK medical -->
+	<property name="Stacknumber" value="1000"/> <!-- STK medical -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="500"/>
@@ -183,7 +183,7 @@
 		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mcloth"/>
-	<property name="Stacknumber" value="100"/> <!-- STK medical -->
+	<property name="Stacknumber" value="1000"/> <!-- STK medical -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="500"/>
