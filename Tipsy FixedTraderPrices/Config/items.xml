@@ -1,16 +1,9 @@
 <configs>
-  <append xpath="/items">
-    <item name="resourceAcid">
-	<property name="HoldType" value="45"/>
-	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceAcid"/>
-	<property name="Weight" value="0"/>
-	<property name="Stacknumber" value="100"/> <!-- STK resource -->
-	<property name="EconomicValue" value="20000"/>
-	<property name="EconomicBundleSize" value="1"/>
-	<property name="Group" value="Resources"/>
-</item>
-  
-  </append>
+
+    <setattribute xpath="/items/item[@name='foodHoney']/property[@name='EconomicValue']" name="value">400</setattribute>
+	  
+    <setattribute xpath="/items/item[@name='resourceAcid']/property[@name='EconomicValue']" name="value">2000</setattribute>
+
+
+
 </configs>
