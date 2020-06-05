@@ -22,6 +22,7 @@ I'll leave some items for when you wakeup. Good Luck out there!" />
 		<reward type="Item" id="medicalFirstAidBandage" value="3" isfixed="true"/>
 		<reward type="Item" id="meleeToolTorch" value="1" isfixed="true"/>
 		<reward type="Item" id="vehicleBicyclePlaceable" value="1" isfixed="true"/>
+		<reward type="Item" id="casinoCoin" value="1000" isfixed="true"/>
 	</quest>
 
        </append>
