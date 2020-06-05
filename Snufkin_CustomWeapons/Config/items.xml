@@ -1198,7 +1198,7 @@
 			<property name="Material" value="MleatherKnuckles"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Melee/KnuckleWraps/knuckleWrapsRight_Prefab.prefab"/>
 			<property name="HoldType" value="70"/>
-			<property name="CustomIcon" value="armorLeatherGloves"/>
+			<property name="CustomIcon" value="meleeKnucklesLeather"/>
 			<property name="CustomIconTint" value="200, 0, 0"/>
 			<property name="ItemTypeIcon" value="star"/>
 			<property name="RepairTools" value="resourceLeather"/>
