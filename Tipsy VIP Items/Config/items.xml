@@ -120,7 +120,7 @@
      
 	 
 	 
-	 <item name="Ultimate Tool">
+	 <item name="Ultimate Tool VIP">
 	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,selfLoading,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic,admin"/>
 	<property name="DisplayType" value="adminRanged"/>
 	<property name="HoldType" value="6"/>
@@ -202,7 +202,7 @@
 		<property name="Sound_start" value="erase"/>
 		<property name="Infinite_ammo" value="true"/>
 		<property name="Magazine_items" value="resourcePaint"/>
-		<property name="Range" value="50"/>
+		<property name="Range" value="40"/>
 		<property name="Delay" value=".0"/> <!-- obsolete if rounds per minute exists -->
 		<property name="RemoveTexture" value="true"/>
 		<property name="DefaultTextureID" value="156"/>
@@ -213,7 +213,7 @@
 		<property name="Sound_start" value="resourcePaint"/>
 		<property name="Infinite_ammo" value="true"/>
 		<property name="Magazine_items" value="resourcePaint"/>
-		<property name="Range" value="50"/>
+		<property name="Range" value="40"/>
 		<property name="Delay" value=".0"/> <!-- obsolete if rounds per minute exists -->
 		<property name="Particles_muzzle_fire" value="paint_splash2"/>
 	</property>
@@ -224,6 +224,9 @@
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="PickupJournalEntry" value="paintingTip"/>
 	
 </item>
 
