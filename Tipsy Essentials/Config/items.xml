@@ -209,7 +209,7 @@
 			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mpaper"/>
-			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property name="CustomIconTint" value="03fcec"/>
 			<property name="Unlocks" value="TIPSYWorkBench"/>
 			<effect_group tiered="false">
@@ -225,7 +225,7 @@
 			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mpaper"/>
-			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property name="CustomIconTint" value="03fcec"/>
 			<property name="Unlocks" value="WeaponsTruck"/>
 			<effect_group tiered="false">
@@ -233,6 +233,22 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 	</item>
+	
+	<item name="TIPSYGrillSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="DescriptionKey" value="TIPSYGrillSchematicDesc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="03fcec"/>
+			<property name="Unlocks" value="WeaponsTruck"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSYGrillSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+	</item>	
 	
 	</append>
 </modtipsy>

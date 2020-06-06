@@ -19,16 +19,15 @@
 			<window name="windowToolsWeaponsMechine" />
 		</window_group>	
 		
-		<window_group name="workstation_Blacksmith" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_TIPSYGrill" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowToolsForge" />
+			<window name="windowToolsCampfire" />
 			<window name="windowFuel" />
-			<window name="windowForgeInput" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowToolsBlacksmith" />
+			<window name="windowToolsTIPSYGrill" />
 		</window_group>
 		
 	</append>
