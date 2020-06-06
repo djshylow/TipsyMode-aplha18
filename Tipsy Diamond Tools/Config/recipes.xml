@@ -4,79 +4,79 @@
 	 
 	<append xpath="/recipes">
 	
-	    <recipe name="Diamond Fireaxe" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
-	<ingredient name="resourceRawDiamond" count="5"/>
-	<ingredient name="meleeToolAllSteelParts" count="10"/>
-	<ingredient name="resourceForgedSteel" count="20"/>
-	<ingredient name="resourceWood" count="10"/>
-	<ingredient name="resourceLeather" count="3"/>
-	<ingredient name="resourceDuctTape" count="3"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
-	</effect_group>
-</recipe>
+	<recipe name="Diamond Fireaxe" count="1" craft_area="TIPSYWorkBench" craft_time="600" tags="learnable,perkMiner69r">
+		<ingredient name="resourceRawDiamond" count="5"/>
+		<ingredient name="Diamond Tool Parts" count="10"/>
+		<ingredient name="Perfect Steel" count="20"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="3"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="Diamond Tool Parts,Perfect Steel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
 				 
-	    <recipe name="Diamond Pickaxe" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
-	<ingredient name="resourceRawDiamond" count="20"/>
-	<ingredient name="meleeToolAllSteelParts" count="40"/>
-	<ingredient name="resourceForgedSteel" count="100"/>
-	<ingredient name="resourceWood" count="20"/>
-	<ingredient name="resourceDuctTape" count="5"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,6" operation="perc_add" value="1.0,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape,resourceRawDiamond"/>
-	</effect_group>
-</recipe>
+	<recipe name="Diamond Pickaxe" count="1" craft_area="TIPSYWorkBench" craft_time="600" tags="learnable,perkMiner69r">
+		<ingredient name="resourceRawDiamond" count="20"/>
+		<ingredient name="Diamond Tool Parts" count="40"/>
+		<ingredient name="Perfect Steel" count="100"/>
+		<ingredient name="resourceWood" count="20"/>
+		<ingredient name="resourceDuctTape" count="5"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="1,6" operation="perc_add" value="1.0,2.5" tags="Diamond Tool Parts,Perfect Steel,resourceWood,resourceLeather,resourceDuctTape,resourceRawDiamond"/>
+		</effect_group>
+	</recipe>
 	
-	    <recipe name="Diamond Nailgun" count="1" craft_area="workbench" craft_time="600" tags="learnable,workbenchCrafting">
-	<ingredient name="resourceRawDiamond" count="40"/>	
-	<ingredient name="resourceForgedSteel" count="100"/>
-	<ingredient name="resourceMechanicalParts" count="40"/>
-	<ingredient name="resourceScrapPolymers" count="40"/>
-	<ingredient name="resourceSpring" count="20"/>
-</recipe>
+	<recipe name="Diamond Nailgun" count="1" craft_area="TIPSYWorkBench" craft_time="600" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceRawDiamond" count="40"/>	
+		<ingredient name="Perfect Steel" count="100"/>
+		<ingredient name="AdvanceMechaParts" count="40"/>
+		<ingredient name="resourceScrapPolymers" count="40"/>
+		<ingredient name="resourceSpring" count="20"/>
+	</recipe>
 		
-	    <recipe name="Diamond Auger" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
-	<ingredient name="resourceRawDiamond" count="35"/>	
-	<ingredient name="meleeToolChainsawParts" count="10"/>
-	<ingredient name="vehicleBicycleHandlebars" count="1"/>
-	<ingredient name="smallEngine" count="1"/>
-	<ingredient name="resourceForgedSteel" count="50"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolChainsawParts,resourceForgedSteel"/>
-	</effect_group>
-</recipe>
+	<recipe name="Diamond Auger" count="1" craft_area="TIPSYWorkBench" craft_time="600" tags="learnable,perkMiner69r">
+		<ingredient name="resourceRawDiamond" count="35"/>	
+		<ingredient name="Diamond Moter Parts" count="10"/>
+		<ingredient name="vehicleBicycleHandlebars" count="1"/>
+		<ingredient name="smallEngine" count="1"/>
+		<ingredient name="Perfect Steel" count="50"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="Diamond Moter Parts,Perfect Steel"/>
+		</effect_group>
+	</recipe>
 	   
-	    <recipe name="Diamond Chainsaw" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
-	<ingredient name="resourceRawDiamond" count="10"/>
-	<ingredient name="meleeToolChainsawParts" count="10"/>
-	<ingredient name="vehicleBicycleHandlebars" count="1"/>
-	<ingredient name="smallEngine" count="1"/>
-	<ingredient name="resourceForgedSteel" count="50"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolChainsawParts,resourceForgedSteel"/>
-	</effect_group>
-</recipe>
+	<recipe name="Diamond Chainsaw" count="1" craft_area="TIPSYWorkBench" craft_time="600" tags="learnable,perkMiner69r">
+		<ingredient name="resourceRawDiamond" count="10"/>
+		<ingredient name="Diamond Moter Parts" count="10"/>
+		<ingredient name="vehicleBicycleHandlebars" count="1"/>
+		<ingredient name="smallEngine" count="1"/>
+		<ingredient name="Perfect Steel" count="50"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="Diamond Moter Parts,Perfect Steel"/>
+		</effect_group>
+	</recipe>
 	
-	    <recipe name="Diamond Wrench" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkSalvageOperations">
-	<ingredient name="resourceRawDiamond" count="10"/>
-	<ingredient name="resourceForgedIron" count="100"/>
-	<ingredient name="resourceMechanicalParts" count="10"/>
-	<ingredient name="resourceDuctTape" count="2"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape"/>
-	</effect_group>
-</recipe>
+	<recipe name="Diamond Wrench" count="1" craft_area="TIPSYWorkBench" craft_time="600" tags="learnable,perkSalvageOperations">
+		<ingredient name="resourceRawDiamond" count="10"/>
+		<ingredient name="Perfect Iron" count="100"/>
+		<ingredient name="AdvanceMechaParts" count="10"/>
+		<ingredient name="resourceDuctTape" count="2"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="Perfect Iron,AdvanceMechaParts,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
 	
-	    <recipe name="Diamond Shovel" count="1" craft_area="workbench" craft_time="600" tags="learnable,perkMiner69r">
-	<ingredient name="resourceRawDiamond" count="5"/>
-	<ingredient name="meleeToolAllSteelParts" count="10"/>
-	<ingredient name="resourceForgedSteel" count="20"/>
-	<ingredient name="resourceWood" count="10"/>
-	<ingredient name="resourceDuctTape" count="3"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
-	</effect_group>
-</recipe>
+	<recipe name="Diamond Shovel" count="1" craft_area="TIPSYWorkBench" craft_time="600" tags="learnable,perkMiner69r">
+		<ingredient name="resourceRawDiamond" count="5"/>
+		<ingredient name="Diamond Tool Parts" count="10"/>
+		<ingredient name="Perfect Steel" count="20"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="Diamond Tool Parts,Perfect Steel,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
 	
 	
 	

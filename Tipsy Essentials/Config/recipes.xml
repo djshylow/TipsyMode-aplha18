@@ -15,6 +15,17 @@
 		<ingredient name="resourceElectricParts" count="1"/>
 	</recipe>	
 	
+	<recipe name="meleeToolAllSteelParts" count="1" craft_area="workbench">
+		<ingredient name="resourceForgedSteel" count="10"/>
+	</recipe>
+	
+	<recipe name="resourceSpring" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+		<ingredient name="unit_iron" count="100"/>
+		<ingredient name="unit_clay" count="100"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+		</effect_group>
+	</recipe>
 <!-- Kits -->
 
 	<recipe name="AdvanceRepairKit" count="1" craft_area="TIPSYWorkBench">
@@ -69,7 +80,23 @@
 	<recipe name="AdvanceElectronicParts" count="1" craft_area="TIPSYWorkBench">
 		<ingredient name="resourceElectronicParts" count="5"/>
 	</recipe>
+	
+	<recipe name="Diamond Tool Parts" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="meleeToolAllSteelParts" count="50"/>
+		<ingredient name="resourceSpring" count="20"/>
+	</recipe>	
 
+	<recipe name="Diamond Moter Parts" count="1" craft_area="TIPSYWorkBench">
+		<ingredient name="meleeToolChainsawParts" count="5"/>
+	</recipe>	
+	
+	<recipe name="TIPSY Tokens" count="1" craft_area="workbench">
+		<ingredient name="casinoCoin" count="2"/>
+	</recipe>
+	<recipe name="casinoCoin" count="2" craft_area="workbench">
+		<ingredient name="TIPSY Tokens" count="1"/>
+	</recipe>		
+	
 <!-- WorkStation -->	
 	<recipe name="TIPSYWorkBench" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 		<ingredient name="resourceForgedIron" count="100"/>
@@ -81,14 +108,22 @@
 	
 	<recipe name="WeaponsMechine" count="1" craft_area="TIPSYWorkBench" tags="learnable,workbenchCrafting">
 		<ingredient name="resourceForgedSteel" count="500"/>
-		<ingredient name="resourceMechanicalParts" count="1000"/>
+		<ingredient name="AdvanceMechaParts" count="1000"/>
 		<ingredient name="meleeToolWrench" count="1"/>
 		<ingredient name="meleeToolClawHammer" count="1"/>
-		<ingredient name="resourceElectricParts" count="1000"/>
+		<ingredient name="AdvanceElectricParts" count="1000"/>
+	</recipe>
+	
+	<recipe name="TIPSYGrill" count="1" craft_area="TIPSYWorkBench" tags="learnable,workbenchCrafting">
+		<ingredient name="Perfect Steel" count="50"/>
+		<ingredient name="AdvanceMechaParts" count="1000"/>
+		<ingredient name="Perfect Iron" count="100"/>
+		<ingredient name="toolBeaker" count="5"/>
+		<ingredient name="AdvanceElectricParts" count="1000"/>
 	</recipe>
 <!-- Books -->
 	
-	<recipe name="TIPSYWorkBenchSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
+<!-- 	<recipe name="TIPSYWorkBenchSchematic" count="1" craft_area="workbench" tags="workbenchCrafting">
 		<ingredient name="resourceMechanicalParts" count="100"/>
 		<ingredient name="resourceElectricParts" count="100"/>
 		<ingredient name="resourceElectronicParts" count="20"/>
@@ -99,7 +134,7 @@
 		<ingredient name="AdvanceElectronicParts" count="100"/>
 		<ingredient name="AdvanceElectricParts" count="20"/>
 		<ingredient name="resourcePaper" count="1000"/>
-	</recipe>	
+	</recipe>	-->
 	
 	</append>
 </modtipsy>

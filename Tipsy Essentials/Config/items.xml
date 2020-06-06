@@ -154,7 +154,7 @@
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="5"/>
 		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
-		<property name="EconomicValue" value="100"/>
+		<property name="EconomicValue" value="150"/>
 		<property name="Group" value="Resources"/>
 		<property name="CraftingIngredientExp" value="15"/>
 		<property name="CraftingIngredientTime" value="2"/>
@@ -173,7 +173,7 @@
 		<property name="Material" value="MelectricParts"/>
 		<property name="Weight" value="1"/>
 		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
-		<property name="EconomicValue" value="32"/>
+		<property name="EconomicValue" value="150"/>
 		<property name="Group" value="Resources"/>
 		<property name="CraftingIngredientExp" value="15"/>
 		<property name="CraftingIngredientTime" value="2"/>
@@ -192,12 +192,66 @@
 		<property name="Material" value="MelectronicParts"/>
 		<property name="Weight" value="1"/>
 		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
-		<property name="EconomicValue" value="50"/>
+		<property name="EconomicValue" value="150"/>
 		<property name="Group" value="Resources"/>
 		<property name="CraftingIngredientExp" value="15"/>
 		<property name="CraftingIngredientTime" value="2"/>
 		<!-- <property name="RepairTime" value="2"/>
 		<property name="RepairAmount" value="400"/> -->
+	</item>
+	
+	<item name="Diamond Tool Parts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="DiamondToolPartsDesc"/>	
+		<property name="CustomIcon" value="meleeToolAllSteelParts" />
+		<property name="CustomIconTint" value="424bf5" />	
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MelectronicParts"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="1000"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+	
+	<item name="Diamond Moter Parts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="DiamondToolPartsDesc"/>	
+		<property name="CustomIcon" value="meleeToolChainsawParts" />
+		<property name="CustomIconTint" value="424bf5" />	
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MelectronicParts"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="1000"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	.
+	
+	<item name="TIPSY Tokens">
+		<property name="Tags" value="dukes"/>
+		<property name="CustomIcon" value="casinoCoin" />
+		<property name="CustomIconTint" value="ff0000" />
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceScrapBrassSmall"/>
+		<property name="MeltTimePerUnit" value=".4"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="100000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="5"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="SellableToTrader" value="false"/>
 	</item>
 
 <!--BOOKS-->
@@ -227,7 +281,7 @@
 			<property name="Material" value="Mpaper"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property name="CustomIconTint" value="03fcec"/>
-			<property name="Unlocks" value="WeaponsTruck"/>
+			<property name="Unlocks" value="WeaponsMechine"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="WeaponsMechineSchematic" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
@@ -243,9 +297,25 @@
 			<property name="Material" value="Mpaper"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property name="CustomIconTint" value="03fcec"/>
-			<property name="Unlocks" value="WeaponsTruck"/>
+			<property name="Unlocks" value="TIPSYGrill"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSYGrillSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+	</item>	
+	
+	<item name="MechanicSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="DescriptionKey" value="TIPSYGrillSchematicDesc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="03fcec"/>
+			<property name="Unlocks" value="Mechanic"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MechanicSchematic" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 	</item>	

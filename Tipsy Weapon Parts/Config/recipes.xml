@@ -1,0 +1,50 @@
+<modtipsygunsparts>
+
+	<append xpath="/recipes">
+
+<!-- GUNPARTS -->	
+	<recipe name="Colt Parts" count="1" craft_area="WeaponsMechine">
+		<ingredient name="gunPistolParts" count="10"/>
+	</recipe>	
+	
+	<recipe name="Colt Barrel" count="1" craft_area="WeaponsMechine">
+		<ingredient name="gunPistolParts" count="10"/>
+		<ingredient name="AdvanceMechaParts" count="20"/>
+		<ingredient name="GunBarrels" count="20"/>
+		<ingredient name="GunKit" count="1"/>
+	</recipe>
+	
+	<recipe name="Polearm Parts" count="1" craft_area="WeaponsMechine">
+		<ingredient name="meleeThrownSpearSteelParts" count="10"/>
+	</recipe>	
+	
+	<recipe name="Railgun Part1" count="1" craft_area="WeaponsMechine">
+		<ingredient name="gunHuntingRifleParts" count="10"/>
+	</recipe>
+
+	<recipe name="Railgun Part2" count="1" craft_area="WeaponsMechine">
+		<ingredient name="meleeStunBatonParts" count="10"/>
+	</recipe>
+
+	<recipe name="CrossbowMag Part1" count="1" craft_area="WeaponsMechine">
+		<ingredient name="gunCrossbowCompound" count="10"/>
+	</recipe>
+
+	<recipe name="CrossbowMag Part2" count="1" craft_area="WeaponsMechine">
+		<ingredient name="gunBowWoodenParts" count="10"/>
+	</recipe>	
+	
+	<recipe name="ThorHammer Part1" count="1" craft_area="WeaponsMechine">
+		<ingredient name="meleeToolSledgehammerSteelParts" count="10"/>
+	</recipe>	
+	
+	<recipe name="ThorHammer Part2" count="1" craft_area="WeaponsMechine">
+		<ingredient name="meleeStunBatonParts" count="10"/>
+	</recipe>	
+	
+	<recipe name="JetPack Parts" count="1" craft_area="WeaponsMechine">
+		<ingredient name="gunJunkTurretParts" count="10"/>
+	</recipe>	
+	
+	</append>
+</modtipsygunsparts>

@@ -2,17 +2,7 @@
 
 	<append xpath="/recipes">
 
-<!-- GUNPARTS -->	
-	<recipe name="Colt Parts" count="1" craft_area="WeaponsMechine">
-		<ingredient name="gunPistolParts" count="10"/>
-	</recipe>	
-	
-	<recipe name="Colt Barrel" count="1" craft_area="WeaponsMechine">
-		<ingredient name="gunPistolParts" count="10"/>
-		<ingredient name="AdvanceMechaParts" count="20"/>
-		<ingredient name="GunBarrels" count="20"/>
-		<ingredient name="GunKit" count="1"/>
-	</recipe>
+
 	
 <!-- 	<recipe name="Colt Blueprint" count="1" craft_area="WeaponsMechine">
 		<ingredient name="gunPistolParts" count="10"/>

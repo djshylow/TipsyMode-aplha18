@@ -2,43 +2,23 @@
 
 	<append xpath="/items">
 	
-	<item name="Colt Parts"> <!-- scrap material -->
-		<property name="DescriptionKey" value="ColtPartsDesc"/>	
-		<property name="CustomIcon" value="gunPistolParts" />
-		<property name="CustomIconTint" value="424bf5" />		
-		<property name="HoldType" value="45"/>
-		<property name="Tags" value="junk"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+<!-- BluePrints-->	
+	<item name="Colt Blueprint">
+		<property name="Extends" value="schematicNoQualityMaster"/>
+		<property name="DescriptionKey" value="BlueprintDesc"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="MHandGunParts"/> <property name="Weight" value="5"/>
-		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
-		<property name="EconomicValue" value="150"/>
-		<property name="Group" value="Resources"/>
-		<property name="CraftingIngredientExp" value="15"/>
-		<property name="CraftingIngredientTime" value="2"/>
-		<!-- <property name="RepairTime" value="2"/>
-		<property name="RepairAmount" value="400"/> -->
-	</item>
-
-	<item name="Colt Barrel"> <!-- scrap material -->
-		<property name="DescriptionKey" value="ColtBarrelDesc"/>	
-		<property name="CustomIcon" value="resourceMetalPipe" />
-		<property name="CustomIconTint" value="424bf5" />		
-		<property name="HoldType" value="45"/>
-		<property name="Tags" value="junk"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="MHandGunParts"/> <property name="Weight" value="5"/>
-		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
-		<property name="EconomicValue" value="150"/>
-		<property name="Group" value="Resources"/>
-		<property name="CraftingIngredientExp" value="15"/>
-		<property name="CraftingIngredientTime" value="2"/>
-		<!-- <property name="RepairTime" value="2"/>
-		<property name="RepairAmount" value="400"/> -->
-	</item>		
-	
-	
+		<property name="Material" value="Mpaper"/>
+		<property name="CustomIcon" value="questMaster"/>
+		<property name="CustomIconTint" value="00eeff"/>
+		<property name="Unlocks" value="The Colt"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Colt Blueprint" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>			
+		
 <!-- KITS-->
 	<item name="The Colt"> <!-- T3 pistols -->
 		<property name="Tags" value="aweapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,canHaveCosmetic"/>

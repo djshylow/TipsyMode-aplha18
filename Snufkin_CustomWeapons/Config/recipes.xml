@@ -1,13 +1,13 @@
 <configs>
 	<append xpath="/recipes">
-		<recipe name="Polearm" count="1" craft_area="workbench" tags="learnable">
-			<ingredient name="meleeThrownSpearSteelParts" count="15"/>
-			<ingredient name="resourceForgedSteel" count="20"/>
+		<recipe name="Polearm" count="1" craft_area="WeaponsMechine" tags="learnable">
+			<ingredient name="Polearm Parts" count="15"/>
+			<ingredient name="Perfect Steel" count="20"/>
 			<ingredient name="resourceWood" count="30"/>
 			<ingredient name="resourceLeather" count="10"/>
-			<ingredient name="resourceDuctTape" count="10"/>
+			<ingredient name="GunTape" count="10"/>
 		</recipe>
-		<recipe name="RailgunAmmo" count="1" craft_area="workbench" craft_time="10">
+		<recipe name="RailgunAmmo" count="1" craft_area="WeaponsMechine" craft_time="10">
 			<ingredient name="ammoDartIron" count="4"/>
 			<ingredient name="resourceForgedSteel" count="4"/>
 		</recipe>
@@ -33,26 +33,26 @@
 			<ingredient name="foodRottingFlesh" count="10"/>
 			<ingredient name="resourceScrapPolymers" count="20"/>
 		</recipe>
-		<recipe name="Railgun" count="1" craft_area="workbench" craft_time="240" tags="learnable,railgun">
-			<ingredient name="gunHuntingRifleParts" count="40"/>
-			<ingredient name="meleeStunBatonParts" count="25"/>
-			<ingredient name="resourceForgedSteel" count="300"/>
-			<ingredient name="resourceMechanicalParts" count="75"/>
-			<ingredient name="resourceElectricParts" count="120"/>
+		<recipe name="Railgun" count="1" craft_area="WeaponsMechine" craft_time="240" tags="learnable,railgun">
+			<ingredient name="Railgun Part1" count="40"/>
+			<ingredient name="Railgun Part2" count="25"/>
+			<ingredient name="Perfect Steel" count="300"/>
+			<ingredient name="AdvanceMechaParts" count="75"/>
+			<ingredient name="AdvanceElectricParts" count="120"/>
 		</recipe>
-		<recipe name="CrossbowMag" count="1" craft_area="workbench" craft_time="240" tags="learnable,crossbowmag">
-			<ingredient name="gunCrossbowCompound" count="1"/>
-			<ingredient name="gunBowWoodenParts" count="25"/>
-			<ingredient name="resourceForgedSteel" count="50"/>
-			<ingredient name="resourceDuctTape" count="20"/>
-			<ingredient name="resourceMechanicalParts" count="40"/>
+		<recipe name="CrossbowMag" count="1" craft_area="WeaponsMechine" craft_time="240" tags="learnable,crossbowmag">
+			<ingredient name="CrossbowMag Part1" count="1"/>
+			<ingredient name="CrossbowMag Part2" count="25"/>
+			<ingredient name="Perfect Steel" count="50"/>
+			<ingredient name="GunTape" count="20"/>
+			<ingredient name="AdvanceMechaParts" count="40"/>
 		</recipe>
-		<recipe name="Thor Hammer" count="1" craft_area="workbench" craft_time="240" tags="learnable,thorhammer">
-			<ingredient name="meleeToolSledgehammerSteelParts" count="20"/>
-			<ingredient name="meleeStunBatonParts" count="20"/>
-			<ingredient name="resourceForgedSteel" count="50"/>
-			<ingredient name="resourceDuctTape" count="20"/>
-			<ingredient name="resourceElectricParts" count="40"/>
+		<recipe name="Thor Hammer" count="1" craft_area="WeaponsMechine" craft_time="240" tags="learnable,thorhammer">
+			<ingredient name="ThorHammer Part1" count="20"/>
+			<ingredient name="ThorHammer Part2" count="20"/>
+			<ingredient name="Perfect Steel" count="50"/>
+			<ingredient name="GunTape" count="20"/>
+			<ingredient name="AdvanceElectricParts" count="40"/>
 		</recipe>
 	</append>
 </configs>

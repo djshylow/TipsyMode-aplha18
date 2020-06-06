@@ -19,6 +19,15 @@
 			<window name="windowToolsWeaponsMechine" />
 		</window_group>	
 		
+		<window_group name="workstation_ModMechine" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowToolsModMechine" />
+		</window_group>			
+		
 		<window_group name="workstation_TIPSYGrill" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
