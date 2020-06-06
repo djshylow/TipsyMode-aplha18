@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<ModInfo>
+		<Name value="Fixed Weak Weapons"/>
+		<Description value="changing the damage some early game weapons do aka damage buff."/>
+		<Author value="Arroz"/>
+		<Version value="1.0"/>
+	</ModInfo>
+</xml>

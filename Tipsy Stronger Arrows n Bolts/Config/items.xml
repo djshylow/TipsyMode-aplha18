@@ -27,7 +27,7 @@
 		</property>
 
 		<effect_group name="ammoArrowStone" tiered="false"> <!-- ammoArrowStone -->
-			<passive_effect name="EntityDamage" operation="base_set" value="50"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="60"/>
 			<passive_effect name="BlockDamage" operation="base_set" value="1"/>
 			<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
 			<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
@@ -70,7 +70,7 @@
 		</property>
 
 		<effect_group name="ammoArrowIron" tiered="false"> <!-- ammoArrowIron -->
-			<passive_effect name="EntityDamage" operation="base_set" value="56"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="66"/>
 			<passive_effect name="BlockDamage" operation="base_set" value="3"/>
 			<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
 			<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
@@ -111,7 +111,7 @@
 	<property name="StickyOffset" value=".5"/>
 	<property name="UnlockedBy" value="perkRangersAPAmmo"/>
 	<effect_group name="ammoArrowSteelAP" tiered="false"> <!-- ammoArrowSteelAP -->
-		<passive_effect name="EntityDamage" operation="base_set" value="62"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="72"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
 		<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
 		<display_value name="dTargetArmor" value="-.2"/>
