@@ -4,7 +4,6 @@
   <append xpath="/recipes">
     <recipe name="resourceCement" count="1" material_based="true" craft_area="cementMixer" tags="cementMixerCrafting">
       <ingredient name="resourceCrushedSand" count="10" />
-      <ingredient name="resourceClayLump" count="10" />
     </recipe>
   </append>
 </configs>

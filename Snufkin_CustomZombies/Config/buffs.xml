@@ -248,7 +248,7 @@
 			</effect_group>
 		</buff>
 		<buff name="buffBansheeScream" hidden="true">
-			<update_rate value="12"/>
+			<update_rate value="60"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="bansheebuff0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="12" buff="buffBanshee"/>
