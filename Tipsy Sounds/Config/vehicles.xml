@@ -1,0 +1,5 @@
+<configs>
+	<set xpath="/vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='hornSound']/@value">motorbike_horn</set>
+	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='hornSound']/@value">4x4truck_horn</set>
+</configs>
+

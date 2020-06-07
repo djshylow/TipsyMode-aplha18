@@ -3,7 +3,7 @@
   <remove xpath="/recipes/recipe[@name='resourceConcreteMix']/ingredient[@name='resourceCrushedSand']" />
   <append xpath="/recipes">
     <recipe name="resourceCement" count="1" material_based="true" craft_area="cementMixer" tags="cementMixerCrafting">
-      <ingredient name="resourceCrushedSand" count="10" />
+      <ingredient name="resourceCrushedSand" count="5" />
     </recipe>
   </append>
 </configs>

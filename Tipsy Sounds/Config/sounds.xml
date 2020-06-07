@@ -1,0 +1,20 @@
+<configs>
+
+
+
+	<append xpath="/Sounds">
+		<SoundDataNode name="motorbike_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+		<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+		<AudioClip ClipName="Sounds/Animals/Chicken/chickenpain1"/>
+	    <AudioClip ClipName="Sounds/Animals/Chicken/chickenpain2"/>
+	    <AudioClip ClipName="Sounds/Animals/Chicken/chickenpain3"/>
+		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+		<SoundDataNode name="4x4truck_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+		<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+		<AudioClip ClipName="Sounds/Animals/Chicken/chickenpain1"/>
+	    <AudioClip ClipName="Sounds/Animals/Chicken/chickenpain2"/>
+	    <AudioClip ClipName="Sounds/Animals/Chicken/chickenpain3"/>
+		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	</append>
+</configs>
