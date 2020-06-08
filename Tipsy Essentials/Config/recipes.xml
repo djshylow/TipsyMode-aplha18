@@ -59,10 +59,12 @@
 	
 	<recipe name="GunBarrels" count="1" craft_area="TIPSYWorkBench">
 		<ingredient name="resourceMetalPipe" count="50"/>
+		<ingredient name="Perfect Iron" count="2"/>
 	</recipe>		
 	
 	<recipe name="GunSprings" count="1" craft_area="TIPSYWorkBench">
 		<ingredient name="resourceSpring" count="50"/>
+		<ingredient name="Perfect Steel" count="1"/>
 	</recipe>		
 	
 	<recipe name="GunTape" count="1" craft_area="TIPSYWorkBench">
