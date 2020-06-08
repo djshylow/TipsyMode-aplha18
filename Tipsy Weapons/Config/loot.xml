@@ -6,6 +6,7 @@
     <insertBefore xpath="//lootgroup[@name='rareBooks']">
 	<lootgroup name="TIPSYguns">
 	    <item name="Colt Blueprint"/>	
+		<item name="D-Eagle Blueprint"/>
 	</lootgroup>
 
     </insertBefore>
