@@ -37,7 +37,7 @@
             <!--<sprite color="[black]" type="sliced" /> -->
 <!-- ######## URL TO EDIT BELOW######## --> 	 
 <!-- ######## URL TO EDIT BELOW######## -->
-  <texture width="1048" height="628" texture="@https://botmanhosting.com/images/7d2d/rulesandinfo.png" depth="4" pos="170,0"/>
+  <texture width="1048" height="628" texture="@http://djshylow.com/7days/WELCOMERULES.png" depth="4" pos="170,0"/>
 <!-- ######## URL ABOVE TO ######## EDIT -->           
 <!-- ######## URL ABOVE TO ######## EDIT -->           
 </rect>
