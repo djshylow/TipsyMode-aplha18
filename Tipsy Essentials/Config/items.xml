@@ -236,7 +236,7 @@
 		<property name="CraftingIngredientTime" value="2"/>
 		<!-- <property name="RepairTime" value="2"/>
 		<property name="RepairAmount" value="400"/> -->
-	</item>	.
+	</item>
 	
 	<item name="TIPSY Tokens">
 		<property name="Tags" value="dukes"/>
@@ -248,7 +248,7 @@
 		<property name="Material" value="MresourceScrapBrassSmall"/>
 		<property name="MeltTimePerUnit" value=".4"/>
 		<property name="Weight" value="1"/>
-		<property name="Stacknumber" value="100000"/> <!-- STK resource -->
+		<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 		<property name="EconomicValue" value="5"/>
 		<property name="EconomicBundleSize" value="1"/>
 		<property name="SellableToTrader" value="false"/>
