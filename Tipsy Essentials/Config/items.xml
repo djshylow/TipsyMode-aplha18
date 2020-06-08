@@ -238,7 +238,7 @@
 		<property name="RepairAmount" value="400"/> -->
 	</item>
 	
-	<item name="TIPSY Tokens">
+	<item name="TIPSYTokens">
 		<property name="Tags" value="dukes"/>
 		<property name="CustomIcon" value="casinoCoin" />
 		<property name="CustomIconTint" value="ff0000" />

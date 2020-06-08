@@ -90,10 +90,10 @@
 		<ingredient name="meleeToolChainsawParts" count="5"/>
 	</recipe>	
 	
-	<recipe name="TIPSY Tokens" count="2" craft_area="workbench">
+	<recipe name="TIPSYTokens" count="1" craft_area="workbench">
 		<ingredient name="casinoCoin" count="2"/>
 	</recipe>
-	<recipe name="casinoCoin" count="1" craft_area="workbench">
+	<recipe name="casinoCoin" count="2" craft_area="workbench">
 		<ingredient name="TIPSY Tokens" count="1"/>
 	</recipe>		
 	
