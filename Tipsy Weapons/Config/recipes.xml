@@ -21,11 +21,19 @@
 
 	<recipe name="D-Eagle" count="1" craft_area="WeaponsMechine">
 		<ingredient name="AdvanceMechaParts" count="50"/>
-		<ingredient name="D-Eagle Parts" count="500"/>
+		<ingredient name="D-Eagle Parts" count="450"/>
 		<ingredient name="GunTape" count="20"/>
 		<ingredient name="D-Eagle Barrel" count="5"/>
 <!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
 	</recipe>	
+	
+	<recipe name="Vector" count="1" craft_area="WeaponsMechine">
+		<ingredient name="AdvanceMechaParts" count="50"/>
+		<ingredient name="Vector Parts" count="700"/>
+		<ingredient name="GunTape" count="20"/>
+		<ingredient name="Vector Barrel" count="8"/>
+<!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
+	</recipe>		
 	
 	</append>
 </modtipsyguns>

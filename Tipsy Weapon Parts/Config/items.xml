@@ -72,6 +72,42 @@
 		<property name="CraftingIngredientTime" value="2"/>
 		<!-- <property name="RepairTime" value="2"/>
 		<property name="RepairAmount" value="400"/> -->
+	</item>	
+
+	<item name="Vector Parts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="D-EaglePartsDesc"/>	
+		<property name="CustomIcon" value="gunPistolParts" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MHandGunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>
+	
+	<item name="Vector Barrel"> <!-- scrap material -->
+		<property name="DescriptionKey" value="D-EagleBarrelDesc"/>	
+		<property name="CustomIcon" value="resourceMetalPipe" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MHandGunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
 	</item>		
 	
 	<item name="Polearm Parts"> <!-- scrap material -->
