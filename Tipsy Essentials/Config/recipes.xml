@@ -94,7 +94,7 @@
 		<ingredient name="casinoCoin" count="2"/>
 	</recipe>
 	<recipe name="casinoCoin" count="2" craft_area="workbench">
-		<ingredient name="TIPSY Tokens" count="1"/>
+		<ingredient name="TIPSYTokens" count="1"/>
 	</recipe>		
 	
 <!-- WorkStation -->	
