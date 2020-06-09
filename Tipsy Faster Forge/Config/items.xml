@@ -1,6 +1,5 @@
 <FasterForging>
 	
 	<set xpath="/items/item[@name='toolBellows']/effect_group/passive_effect[@name='CraftingSmeltTime']/@value">-.777</set>
-    <set xpath="/items/item[@name='toolAnvil']/effect_group/passive_effect[@name='CraftingTime']/@value">-.777</set>
 	
 </FasterForging>
