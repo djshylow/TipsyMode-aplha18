@@ -100,7 +100,7 @@
 	</recipe>		
 	
 <!-- WorkStation -->	
-	<recipe name="TIPSYWorkBench" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<recipe name="TIPSYWorkBench" count="1" craft_area="workbench" craft_time="420">
 		<ingredient name="resourceForgedIron" count="100"/>
 		<ingredient name="resourceMechanicalParts" count="1000"/>
 		<ingredient name="meleeToolWrench" count="1"/>
@@ -108,7 +108,7 @@
 		<ingredient name="resourceWood" count="6000"/>
 	</recipe>
 	
-	<recipe name="WeaponsMechine" count="1" craft_area="TIPSYWorkBench" tags="learnable,workbenchCrafting">
+	<recipe name="WeaponsMechine" count="1" craft_area="TIPSYWorkBench" craft_time="420">
 		<ingredient name="resourceForgedSteel" count="500"/>
 		<ingredient name="AdvanceMechaParts" count="1000"/>
 		<ingredient name="meleeToolWrench" count="1"/>
@@ -116,7 +116,7 @@
 		<ingredient name="AdvanceElectricParts" count="1000"/>
 	</recipe>
 	
-	<recipe name="TIPSYGrill" count="1" craft_area="TIPSYWorkBench" tags="learnable,workbenchCrafting">
+	<recipe name="TIPSYGrill" count="1" craft_area="TIPSYWorkBench" craft_time="420">
 		<ingredient name="Perfect Steel" count="50"/>
 		<ingredient name="AdvanceMechaParts" count="1000"/>
 		<ingredient name="Perfect Iron" count="100"/>
