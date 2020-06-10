@@ -1,186 +1,186 @@
 <configs>
 	<append xpath="/recipes">
-		<recipe name="HazmatJacket Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="HazmatJacket Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="HazmatGloves Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="HazmatGloves Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="HazmatMask Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="HazmatMask Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="Shades Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="Shades Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="AviatorGoggles Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="AviatorGoggles Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SkiGoggles Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SkiGoggles Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="NerdGlasses Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="NerdGlasses Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="NightvisionGoggles Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="NightvisionGoggles Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="Cigar Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="Cigar Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="Cigarette Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="Cigarette Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="FacialPiercings Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="FacialPiercings Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="Bandana Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="Bandana Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="WornBoots Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="WornBoots Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="RunningShoesRegular Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="RunningShoesRegular Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="CowboyBoots Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="CowboyBoots Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="GothBoots Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="GothBoots Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="CoatLeatherPoncho Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="CoatLeatherPoncho Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="CoatLeatherDuster Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="CoatLeatherDuster Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="CoatPufferCoat Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="CoatPufferCoat Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="CoatJacketGeneric Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="CoatJacketGeneric Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SuitJacket Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SuitJacket Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SuitDressShoes Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SuitDressShoes Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ClothHelmet Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ClothHelmet Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SantaHat Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SantaHat Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ClothJacket Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ClothJacket Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ClothGloves Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ClothGloves Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ClothPants Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ClothPants Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ClothBoots Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ClothBoots Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="LeatherHelmet Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="LeatherHelmet Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="LeatherChest Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="LeatherChest Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="LeatherGloves Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="LeatherGloves Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="LeatherPants Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="LeatherPants Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="LeatherBoots Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="LeatherBoots Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="MilitaryHelmet Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="MilitaryHelmet Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="MilitaryVest Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="MilitaryVest Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="MilitaryGloves Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="MilitaryGloves Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="MilitaryLegs Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="MilitaryLegs Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="MilitaryBoots Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="MilitaryBoots Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ScrapHelmet Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ScrapHelmet Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ScrapChest Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ScrapChest Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ScrapGloves Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ScrapGloves Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ScrapLegs Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ScrapLegs Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="ScrapBoots Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="ScrapBoots Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="IronHelmet Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="IronHelmet Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="IronChest Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="IronChest Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="IronGloves Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="IronGloves Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="IronLegs Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="IronLegs Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="IronBoots Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="IronBoots Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SteelHelmet Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SteelHelmet Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SteelChest Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SteelChest Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SteelGloves Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SteelGloves Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SteelLegs Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SteelLegs Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SteelBoots Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SteelBoots Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="MiningHelmet Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="MiningHelmet Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="SwatHelmet Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="SwatHelmet Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="FootballHelmet Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="FootballHelmet Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="200"/>
 		</recipe>
-		<recipe name="InvisibleHeadArmor Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="InvisibleHeadArmor Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="20000"/>
 		</recipe>
-		<recipe name="InvisibleChestArmor Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="InvisibleChestArmor Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="20000"/>
 		</recipe>
-		<recipe name="InvisibleHandsArmor Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="InvisibleHandsArmor Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="20000"/>
 		</recipe>
-		<recipe name="InvisibleLegArmor Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="InvisibleLegArmor Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="20000"/>
 		</recipe>
-		<recipe name="InvisibleOvercoat Visual Mod" count="1" craft_area="ModMechine" craft_time="5">
+		<recipe name="InvisibleOvercoat Visual Mod" count="1" craft_area="Mod Machine" craft_time="5">
 			<ingredient name="TIPSYTokens" count="20000"/>
 		</recipe>
 	</append>
