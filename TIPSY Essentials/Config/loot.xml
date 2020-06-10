@@ -5,10 +5,10 @@
     </append>
     <insertBefore xpath="//lootgroup[@name='rareBooks']">
 	<lootgroup name="TIPSYEssentials">
-	    <item name="TIPSYWorkBenchSchematic"/>
-	    <item name="WeaponsMechineSchematic"/>
-		<item name="TIPSYGrillSchematic"/>
-		<item name="MechanicSchematic"/>		
+	    <item name="TIPSY WorkBench Schematic"/>
+	    <item name="Weapons Machine Schematic"/>
+		<item name="TIPSY Grill Schematic"/>
+		<item name="Mechanic Schematic"/>		
 	</lootgroup>
 
     </insertBefore>

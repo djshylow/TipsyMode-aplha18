@@ -3,11 +3,11 @@
 	<append xpath="/recipes">
 
 <!-- GUNPARTS -->	
-	<recipe name="Colt Parts" count="1" craft_area="WeaponsMechine">
+	<recipe name="Colt Parts" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunPistolParts" count="10"/>
 	</recipe>	
 	
-	<recipe name="Colt Barrel" count="1" craft_area="WeaponsMechine">
+	<recipe name="Colt Barrel" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunPistolParts" count="10"/>
 		<ingredient name="AdvanceMechaParts" count="20"/>
 		<ingredient name="GunBarrels" count="20"/>
@@ -15,11 +15,11 @@
 		<ingredient name="GunSprings" count="20"/>
 	</recipe>
 	
-	<recipe name="D-Eagle Parts" count="1" craft_area="WeaponsMechine">
+	<recipe name="D-Eagle Parts" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunPistolParts" count="10"/>
 	</recipe>	
 	
-	<recipe name="D-Eagle Barrel" count="1" craft_area="WeaponsMechine">
+	<recipe name="D-Eagle Barrel" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunPistolParts" count="10"/>
 		<ingredient name="AdvanceMechaParts" count="30"/>
 		<ingredient name="GunBarrels" count="20"/>
@@ -27,11 +27,11 @@
 		<ingredient name="GunSprings" count="20"/>
 	</recipe>
 	
-	<recipe name="Vector Parts" count="1" craft_area="WeaponsMechine">
+	<recipe name="Vector Parts" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunPistolParts" count="10"/>
 	</recipe>	
 	
-	<recipe name="Vector Barrel" count="1" craft_area="WeaponsMechine">
+	<recipe name="Vector Barrel" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunPistolParts" count="10"/>
 		<ingredient name="AdvanceMechaParts" count="50"/>
 		<ingredient name="GunBarrels" count="20"/>
@@ -39,35 +39,35 @@
 		<ingredient name="GunSprings" count="30"/>
 	</recipe>	
 	
-	<recipe name="Polearm Parts" count="1" craft_area="WeaponsMechine">
+	<recipe name="Polearm Parts" count="1" craft_area="Weapons Machine">
 		<ingredient name="meleeThrownSpearSteelParts" count="10"/>
 	</recipe>	
 	
-	<recipe name="Railgun Part1" count="1" craft_area="WeaponsMechine">
+	<recipe name="Railgun Part1" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunHuntingRifleParts" count="10"/>
 	</recipe>
 
-	<recipe name="Railgun Part2" count="1" craft_area="WeaponsMechine">
+	<recipe name="Railgun Part2" count="1" craft_area="Weapons Machine">
 		<ingredient name="meleeStunBatonParts" count="10"/>
 	</recipe>
 
-	<recipe name="CrossbowMag Part1" count="1" craft_area="WeaponsMechine">
+	<recipe name="CrossbowMag Part1" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunCrossbowCompound" count="10"/>
 	</recipe>
 
-	<recipe name="CrossbowMag Part2" count="1" craft_area="WeaponsMechine">
+	<recipe name="CrossbowMag Part2" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunBowWoodenParts" count="10"/>
 	</recipe>	
 	
-	<recipe name="ThorHammer Part1" count="1" craft_area="WeaponsMechine">
+	<recipe name="ThorHammer Part1" count="1" craft_area="Weapons Machine">
 		<ingredient name="meleeToolSledgehammerSteelParts" count="10"/>
 	</recipe>	
 	
-	<recipe name="ThorHammer Part2" count="1" craft_area="WeaponsMechine">
+	<recipe name="ThorHammer Part2" count="1" craft_area="Weapons Machine">
 		<ingredient name="meleeStunBatonParts" count="10"/>
 	</recipe>	
 	
-	<recipe name="JetPack Parts" count="1" craft_area="WeaponsMechine">
+	<recipe name="JetPack Parts" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunJunkTurretParts" count="10"/>
 	</recipe>	
 	

@@ -12,7 +12,7 @@
 
   <!-- Exceptions & Misc -->
   <set xpath="/items/item[@name='ammoJunkTurret']/property[@name='Stacknumber']/@value">6000</set>
-  <set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">6000</set>
+  <set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">10000</set>
   <set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">20000</set>
   <set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">1000</set>
   <set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">1000</set>

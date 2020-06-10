@@ -1,7 +1,7 @@
 <configs>
     <append xpath="/recipes">
 	
-	<recipe name="GottaGoFast" count="1" craft_area="TIPSYGrill" tags="TIPSYGrill">
+	<recipe name="GottaGoFast" count="1" craft_area="TIPSY Grill" tags="TIPSY Grill">
 	<ingredient name="resourceAcid" count="1"/>
 	<ingredient name="resourceGoldNugget" count="5"/>
 	<ingredient name="resourceSilverNugget" count="5"/>
@@ -9,7 +9,7 @@
 </recipe>
 	
 	
-	<recipe name="Bone Healing Potion" count="1" craft_area="TIPSYGrill" tags="TIPSYGrill">
+	<recipe name="Bone Healing Potion" count="1" craft_area="TIPSY Grill" tags="TIPSY Grill">
 	<ingredient name="resourceBone" count="2"/>
 	<ingredient name="medicalBloodBag" count="1"/>
 	<ingredient name="drinkJarPureMineralWater" count="1"/>
@@ -18,28 +18,28 @@
 
 
 
-    <recipe name="HP +100 Potion" count="1" craft_area="TIPSYGrill" tags="TIPSYGrill">
+    <recipe name="HP +100 Potion" count="1" craft_area="TIPSY Grill" tags="TIPSY Grill">
 	<ingredient name="foodRottingFlesh" count="1"/>
 	<ingredient name="medicalBloodBag" count="1"/>
 	<ingredient name="drinkJarPureMineralWater" count="1"/>
 </recipe>
 
 
-    <recipe name="Stamina +100 Potion" count="1" craft_area="TIPSYGrill" tags="TIPSYGrill">
+    <recipe name="Stamina +100 Potion" count="1" craft_area="TIPSY Grill" tags="TIPSY Grill">
 	<ingredient name="foodRottingFlesh" count="2"/>
 	<ingredient name="medicalBloodBag" count="2"/>
 	<ingredient name="drinkJarPureMineralWater" count="1"/>
 </recipe>
 
 
-    <recipe name="Jump Potion" count="1" craft_area="TIPSYGrill" tags="TIPSYGrill">
+    <recipe name="Jump Potion" count="1" craft_area="TIPSY Grill" tags="TIPSY Grill">
 	<ingredient name="resourceMechanicalParts" count="2"/>
 	<ingredient name="resourceSpring" count="5"/>
 	<ingredient name="drinkJarPureMineralWater" count="1"/>
 </recipe>
 
 	
-	<recipe name="Sonic Speed Potion" count="1" craft_area="TIPSYGrill" tags="TIPSYGrill">
+	<recipe name="Sonic Speed Potion" count="1" craft_area="TIPSY Grill" tags="TIPSY Grill">
 	<ingredient name="apparelRunningShoesRegular" count="1"/>
 	<ingredient name="modDyeBlue" count="1"/>
 	<ingredient name="drinkJarPureMineralWater" count="1"/>

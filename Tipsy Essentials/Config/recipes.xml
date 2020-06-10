@@ -28,19 +28,19 @@
 	</recipe>
 <!-- Kits -->
 
-	<recipe name="AdvanceRepairKit" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="AdvanceRepairKit" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceMechanicalParts" count="1"/>
 		<ingredient name="resourceElectricParts" count="1"/>
 		<ingredient name="resourceElectronicParts" count="1"/>
 		<ingredient name="resourceRepairKit" count="1"/>
 	</recipe>		
 
-	<recipe name="GunKit" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="GunKit" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceAcid" count="2"/>
 		<ingredient name="resourceRepairKit" count="50"/>
 	</recipe>	
 	
-	<recipe name="GoDKit" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="GoDKit" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="AdvanceMechaParts" count="50"/>
 		<ingredient name="resourceAcid" count="5"/>
 		<ingredient name="GunSprings" count="50"/>
@@ -49,46 +49,46 @@
 
 <!-- RESOURCES -->	
 
-	<recipe name="Perfect Steel" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="Perfect Steel" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceForgedSteel" count="100"/>
 	</recipe>
 	
-	<recipe name="Perfect Iron" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="Perfect Iron" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceForgedIron" count="200"/>
 	</recipe>
 	
-	<recipe name="GunBarrels" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="GunBarrels" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceMetalPipe" count="50"/>
 		<ingredient name="Perfect Iron" count="2"/>
 	</recipe>		
 	
-	<recipe name="GunSprings" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="GunSprings" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceSpring" count="50"/>
 		<ingredient name="Perfect Steel" count="1"/>
 	</recipe>		
 	
-	<recipe name="GunTape" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="GunTape" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceDuctTape" count="10"/>
 	</recipe>	
 	
-	<recipe name="AdvanceMechaParts" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="AdvanceMechaParts" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceMechanicalParts" count="20"/>
 	</recipe>
 	
-	<recipe name="AdvanceElectricParts" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="AdvanceElectricParts" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceElectricParts" count="20"/>
 	</recipe>	
 
-	<recipe name="AdvanceElectronicParts" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="AdvanceElectronicParts" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="resourceElectronicParts" count="5"/>
 	</recipe>
 	
-	<recipe name="Diamond Tool Parts" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="Diamond Tool Parts" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="meleeToolAllSteelParts" count="50"/>
 		<ingredient name="resourceSpring" count="20"/>
 	</recipe>	
 
-	<recipe name="Diamond Moter Parts" count="1" craft_area="TIPSYWorkBench">
+	<recipe name="Diamond Moter Parts" count="1" craft_area="TIPSY WorkBench">
 		<ingredient name="meleeToolChainsawParts" count="5"/>
 	</recipe>	
 	
@@ -100,7 +100,7 @@
 	</recipe>		
 	
 <!-- WorkStation -->	
-	<recipe name="TIPSYWorkBench" count="1" craft_area="workbench" craft_time="420">
+	<recipe name="TIPSY WorkBench" count="1" craft_area="workbench" craft_time="420">
 		<ingredient name="resourceForgedIron" count="100"/>
 		<ingredient name="resourceMechanicalParts" count="1000"/>
 		<ingredient name="meleeToolWrench" count="1"/>
@@ -108,7 +108,7 @@
 		<ingredient name="resourceWood" count="6000"/>
 	</recipe>
 	
-	<recipe name="WeaponsMechine" count="1" craft_area="TIPSYWorkBench" craft_time="420">
+	<recipe name="Weapons Machine" count="1" craft_area="TIPSY WorkBench" craft_time="420">
 		<ingredient name="resourceForgedSteel" count="500"/>
 		<ingredient name="AdvanceMechaParts" count="1000"/>
 		<ingredient name="meleeToolWrench" count="1"/>
@@ -116,7 +116,7 @@
 		<ingredient name="AdvanceElectricParts" count="1000"/>
 	</recipe>
 	
-	<recipe name="TIPSYGrill" count="1" craft_area="TIPSYWorkBench" craft_time="420">
+	<recipe name="TIPSY Grill" count="1" craft_area="TIPSY WorkBench" craft_time="420">
 		<ingredient name="Perfect Steel" count="50"/>
 		<ingredient name="AdvanceMechaParts" count="1000"/>
 		<ingredient name="Perfect Iron" count="100"/>

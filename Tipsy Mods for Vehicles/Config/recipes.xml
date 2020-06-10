@@ -2,7 +2,7 @@
 
     <append xpath="/recipes">
 	
-	<recipe name="HeadLights Mod" count="1" craft_time="300" craft_area="TIPSYWorkBench" tags="workbenchCrafting">
+	<recipe name="HeadLights Mod" count="1" craft_time="300" craft_area="TIPSY WorkBench" tags="workbenchCrafting">
 		<ingredient name="resourceAcid" count="6"/>
 		<ingredient name="resourceGoldNugget" count="6"/>
 		<ingredient name="resourceSilverNugget" count="6"/>
@@ -10,7 +10,7 @@
 		<ingredient name="glassBulletproofBlockVariantHelper" count="2"/>
 	</recipe>
 	
-	<recipe name="Turbo Mod" count="1" craft_time="300" craft_area="TIPSYWorkBench" tags="workbenchCrafting">
+	<recipe name="Turbo Mod" count="1" craft_time="300" craft_area="TIPSY WorkBench" tags="workbenchCrafting">
 		<ingredient name="resourceAcid" count="5"/>
 		<ingredient name="resourceRawDiamond" count="5"/>
 		<ingredient name="resourceGunPowder" count="100"/>
@@ -18,7 +18,7 @@
 		<ingredient name="smallEngine" count="2"/>
 	</recipe>
 	
-	<recipe name="FuelSaver Mod" count="1" craft_time="300" craft_area="TIPSYWorkBench" tags="workbenchCrafting">
+	<recipe name="FuelSaver Mod" count="1" craft_time="300" craft_area="TIPSY WorkBench" tags="workbenchCrafting">
 		<ingredient name="resourceAcid" count="5"/>
 		<ingredient name="resourceRawDiamond" count="5"/>
 		<ingredient name="ammoGasCan" count="6000"/>

@@ -104,7 +104,7 @@
 			<!-- XP strong -->
 			<property name="WalkType" value="8"/>
 			<property name="HandItem" value="meleeHandBanshee"/>
-			<property name="LootDropProb" value="1"/>
+			<property name="LootDropProb" value=".5"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
@@ -200,7 +200,7 @@
 			<property name="WalkType" value="7"/>
 			<property name="PhysicsBody" value="nolegsUMA" />
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="LootDropProb" value="1"/>
+			<property name="LootDropProb" value=".5"/>
 			<property name="SurfaceCategory" value="wood"/>
 			<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 			<property name="SoundSpawn" value="Ambient_Loops/a_fire_embersmoke_sm_lp"/>
@@ -226,7 +226,7 @@
 			<property name="Tags" value="entity,zombie,walker,boss,umazombie,psycho" />
 			<property name="WalkType" value="7"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="LootDropProb" value="1"/>
+			<property name="LootDropProb" value=".5"/>
 			<property name="HandItem" value="meleeScarecrow"/>
 			<property name="ExperienceGain" value="1500"/>
 			<property name="SoundFootstepModifier" value=""/>
@@ -297,7 +297,7 @@
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 			<property name="Tags" value="entity,zombie,walker,boss,undertaker,umazombie,undertaker" />
 			<property name="HandItem" value="meleeHandUndertaker"/>
-			<property name="LootDropProb" value="1"/>
+			<property name="LootDropProb" value="0.50"/>
 			<property name="ExperienceGain" value="12000"/>
 			<property name="WalkType" value="2"/>
 			<property name="MoveSpeed" value="0.15"/>
@@ -421,7 +421,7 @@
 			<property name="Tags" value="entity,zombie,walker,boss,umazombie,cowhead" />
 			<property name="ExperienceGain" value="5000"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="LootDropProb" value="1"/>
+			<property name="LootDropProb" value="0.5"/>
 			<property name="HandItem" value="meleeHandCowhead"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="1200"/>
@@ -453,7 +453,7 @@
 			<property name="Tags" value="entity,zombie,walker,boss,wendigo,umazombie,wendigo" />
 			<property name="ExperienceGain" value="8000"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="LootDropProb" value="1"/>
+			<property name="LootDropProb" value="0.5"/>
 			<property name="HandItem" value="meleeHandWendigo"/>
 			<property name="MoveSpeed" value="0.5"/>
 			<property name="WalkType" value="2"/>
@@ -479,7 +479,7 @@
 			<property name="Tags" value="entity,zombie,walker,boss,umazombie,wrestler" />
 			<property name="ExperienceGain" value="7500"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="LootDropProb" value="1"/>
+			<property name="LootDropProb" value="0.5"/>
 			<property name="WalkType" value="2"/>
 			<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
 			<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
@@ -541,7 +541,7 @@
 			<property name="ChestExplosionDamageMultiplier" value=".85"/>
 			<property name="ExperienceGain" value="5000"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="LootDropProb" value="1"/>
+			<property name="LootDropProb" value="0.5"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="2000"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="ArchonDeco"/>

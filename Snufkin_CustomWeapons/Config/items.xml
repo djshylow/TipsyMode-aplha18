@@ -17,7 +17,7 @@
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="EconomicValue" value="700"/>
+			<property name="EconomicValue" value="1000"/>
 			<property name="FuelValue" value="250"/>
 			<property name="UnlockedBy" value="perkBatterUpBaseballBats"/>
 			<property name="ShowQuality" value="true"/>
@@ -132,7 +132,7 @@
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="EconomicValue" value="700"/>
+			<property name="EconomicValue" value="1000"/>
 			<property name="FuelValue" value="250"/>
 			<property name="UnlockedBy" value="perkBatterUpBaseballBats"/>
 			<property name="ShowQuality" value="true"/>
@@ -255,7 +255,7 @@
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="EconomicValue" value="700"/>
+			<property name="EconomicValue" value="1000"/>
 			<property name="FuelValue" value="250"/>
 			<property name="UnlockedBy" value="perkBatterUpBaseballBats"/>
 			<property name="ShowQuality" value="true"/>
@@ -369,7 +369,7 @@
 			<property name="Weight" value="6"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="EconomicValue" value="700"/>
+			<property name="EconomicValue" value="1000"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="Group" value="Ammo/Weapons"/>
@@ -505,7 +505,7 @@
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="500"/>
+			<property name="EconomicValue" value="2000"/>
 			<property name="ShowQuality" value="true"/>
 			<property class="Action0">
 				<property name="Class" value="Launcher"/>
@@ -633,7 +633,7 @@
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="500"/>
+			<property name="EconomicValue" value="2000"/>
 			<property name="UnlockedBy" value="perkGunslinger,gunPistolSchematic"/>
 			<property name="ShowQuality" value="true"/>
 			<property class="Action0">
@@ -754,7 +754,7 @@
 			<property name="DropScale" value="2.5"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Stacknumber" value="25"/>
-			<property name="EconomicValue" value="41"/>
+			<property name="EconomicValue" value="200"/>
 			<property name="Weight" value="0"/>
 			<property name="Explosion.ParticleIndex" value="13"/>
 			<property name="Explosion.RadiusBlocks" value="4"/>
@@ -806,7 +806,7 @@
 			<property name="Sound_Sight_In" value="rifle_sight_in"/>
 			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
-			<property name="EconomicValue" value="500"/>
+			<property name="EconomicValue" value="2000"/>
 			<property name="ShowQuality" value="true"/>
 			<property name="Group" value="Ammo/Weapons"/>
 			<property class="Action0">
@@ -910,7 +910,7 @@
 			<property name="Material" value="Mlead_scrap"/>
 			<property name="MeltTimePerUnit" value=".4"/>
 			<property name="Stacknumber" value="20000"/>
-			<property name="EconomicValue" value="1"/>
+			<property name="EconomicValue" value="10"/>
 			<property name="Group" value="Ammo/Weapons"/>
 			<effect_group name="Energy Cells" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="25"/>
@@ -931,7 +931,7 @@
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="Canhold" value="true"/>
-			<property name="EconomicValue" value="45"/>
+			<property name="EconomicValue" value="1000"/>
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="ShowQuality" value="true"/>
 			<property class="Action0">
@@ -1207,7 +1207,7 @@
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="Canhold" value="true"/>
-			<property name="EconomicValue" value="45"/>
+			<property name="EconomicValue" value="1000"/>
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="ShowQuality" value="true"/>
 			<property class="Action0">
@@ -1362,7 +1362,7 @@
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="1000"/>
+			<property name="EconomicValue" value="2000"/>
 			<property name="UnlockedBy" value="gunPumpShotgunSchematic"/>
 			<property name="ShowQuality" value="true"/>
 			<property class="Action0">
@@ -1494,7 +1494,7 @@
 			<property name="Sound_Sight_In" value="rifle_sight_in"/>
 			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
-			<property name="EconomicValue" value="1000"/>
+			<property name="EconomicValue" value="2000"/>
 			<property name="UnlockedBy" value="perkAutoWeaponsMachineGuns"/>
 			<property name="ShowQuality" value="true"/>
 			<property name="Group" value="Ammo/Weapons"/>
@@ -1665,7 +1665,7 @@
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="1000"/>
+			<property name="EconomicValue" value="2000"/>
 			<property name="UnlockedBy" value="gun44MagnumSchematic"/>
 			<property name="ShowQuality" value="true"/>
 			<property class="Action0">
@@ -1927,7 +1927,7 @@
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="1000"/>
+			<property name="EconomicValue" value="2000"/>
 			<property name="UnlockedBy" value="gunSMG5Schematic"/>
 			<property name="ShowQuality" value="true"/>
 			<property name="TintColor" value="210,180,140"/>
@@ -2017,7 +2017,7 @@
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 			<property name="EconomicBundleSize" value="1"/>
-			<property name="EconomicValue" value="700"/>
+			<property name="EconomicValue" value="1000"/>
 			<property name="FuelValue" value="250"/>
 			<property name="UnlockedBy" value="perkJavelinMaster"/>
 			<property name="ShowQuality" value="true"/>
@@ -2128,7 +2128,7 @@
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="500"/>
+			<property name="EconomicValue" value="2000"/>
 			<property name="UnlockedBy" value="perkBoomstick,gunDoubleBarrelShotgunSchematic"/>
 			<property name="ShowQuality" value="true"/>
 			<property class="Action0">
@@ -2238,7 +2238,7 @@
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="1500"/>
+			<property name="EconomicValue" value="2500"/>
 			<property name="UnlockedBy" value="perkDeadEye,perkElectrocutioner"/>
 			<property name="ShowQuality" value="true"/>
 			<property class="Action0">
@@ -2498,7 +2498,7 @@
 			<property name="Weight" value="6"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="FuelValue" value="200"/>
-			<property name="EconomicValue" value="1000"/>
+			<property name="EconomicValue" value="2000"/>
 			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>
 			<property name="SoundDestroy" value="wooddestroy1"/>

@@ -1,34 +1,34 @@
 <modtipsy>
 
 	<append xpath="/xui/ruleset">
-		<window_group name="workstation_TIPSYWorkBench" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_TIPSY WorkBench" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowToolsTIPSYWorkBench" />
+			<window name="windowToolsTIPSY WorkBench" />
 		</window_group>	
 		
-		<window_group name="workstation_WeaponsMechine" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_Weapons Machine" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowToolsWeaponsMechine" />
+			<window name="windowToolsWeapons Machine" />
 		</window_group>	
 		
-		<window_group name="workstation_ModMechine" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_Mod Machine" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowToolsModMechine" />
+			<window name="windowToolsMod Machine" />
 		</window_group>			
 		
-		<window_group name="workstation_TIPSYGrill" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_TIPSY Grill" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
@@ -36,7 +36,7 @@
 			<window name="windowFuel" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowToolsTIPSYGrill" />
+			<window name="windowToolsTIPSY Grill" />
 		</window_group>
 		
 	</append>

@@ -256,7 +256,7 @@
 
 <!--BOOKS-->
 		
-	<item name="TIPSYWorkBenchSchematic">
+	<item name="TIPSY WorkBench Schematic">
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="DescriptionKey" value="TIPSYWorkBenchSchematicDesc"/>
 			<property name="CreativeMode" value="Player"/>
@@ -265,14 +265,14 @@
 			<property name="Material" value="Mpaper"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property name="CustomIconTint" value="03fcec"/>
-			<property name="Unlocks" value="TIPSYWorkBench"/>
+			<property name="Unlocks" value="TIPSY WorkBench"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSYWorkBenchSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSY WorkBench Schematic" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 	</item>
 	
-	<item name="WeaponsMechineSchematic">
+	<item name="Weapons Machine Schematic">
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="DescriptionKey" value="WeaponsMechineSchematicDesc"/>
 			<property name="CreativeMode" value="Player"/>
@@ -281,14 +281,14 @@
 			<property name="Material" value="Mpaper"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property name="CustomIconTint" value="03fcec"/>
-			<property name="Unlocks" value="WeaponsMechine"/>
+			<property name="Unlocks" value="Weapons Machine"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="WeaponsMechineSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Weapons Machine Schematic" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 	</item>
 	
-	<item name="TIPSYGrillSchematic">
+	<item name="TIPSY Grill Schematic">
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="DescriptionKey" value="TIPSYGrillSchematicDesc"/>
 			<property name="CreativeMode" value="Player"/>
@@ -297,14 +297,14 @@
 			<property name="Material" value="Mpaper"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property name="CustomIconTint" value="03fcec"/>
-			<property name="Unlocks" value="TIPSYGrill"/>
+			<property name="Unlocks" value="TIPSY Grill"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSYGrillSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSY Grill Schematic" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 	</item>	
 	
-	<item name="MechanicSchematic">
+	<item name="Mechanic Schematic">
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="DescriptionKey" value="TIPSYGrillSchematicDesc"/>
 			<property name="CreativeMode" value="Player"/>
@@ -315,7 +315,7 @@
 			<property name="CustomIconTint" value="03fcec"/>
 			<property name="Unlocks" value="Mechanic"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="MechanicSchematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Mechanic Schematic" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 	</item>	

@@ -5,7 +5,7 @@
 
 
 	<item_modifier name="HeadLights Mod" installable_tags="vehicle" modifier_tags="light" type="attachment">
-		<property name="UnlockedBy" value="MechanicSchematic"/>
+		<property name="UnlockedBy" value="Mechanic Schematic"/>
         <property name="CustomIcon" value="resourceHeadlight"/>
 		<property name="CustomIconTint" value="00FFE4"/>
 		<property name="SellableToTrader" value="false"/>
@@ -18,7 +18,7 @@
     </item_modifier>
 
 	<item_modifier name="Turbo Mod" installable_tags="vehicle" modifier_tags="speed" type="attachment">
-		<property name="UnlockedBy" value="MechanicSchematic"/>
+		<property name="UnlockedBy" value="Mechanic Schematic"/>
         <property name="CustomIcon" value="toolAndDieSet"/>
 		<property name="CustomIconTint" value="00FFE4"/>
 		<property name="SellableToTrader" value="false"/>
@@ -33,7 +33,7 @@
     </item_modifier>
 	
 	<item_modifier name="FuelSaver Mod" installable_tags="vehicle" modifier_tags="fuel" type="attachment">
-		<property name="UnlockedBy" value="MechanicSchematic"/>
+		<property name="UnlockedBy" value="Mechanic Schematic"/>
 		<property name="CustomIcon" value="ammoGasCan"/>
 		<property name="CustomIconTint" value="00FFE4"/>
 		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
