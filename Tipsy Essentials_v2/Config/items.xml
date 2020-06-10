@@ -267,7 +267,7 @@
 			<property name="CustomIconTint" value="03fcec"/>
 			<property name="Unlocks" value="TIPSY WorkBench"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSY WorkBench Schematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSY WorkBench" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 	</item>
@@ -283,7 +283,7 @@
 			<property name="CustomIconTint" value="03fcec"/>
 			<property name="Unlocks" value="Weapons Machine"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Weapons Machine Schematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Weapons Machine" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 	</item>
@@ -299,26 +299,12 @@
 			<property name="CustomIconTint" value="03fcec"/>
 			<property name="Unlocks" value="TIPSY Grill"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSY Grill Schematic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="TIPSY Grill" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 	</item>	
 	
-	<item name="Mechanic Schematic">
-			<property name="Extends" value="schematicNoQualityMaster"/>
-			<property name="DescriptionKey" value="TIPSYGrillSchematicDesc"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mpaper"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-			<property name="CustomIconTint" value="03fcec"/>
-			<property name="Unlocks" value="Mechanic"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Mechanic Schematic" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-	</item>	
+	
 	
 	</append>
 </modtipsy>

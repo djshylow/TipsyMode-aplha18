@@ -100,8 +100,6 @@
 		<property name="UISlot" value="Eyewear"/>
 	</property>
 	<effect_group tiered="false">
-	    <passive_effect name="RunSpeed" operation="perc_add" value="1"/>
-		<display_value name="dRunSpeed" value="1"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
 		<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
@@ -165,7 +163,7 @@
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="0"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="300"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="1000"/>
 		<passive_effect name="MaxRange" operation="base_set" value="25"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>
@@ -175,7 +173,7 @@
 		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="0"/>
 		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="0"/>
 		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="0"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="1000" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="2000" tags="perkGunslinger,9mmGun"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkGunslinger,9mmGun"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
 	</effect_group>

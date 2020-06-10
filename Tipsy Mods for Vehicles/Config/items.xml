@@ -1,4 +1,23 @@
 <configs>
-  <append xpath="/items/item[@name='vehicleBicyclePlaceable']"><property name="Tags" value="vehicle"/></append>
-    
+    <append xpath="/items/item[@name='vehicleBicyclePlaceable']"><property name="Tags" value="vehicle"/></append>
+  
+  
+    <append xpath="/items">
+  
+        <item name="Mechanic Schematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="DescriptionKey" value="TIPSYGrillSchematicDesc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="03fcec"/>
+			<property name="Unlocks" value="Mechanic"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Mechanic" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+	      </item>	
+    </append>
 </configs>
