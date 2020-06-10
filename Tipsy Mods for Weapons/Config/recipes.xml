@@ -2,7 +2,7 @@
 
     <append xpath="/recipes">
 	
-	    <recipe name="Lightning Bolt Mod" count="1" craft_time="1800" craft_area="workbench" tags="workbenchCrafting">
+	    <recipe name="Lightning Bolt Mod" count="1" craft_time="1800" craft_area="Weapons Machine" >
 	<ingredient name="resourceAcid" count="50"/>
 	<ingredient name="resourceRawDiamond" count="5"/>
 	<ingredient name="resourceGunPowder" count="100"/>
@@ -12,7 +12,7 @@
 	
 	
 	
-	    <recipe name="Burn Them All Mod" count="1" craft_time="1800" craft_area="workbench" tags="workbenchCrafting">
+	    <recipe name="Burn Them All Mod" count="1" craft_time="1800" craft_area="Weapons Machine" >
 	<ingredient name="resourceAcid" count="50"/>
 	<ingredient name="resourceRawDiamond" count="5"/>
 	<ingredient name="resourceGunPowder" count="100"/>
