@@ -1,7 +1,8 @@
 <configs>
   <append xpath="/items">
      <item name="Nailgun VIP"> <!-- T3 Tools -->
-		<property name="CreativeMode" value="Dev"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="ItemTypeIcon" value="Star"/>
 		<property name="CustomIcon" value="gunToolNailgun" />
 		<property name="CustomIconTint" value="#FF0000"/>
 	 	<property name="Tags" value="tool,nailgun,sideAttachments,selfLoading,canHaveCosmetic"/>
