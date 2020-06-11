@@ -239,7 +239,7 @@
 
 	<effect_group name="Diamond Auger">
 		<passive_effect name="EntityDamage" operation="base_set" value="10"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="100"/>
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
