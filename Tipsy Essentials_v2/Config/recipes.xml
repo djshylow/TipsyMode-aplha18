@@ -49,11 +49,11 @@
 
 <!-- RESOURCES -->	
 
-	<recipe name="Perfect Steel" count="1" craft_area="TIPSY WorkBench">
+	<recipe name="Perfect Steel" count="1" craft_area="TIPSY WorkBench" craft_time="60">
 		<ingredient name="resourceForgedSteel" count="100"/>
 	</recipe>
 	
-	<recipe name="Perfect Iron" count="1" craft_area="TIPSY WorkBench">
+	<recipe name="Perfect Iron" count="1" craft_area="TIPSY WorkBench" craft_time="60">
 		<ingredient name="resourceForgedIron" count="200"/>
 	</recipe>
 	
