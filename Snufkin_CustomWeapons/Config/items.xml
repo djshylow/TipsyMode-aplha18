@@ -2356,7 +2356,7 @@
 			<property name="DropMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="IsSticky" value="false"/>
-			<property name="Stacknumber" value="30000"/>
+			<property name="Stacknumber" value="20000"/>
 			<property name="FuelValue" value="8"/>
 			<property name="EconomicValue" value="12"/>
 			<property name="EconomicBundleSize" value="5"/>
