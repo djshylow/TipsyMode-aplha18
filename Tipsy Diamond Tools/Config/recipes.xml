@@ -17,7 +17,7 @@
 	</recipe>
 				 
 	<recipe name="Diamond Pickaxe" count="1" craft_area="TIPSY WorkBench" craft_time="600" tags="learnable,perkMiner69r">
-		<ingredient name="resourceRawDiamond" count="20"/>
+		<ingredient name="resourceRawDiamond" count="10"/>
 		<ingredient name="Diamond Tool Parts" count="20"/>
 		<ingredient name="Perfect Steel" count="10"/>
 		<ingredient name="resourceWood" count="20"/>
