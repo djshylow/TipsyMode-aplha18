@@ -13,8 +13,8 @@
 
 	<effect_group name="Diamond Fireaxe">
 		<passive_effect name="EntityDamage" operation="base_set" value="40"/> <!-- meleeToolFireaxeSteel -->
-		<passive_effect name="BlockDamage" operation="base_set" value="125"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="300"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="600,2100" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
@@ -35,9 +35,9 @@
 		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
 
 		<passive_effect name="HarvestCount" operation="base_set" value=".7" tags="butcherHarvest"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
@@ -93,7 +93,7 @@
 	<effect_group name="Diamond Pickaxe">
 		<passive_effect name="EntityDamage" operation="base_set" value="50"/> 
 		<passive_effect name="BlockDamage" operation="base_set" value="450"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/><!-- Gazz change 55 to 65 -->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/><!-- Gazz change 55 to 65 -->
 		<passive_effect name="StaminaLoss" operation="base_set" value="12.9" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="1000,1500" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
@@ -112,9 +112,9 @@
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
 		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
 
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".9" tags="terrGravel"/>
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -264,7 +264,7 @@
 		<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
 		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
 
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="wood"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="300"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 3.5s -->
@@ -320,7 +320,7 @@
 
 	<effect_group name="Diamond Chainsaw"> <!-- meleeToolChainsaw -->
 		<passive_effect name="EntityDamage" operation="base_set" value="80"/><!-- meleeToolChainsaw -->
-		<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="140"/>
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
@@ -345,9 +345,9 @@
 		<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
 		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
 
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.85" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.85" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.85" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.95" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.95" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.95" tags="metal"/>
 
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="300"/>
@@ -405,7 +405,7 @@
 
 	<effect_group name="meleeToolWrench">
 		<passive_effect name="EntityDamage" operation="base_set" value="40"/> <!-- meleeToolWrench -->
-		<passive_effect name="BlockDamage" operation="base_set" value="100"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="150"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="16.8" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6" tags="perkSalvageOperations"/>
@@ -422,9 +422,9 @@
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
 
 		<passive_effect name="HarvestCount" operation="base_set" value="2" tags="salvageHarvest"/>
 	</effect_group>
@@ -451,9 +451,9 @@
 
 	<effect_group name="Diamond Shovel">
 		<passive_effect name="EntityDamage" operation="base_set" value="35"/> <!-- meleeToolShovelSteel -->
-		<passive_effect name="BlockDamage" operation="base_set" value="140"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="15.8" tags="primary"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="300"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="100"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="5" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="600,2100" tier="1,6" tags="perkMiner69r"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
@@ -472,9 +472,9 @@
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
 		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
 
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
