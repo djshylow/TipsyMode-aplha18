@@ -11,7 +11,7 @@
 		<ingredient name="GunKit" count="1"/>
 	</recipe>	-->	
 	
-	<recipe name="The Colt" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Colt Blueprint">
+	<recipe name="The Colt" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
 		<ingredient name="AdvanceMechaParts" count="50"/>
 		<ingredient name="Colt Parts" count="500"/>
 		<ingredient name="GunTape" count="20"/>
