@@ -1,15 +1,23 @@
 <configs>
     <append xpath="//lootgroup[@name='rareBooks']">
         <item group="TIPSYguns" count="1" prob="12"/>
-		
+		<item group="GoD" count="1" prob="5"/>
     </append>
     <insertBefore xpath="//lootgroup[@name='rareBooks']">
 	<lootgroup name="TIPSYguns">
 	    <item name="Colt Blueprint"/>	
 		<item name="D-Eagle Blueprint"/>
 		<item name="Vector Blueprint"/>
+		<item name="Kalashnikova Blueprint"/>
+		<item name="Barrett M82 Blueprint"/>
+		<item name="Kar98 Blueprint"/>
+		<item name="Dickinson Blueprint"/>
 	</lootgroup>
 
+	<lootgroup name="GoD">
+	    <item name="GoD Blueprint"/>	
+	</lootgroup>
+	
     </insertBefore>
 
 </configs>

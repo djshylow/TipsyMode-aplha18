@@ -254,5 +254,239 @@
 		<property name="RepairAmount" value="400"/> -->
 	</item>		
 	
+	<item name="Dickinson Parts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="gunDoubleBarrelShotgunParts" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MShotgunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>		
+
+	<item name="Dickinson Barrel"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="resourceMetalPipe" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MShotgunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+
+	<item name="Kar98 Parts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="gunHuntingRifleParts" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MRifleParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+
+	<item name="Kar98 Barrel"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="resourceMetalPipe" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MRifleParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+
+	<item name="Barrett Parts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="gunHuntingRifleParts" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MRifleParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+
+	<item name="Barrett Barrel"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="resourceMetalPipe" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MRifleParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+
+	<item name="Kalashnikova Parts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="gunAk47Parts" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+
+	<item name="Kalashnikova Barrel"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="resourceMetalPipe" />
+		<property name="CustomIconTint" value="424bf5" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+	
+	<item name="GoD parts"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="gunAk47Parts" />
+		<property name="CustomIconTint" value="fc0303" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+	
+	<item name="GoD Mag"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="modGunDrumMagazineExtender" />
+		<property name="CustomIconTint" value="fc0303" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>		
+
+	<item name="GoD Bipod"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="modGunBipod" />
+		<property name="CustomIconTint" value="fc0303" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+	
+	<item name="GoD Stock"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="modGunRetractingStock" />
+		<property name="CustomIconTint" value="fc0303" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>	
+
+	<item name="GoD Barrel"> <!-- scrap material -->
+		<property name="DescriptionKey" value="JetPackDesc"/>	
+		<property name="CustomIcon" value="modGunBarrelExtender" />
+		<property name="CustomIconTint" value="fc0303" />		
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="5"/>
+		<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="150"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientExp" value="15"/>
+		<property name="CraftingIngredientTime" value="2"/>
+		<!-- <property name="RepairTime" value="2"/>
+		<property name="RepairAmount" value="400"/> -->
+	</item>		
+	
 	</append>
 </modtipsygunsparts>

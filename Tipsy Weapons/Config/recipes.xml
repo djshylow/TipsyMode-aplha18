@@ -12,7 +12,7 @@
 	</recipe>	-->	
 	
 	<recipe name="The Colt" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
-		<ingredient name="AdvanceMechaParts" count="50"/>
+		<ingredient name="AdvanceMechaParts" count="250"/>
 		<ingredient name="Colt Parts" count="500"/>
 		<ingredient name="GunTape" count="20"/>
 		<ingredient name="Colt Barrel" count="5"/>
@@ -20,7 +20,7 @@
 	</recipe>
 
 	<recipe name="D-Eagle" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
-		<ingredient name="AdvanceMechaParts" count="50"/>
+		<ingredient name="AdvanceMechaParts" count="250"/>
 		<ingredient name="D-Eagle Parts" count="450"/>
 		<ingredient name="GunTape" count="20"/>
 		<ingredient name="D-Eagle Barrel" count="5"/>
@@ -28,12 +28,52 @@
 	</recipe>	
 	
 	<recipe name="Vector" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
-		<ingredient name="AdvanceMechaParts" count="50"/>
+		<ingredient name="AdvanceMechaParts" count="350"/>
 		<ingredient name="Vector Parts" count="700"/>
 		<ingredient name="GunTape" count="20"/>
 		<ingredient name="Vector Barrel" count="8"/>
 <!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
 	</recipe>		
 	
+	<recipe name="Dickinson T1000" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
+		<ingredient name="AdvanceMechaParts" count="600"/>
+		<ingredient name="Dickinson Parts" count="400"/>
+		<ingredient name="GunTape" count="30"/>
+		<ingredient name="Dickinson Barrel" count="5"/>
+<!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
+	</recipe>
+
+	<recipe name="Kar98" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
+		<ingredient name="AdvanceMechaParts" count="450"/>
+		<ingredient name="Kar98 Parts" count="750"/>
+		<ingredient name="GunTape" count="600"/>
+		<ingredient name="Kar98 Barrel" count="20"/>
+<!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
+	</recipe>
+
+	<recipe name="Barrett M82" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
+		<ingredient name="AdvanceMechaParts" count="550"/>
+		<ingredient name="Barrett Parts" count="730"/>
+		<ingredient name="GunTape" count="20"/>
+		<ingredient name="Barrett Barrel" count="10"/>
+<!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
+	</recipe>	
+	
+	<recipe name="Kalashnikova" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
+		<ingredient name="AdvanceMechaParts" count="650"/>
+		<ingredient name="Kalashnikova Parts" count="700"/>
+		<ingredient name="GunTape" count="60"/>
+		<ingredient name="Kalashnikova Barrel" count="10"/>
+<!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
+	</recipe>
+
+	<recipe name="Gun of Death" count="1" craft_area="Weapons Machine" craft_time="840" tags="learnable,Weapons Machine">
+		<ingredient name="GoD parts" count="6000"/>
+		<ingredient name="GoD Mag" count="1"/>
+		<ingredient name="GoD Bipod" count="1"/>
+		<ingredient name="GoD Stock" count="1"/>
+		<ingredient name="GoD Barrel" count="1"/>
+<!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
+	</recipe>	
 	</append>
 </modtipsyguns>

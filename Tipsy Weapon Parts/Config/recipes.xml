@@ -12,7 +12,7 @@
 		<ingredient name="AdvanceMechaParts" count="20"/>
 		<ingredient name="GunBarrels" count="20"/>
 		<ingredient name="GunKit" count="1"/>
-		<ingredient name="GunSprings" count="20"/>
+		<ingredient name="GunSprings" count="5"/>
 	</recipe>
 	
 	<recipe name="D-Eagle Parts" count="1" craft_area="Weapons Machine">
@@ -24,7 +24,7 @@
 		<ingredient name="AdvanceMechaParts" count="30"/>
 		<ingredient name="GunBarrels" count="20"/>
 		<ingredient name="GunKit" count="1"/>
-		<ingredient name="GunSprings" count="20"/>
+		<ingredient name="GunSprings" count="5"/>
 	</recipe>
 	
 	<recipe name="Vector Parts" count="1" craft_area="Weapons Machine">
@@ -36,7 +36,7 @@
 		<ingredient name="AdvanceMechaParts" count="50"/>
 		<ingredient name="GunBarrels" count="20"/>
 		<ingredient name="GunKit" count="1"/>
-		<ingredient name="GunSprings" count="30"/>
+		<ingredient name="GunSprings" count="5"/>
 	</recipe>	
 	
 	<recipe name="Polearm Parts" count="1" craft_area="Weapons Machine">
@@ -70,6 +70,86 @@
 	<recipe name="JetPack Parts" count="1" craft_area="Weapons Machine">
 		<ingredient name="gunJunkTurretParts" count="10"/>
 	</recipe>	
+	
+	<recipe name="Dickinson Parts" count="1" craft_area="Weapons Machine">
+		<ingredient name="gunDoubleBarrelShotgunParts" count="15"/>
+	</recipe>	
+	
+	<recipe name="Dickinson Barrel" count="1" craft_area="Weapons Machine">
+		<ingredient name="gunDoubleBarrelShotgunParts" count="25"/>
+		<ingredient name="AdvanceMechaParts" count="50"/>
+		<ingredient name="GunBarrels" count="25"/>
+		<ingredient name="GunKit" count="1"/>
+		<ingredient name="GunSprings" count="5"/>
+	</recipe>
+
+	<recipe name="Kar98 Parts" count="1" craft_area="Weapons Machine">
+		<ingredient name="gunHuntingRifleParts" count="15"/>
+	</recipe>	
+	
+	<recipe name="Kar98 Barrel" count="1" craft_area="Weapons Machine">
+		<ingredient name="gunHuntingRifleParts" count="10"/>
+		<ingredient name="AdvanceMechaParts" count="60"/>
+		<ingredient name="GunBarrels" count="25"/>
+		<ingredient name="GunKit" count="1"/>
+		<ingredient name="GunSprings" count="5"/>
+	</recipe>
+
+	<recipe name="Barrett Parts" count="1" craft_area="Weapons Machine">
+		<ingredient name="gunHuntingRifleParts" count="15"/>
+	</recipe>	
+	
+	<recipe name="Barrett Barrel" count="1" craft_area="Weapons Machine">
+		<ingredient name="gunHuntingRifleParts" count="25"/>
+		<ingredient name="AdvanceMechaParts" count="60"/>
+		<ingredient name="GunBarrels" count="15"/>
+		<ingredient name="GunKit" count="1"/>
+		<ingredient name="GunSprings" count="5"/>
+	</recipe>
+
+	<recipe name="Kalashnikova Parts" count="1" craft_area="Weapons Machine">
+		<ingredient name="gunAk47Parts" count="15"/>
+	</recipe>	
+	
+	<recipe name="Kalashnikova Barrel" count="1" craft_area="Weapons Machine">
+		<ingredient name="gunAk47Parts" count="30"/>
+		<ingredient name="AdvanceMechaParts" count="70"/>
+		<ingredient name="GunBarrels" count="30"/>
+		<ingredient name="GunKit" count="2"/>
+		<ingredient name="GunSprings" count="5"/>
+	</recipe>	
+	
+	<recipe name="GoD parts" count="1" craft_area="Weapons Machine" craft_time="260">
+		<ingredient name="gunAk47Parts" count="2"/>
+	</recipe>
+	<recipe name="GoD Mag" count="1" craft_area="Weapons Machine" craft_time="260">
+		<ingredient name="modGunDrumMagazineExtender" count="5"/>
+		<ingredient name="AdvanceMechaParts" count="1000"/>
+		<ingredient name="Perfect Steel" count="150"/>
+		<ingredient name="GunKit" count="25"/>
+		<ingredient name="AdvanceElectricParts" count="1000"/>
+	</recipe>
+	<recipe name="GoD Bipod" count="1" craft_area="Weapons Machine" craft_time="260">
+		<ingredient name="modGunBipod" count="5"/>
+		<ingredient name="AdvanceMechaParts" count="1000"/>
+		<ingredient name="Perfect Steel" count="150"/>
+		<ingredient name="GunKit" count="30"/>
+		<ingredient name="AdvanceElectricParts" count="1000"/>
+	</recipe>
+	<recipe name="GoD Stock" count="1" craft_area="Weapons Machine" craft_time="260">
+		<ingredient name="modGunRetractingStock" count="5"/>
+		<ingredient name="AdvanceMechaParts" count="1000"/>
+		<ingredient name="Perfect Steel" count="150"/>
+		<ingredient name="GunKit" count="20"/>
+		<ingredient name="AdvanceElectricParts" count="1000"/>
+	</recipe>
+	<recipe name="GoD Barrel" count="1" craft_area="Weapons Machine" craft_time="260">
+		<ingredient name="modGunBarrelExtender" count="5"/>
+		<ingredient name="AdvanceMechaParts" count="1000"/>
+		<ingredient name="Perfect Steel" count="150"/>
+		<ingredient name="GunKit" count="30"/>
+		<ingredient name="GunSprings" count="35"/>
+	</recipe>
 	
 	</append>
 </modtipsygunsparts>

@@ -568,7 +568,7 @@
 	</item>
 
 
-<!--Kar98-->		
+<!--Barrett-->		
 	<item name="Barrett M82 Blueprint">
 		<property name="Extends" value="schematicNoQualityMaster"/>
 		<property name="DescriptionKey" value="BlueprintDesc"/>
@@ -812,7 +812,7 @@
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="60"/>
 		<property name="CustomIcon" value="gunM60"/>
-		<property name="CustomIconTint" value="e000f5" />	
+		<property name="CustomIconTint" value="fc0303" />	
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/m60/m60Prefab.prefab"/>
 		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="6"/>
 
@@ -828,7 +828,7 @@
 
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="EconomicValue" value="1000"/>
-		<property name="UnlockedBy" value="perkAutoWeaponsMachineGuns,GoD Blueprint"/>
+		<property name="UnlockedBy" value="perkMachineGunner,perkAutoWeaponsMachineGuns,GoD Blueprint"/>
 		<property name="ShowQuality" value="true"/>
 		<property name="Group" value="Ammo/Weapons"/>
 
