@@ -11,7 +11,7 @@
 		<ingredient name="GunKit" count="1"/>
 	</recipe>	-->	
 	
-	<recipe name="The Colt" count="1" craft_area="Weapons Machine">
+	<recipe name="The Colt" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Colt Blueprint">
 		<ingredient name="AdvanceMechaParts" count="50"/>
 		<ingredient name="Colt Parts" count="500"/>
 		<ingredient name="GunTape" count="20"/>
@@ -19,7 +19,7 @@
 <!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
 	</recipe>
 
-	<recipe name="D-Eagle" count="1" craft_area="Weapons Machine">
+	<recipe name="D-Eagle" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
 		<ingredient name="AdvanceMechaParts" count="50"/>
 		<ingredient name="D-Eagle Parts" count="450"/>
 		<ingredient name="GunTape" count="20"/>
@@ -27,7 +27,7 @@
 <!-- 		<ingredient name="Colt Blueprint" count="1"/>-->	
 	</recipe>	
 	
-	<recipe name="Vector" count="1" craft_area="Weapons Machine">
+	<recipe name="Vector" count="1" craft_area="Weapons Machine" craft_time="420" tags="learnable,Weapons Machine">
 		<ingredient name="AdvanceMechaParts" count="50"/>
 		<ingredient name="Vector Parts" count="700"/>
 		<ingredient name="GunTape" count="20"/>

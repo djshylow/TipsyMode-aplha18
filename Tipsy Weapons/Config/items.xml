@@ -69,7 +69,7 @@
 			<property name="Zoom_max_in" value="55"/>
 		</property>
 
-		<effect_group name="gun44Magnum">
+		<effect_group name="The Colt">
 			<passive_effect name="MaxRange" operation="base_set" value="80"/>
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="25"/>
 			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2,.2"/> <!-- random effective rng -->
