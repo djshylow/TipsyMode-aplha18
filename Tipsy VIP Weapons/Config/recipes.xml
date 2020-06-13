@@ -1,0 +1,76 @@
+<modtipsygunsvip>
+
+	<append xpath="/recipes">
+
+	<recipe name="The Colt-VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="The Colt-VIP" count="1"/>
+	</recipe>
+
+	<recipe name="D-Eagle-VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="D-Eagle-VIP" count="1"/>
+	</recipe>
+	
+	<recipe name="Vector-VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="Vector-VIP" count="1"/>
+	</recipe>
+
+	<recipe name="Dickinson T1000-VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="Dickinson T1000-VIP" count="1"/>
+	</recipe>	
+
+	<recipe name="Kar98-VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="Kar98-VIP" count="1"/>
+	</recipe>
+	
+	<recipe name="Barrett M82-VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="Barrett M82-VIP" count="1"/>
+	</recipe>	
+
+	<recipe name="Kalashnikova-VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="Kalashnikova-VIP" count="1"/>
+	</recipe>	
+
+	</append>
+</modtipsygunsvip>
