@@ -1,0 +1,9 @@
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="The Colt">
+				<requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="GTE" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</append>	
+</configs>
