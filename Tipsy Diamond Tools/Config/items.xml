@@ -3,36 +3,42 @@
     
 	<item name="Diamond Fireaxe"> <!-- T3 Tools -->
 	<property name="Extends" value="meleeToolFireaxeIron"/>
+	<property name="Tags" value="axe,melee,grunting,medium,tool,attStrength,perkMotherLode,canHaveCosmetic"/>
 	<property name="CustomIcon" value="meleeToolFireaxeIron"/> <!-- xxx model to be replaced -->
 	<property name="CustomIconTint" value="8B00FF"/>
+    <property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
 	<property name="ItemTypeIcon" value="star"/>
 	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/fireaxePrefab.prefab"/>
 	<property name="EconomicValue" value="5000"/>
 	<property name="UnlockedBy" value="Diamond Fireaxe Schematic"/>
 	<property name="Material" value="MmeleeToolAllSteel"/> <property name="Weight" value="6"/>
-
+    <property name="ShowQuality" value="true"/>
+	
 	<effect_group name="Diamond Fireaxe">
 		<passive_effect name="EntityDamage" operation="base_set" value="40"/> <!-- meleeToolFireaxeSteel -->
 		<passive_effect name="BlockDamage" operation="base_set" value="300"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="600,2100" tier="1,6" tags="perkMiner69r"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
 		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
-
-		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+      
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
-		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
-		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="0" /> <!-- tier bonus -->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
-		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
-		<passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
-		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
-		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".5" /> <!-- tier bonus -->
+		<passive_effect name="DegradationMax" operation="perc_add" value=".15" /> <!-- random DegMax -->
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05"/> <!-- random APM -->
+		<passive_effect name="StaminaLoss" operation="perc_add" value=".05"/> <!-- random StamLoss -->
 
 		<passive_effect name="HarvestCount" operation="base_set" value=".7" tags="butcherHarvest"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
@@ -48,7 +54,7 @@
 </item>
  
     <item name="Diamond Pickaxe"> <!-- T2 Tools -->
-	<property name="Tags" value="melee,grunting,medium,tool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
+	<property name="Tags" value="melee,grunting,medium,tool,attStrength,perkMotherLode,miningTool,canHaveCosmetic"/>
 	<property name="CustomIcon" value="meleeToolPickaxeSteel"/>
     <property name="CustomIconTint" value="8B00FF"/>
 	<property name="ItemTypeIcon" value="star"/>
@@ -93,24 +99,24 @@
 	<effect_group name="Diamond Pickaxe">
 		<passive_effect name="EntityDamage" operation="base_set" value="50"/> 
 		<passive_effect name="BlockDamage" operation="base_set" value="450"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/><!-- Gazz change 55 to 65 -->
-		<passive_effect name="StaminaLoss" operation="base_set" value="12.9" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="1000,1500" tier="1,6" tags="perkMiner69r"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="90"/><!-- Gazz change 55 to 65 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="8" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
 
-		<passive_effect name="ModSlots" operation="base_set" value="4" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
-		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
-		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="1,6"/> <!-- tier bonus -->
-		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
-		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="1,6"/> <!-- tier bonus -->
-		<passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
-		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
-		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".5"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".5"/> <!-- tier bonus -->
+		<passive_effect name="DegradationMax" operation="perc_add" value=".15"/> <!-- random DegMax -->
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05"/> <!-- random APM -->
+		<passive_effect name="StaminaLoss" operation="perc_add" value=".05"/> <!-- random StamLoss -->
 
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
@@ -119,7 +125,7 @@
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-		<passive_effect name="StaminaLoss" operation="base_add" value="25.8" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="20" tags="secondary"/>
 	</effect_group>
 	<property name="PickupJournalEntry" value="miningTip"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
@@ -159,7 +165,7 @@
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Repair"/>
 		<property name="Delay" value=".50"/> <!-- Repair actions still need the delay amount -->
-		<property name="Repair_amount" value="1000"/>
+		<property name="Repair_amount" value="500"/>
 		<property name="Upgrade_hit_offset" value="-5"/>
 		<property name="Repair_action_sound" value="nailgun_fire"/>
 		<property name="Upgrade_action_sound" value="nailgun_fire"/>
@@ -193,7 +199,7 @@
 
 		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.6"/>
 		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".6"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="1000" tags="nailgun"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="500" tags="nailgun"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="nailgun"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 	</effect_group>
@@ -239,30 +245,30 @@
 
 	<effect_group name="Diamond Auger">
 		<passive_effect name="EntityDamage" operation="base_set" value="10"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="100"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="200"/>
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="450"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
 		<passive_effect name="MaxRange" operation="base_set" value="2.35"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
 
-		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="SphereCastRadius" operation="base_set" value=".1"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
-		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
-		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
-		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2"/> <!-- random effective rng -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".5"/> <!-- tier bonus -->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.3" tags="Harvesting"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
-		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".5"/> <!-- tier bonus -->
 
-		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/> <!-- random DegMax -->
-		<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
-		<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
-		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
+		<passive_effect name="DegradationMax" operation="perc_add" value=".2"/> <!-- random DegMax -->
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value=".05"/> <!-- random APM -->
+		<passive_effect name="MagazineSize" operation="perc_add" value=".122"/> <!-- random MagazineSize -->
+		<passive_effect name="WeaponHandling" operation="perc_add" value=".08"/> <!-- random WeaponHandling -->
 
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="wood"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
@@ -322,28 +328,28 @@
 		<passive_effect name="EntityDamage" operation="base_set" value="80"/><!-- meleeToolChainsaw -->
 		<passive_effect name="BlockDamage" operation="base_set" value="140"/>
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="450" />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
 		<passive_effect name="MaxRange" operation="base_set" value="2.35"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
 
-		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
 		<passive_effect name="SphereCastRadius" operation="base_set" value=".1"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
-		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2"/> <!-- random effective rng -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
-		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".5" /> <!-- tier bonus -->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.3" tags="Harvesting"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
-		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".5"/> <!-- tier bonus -->
 
-		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/> <!-- random DegMax -->
-		<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
-		<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
-		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
+		<passive_effect name="DegradationMax" operation="perc_add" value=".2"/> <!-- random DegMax -->
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value=".05"/> <!-- random APM -->
+		<passive_effect name="MagazineSize" operation="perc_add" value=".122"/> <!-- random MagazineSize -->
+		<passive_effect name="WeaponHandling" operation="perc_add" value=".08"/> <!-- random WeaponHandling -->
 
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.95" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.95" tags="stone"/>
@@ -408,19 +414,19 @@
 		<passive_effect name="BlockDamage" operation="base_set" value="150"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="16.8" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6" tags="perkSalvageOperations"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkSalvageOperations"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200" />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
 
-		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
-		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
-		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
-		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
-		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".5"/><!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".5"/> <!-- tier bonus -->
 
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
@@ -454,23 +460,23 @@
 		<passive_effect name="BlockDamage" operation="base_set" value="300"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="100"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="5" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="600,2100" tier="1,6" tags="perkMiner69r"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="500" />
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
 		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
 
-		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="4" />
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
-		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
-		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".15"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value=".5"/> <!-- tier bonus -->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
-		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
-		<passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
-		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
-		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".15"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".5" /> <!-- tier bonus -->
+		<passive_effect name="DegradationMax" operation="perc_add" value=".15" /> <!-- random DegMax -->
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05"/> <!-- random APM -->
+		<passive_effect name="StaminaLoss" operation="perc_add" value=".05"/> <!-- random StamLoss -->
 
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
