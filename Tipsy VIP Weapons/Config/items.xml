@@ -21,7 +21,7 @@
 	</item>		
 		
 	<item name="The Colt-VIP"> <!-- T3 pistols -->
-		<property name="Tags" value="aweapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,canHaveCosmetic"/>
+		<property name="Tags" value="aweapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="44"/>
 		<property name="CreativeMode" value="Player"/>
@@ -46,7 +46,8 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
 		<property name="EconomicValue" value="5000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -78,7 +79,7 @@
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="25"/>
 			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2,.2"/> <!-- random effective rng -->
 
-			<passive_effect name="EntityDamage" operation="perc_add" value="3"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="5"/>
 			<!--<passive_effect name="BlockDamage" operation="perc_add" value="0"/>-->
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
@@ -118,7 +119,7 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value=".6"/>
 
 			<passive_effect name="DegradationMax" operation="base_set" value="2000" />
-			<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 			<!-- <triggered_effect trigger="onSelfEquipStart" action="CVarLogValue" cvar="onSelfEquipStartMagnum"/> -->
 		</effect_group>
 	</item>
@@ -126,7 +127,7 @@
 <!--D-Eagle-->		
 
 	<item name="D-Eagle-VIP"> <!-- T2 pistols -->
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,selfLoading,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,selfLoading,9mmGun,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="1"/>
 		<property name="CreativeMode" value="Player"/>
@@ -136,6 +137,7 @@
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Pistol/PistolPrefab.prefab"/>
 		<property name="Material" value="MHandGunParts"/> <property name="Weight" value="4"/>
 		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -150,7 +152,8 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
 		<property name="EconomicValue" value="5000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -178,7 +181,7 @@
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="6"/>
 			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2,.2"/> <!-- random effective rng -->
 
-			<passive_effect name="EntityDamage" operation="perc_add" value="6"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="2"/>
 			<!--<passive_effect name="BlockDamage" operation="perc_add" value="0"/>-->
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
@@ -220,7 +223,7 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value=".95"/> <!-- crosshair reset speed -->
 
 			<passive_effect name="DegradationMax" operation="base_set" value="2000"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 		</effect_group>
 	</item>
 		
@@ -228,7 +231,7 @@
 <!--Vector-->			
 	
 	<item name="Vector-VIP"> <!-- T3 pistols -->
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,selfLoading,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,selfLoading,bottomAttachments,9mmGun,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="6"/>
 		<property name="CreativeMode" value="Player"/>
@@ -238,6 +241,7 @@
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
 		<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
 		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -250,7 +254,8 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
 		<property name="EconomicValue" value="1000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -290,7 +295,7 @@
 
 			<passive_effect name="MagazineSize" operation="base_set" value="30"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 4s -->
-			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModSlots" operation="base_set" value="4"/>
 			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="4"/> <!-- random EntityDmg -->
@@ -320,14 +325,14 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value=".8"/>
 
 			<passive_effect name="DegradationMax" operation="base_set" value="2000"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
 		</effect_group>
 	</item>
 
 <!--Dickinson T1000-->		
 
 	<item name="Dickinson T1000-VIP"> <!-- T3 shotguns -->
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,canHaveCosmetic"/>
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,stock,bottomAttachments,modGunShotgunTubeExtenderMagazine,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedShotgun"/>
 		<property name="HoldType" value="5"/>
 		<property name="CreativeMode" value="Player"/>
@@ -337,6 +342,7 @@
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab.prefab"/>
 		<property name="Material" value="MShotgunParts"/> <property name="Weight" value="6"/>
 		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -352,7 +358,8 @@
 		<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 		<property name="LightValue" value=".45"/>
 		<property name="EconomicValue" value="1000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -392,7 +399,7 @@
 
 			<passive_effect name="MagazineSize" operation="base_set" value="8"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 2.3s -->
-			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModSlots" operation="base_set" value="4"/>
 			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
@@ -418,7 +425,7 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value="1.7"/>
 
 			<passive_effect name="DegradationMax" operation="base_set" value="2000" />
-			<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
 			<display_value name="dStatStunEffect" value="4"/>
 		</effect_group>
 	</item>
@@ -426,7 +433,7 @@
 <!--Kar98-->		
 	
 	<item name="Kar98-VIP"> <!-- T2 rifles -->
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,canHaveCosmetic"/>
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="30"/>
 		<property name="CreativeMode" value="Player"/>
@@ -436,6 +443,7 @@
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/HuntingRifle/HuntingRiflePrefab.prefab"/>
 		<property name="Material" value="MRifleParts"/> <property name="Weight" value="4"/>
 		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -450,7 +458,8 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
 		<property name="EconomicValue" value="500"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -488,7 +497,7 @@
 			<passive_effect name="MagazineSize" operation="base_set" value="1"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="3"/> <!-- 2.66s -->
 
-			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModSlots" operation="base_set" value="4"/>
 			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value=".15,.15"/> <!-- random EntityDmg -->
@@ -517,7 +526,7 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value=".65"/>
 
 			<passive_effect name="DegradationMax" operation="base_set" value="2000" />
-			<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
 		</effect_group>
 	</item>
 
@@ -525,7 +534,7 @@
 <!--Barrett-->		
 	
 	<item name="Barrett M82-VIP"> <!-- T3 rifles -->
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,attPerception,perkDeadEye,canHaveCosmetic"/>
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,selfLoading,bottomAttachments,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="11"/>
 		<property name="CustomIcon" value="gunMR10"/>
@@ -535,6 +544,7 @@
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/SniperRifle/sniperRiflePrefab.prefab"/>
 		<property name="Material" value="MRifleParts"/> <property name="Weight" value="6"/>
 		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -549,7 +559,8 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
 		<property name="EconomicValue" value="1000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -585,7 +596,7 @@
 
 			<passive_effect name="MagazineSize" operation="base_set" value="20"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="2"/> <!-- 2.7s -->
-			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModSlots" operation="base_set" value="4"/>
 			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value=".15,.15"/> <!-- random EntityDmg -->
@@ -615,7 +626,7 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value=".7"/>
 
 			<passive_effect name="DegradationMax" operation="base_set" value="2000" />
-			<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
 
 			<!--
 			<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
@@ -626,7 +637,7 @@
 <!--Kalashnikova-->		
 
 	<item name="Kalashnikova-VIP"> <!-- T2 automatic rifles -->
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,selfLoading,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic"/>
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,selfLoading,bottomAttachments,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="CreativeMode" value="Player"/>
 		<property name="ItemTypeIcon" value="Star"/>		
@@ -641,14 +652,15 @@
 
 		<property name="RepairTools" value="resourceRepairKit"/>
 		<property name="DegradationBreaksAfter" value="false"/>
-
+        <property name="NoScrapping" value="true"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Sound_Sight_In" value="rifle_sight_in"/>
 		<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="EconomicValue" value="500"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ShowQuality" value="false"/>
 		<property name="Group" value="Ammo/Weapons"/>
 
 		<property class="Action0">
@@ -710,9 +722,9 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value=".7"/> <!-- ak47 -->
 
 			<passive_effect name="DegradationMax" operation="base_set" value="2000" />
-			<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
 
-			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModSlots" operation="base_set" value="4"/>
 			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		</effect_group>
@@ -721,7 +733,7 @@
 <!--Gun of Death-->		
 	
 	<item name="Gun of Death-VIP"> <!-- T3 automatic rifles -->
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,magazine,drumMagazine,selfLoading,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic"/>
+		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,magazine,drumMagazine,selfLoading,bottomAttachments,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic"/>
 		<property name="DisplayType" value="rangedGun"/>
 		<property name="HoldType" value="60"/>
 		<property name="CreativeMode" value="Player"/>
@@ -733,7 +745,7 @@
 
 		<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
 		<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
-
+        <property name="NoScrapping" value="true"/>
 		<property name="RepairTools" value="GoDKit"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 
@@ -743,7 +755,8 @@
 
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="EconomicValue" value="1000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ShowQuality" value="false"/>
 		<property name="Group" value="Ammo/Weapons"/>
 
 		<property class="Action0">
@@ -901,7 +914,7 @@
 			<passive_effect name="DegradationMax" operation="base_set" value="4000"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="2" />
 
-			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModSlots" operation="base_set" value="4"/>
 			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		</effect_group>
