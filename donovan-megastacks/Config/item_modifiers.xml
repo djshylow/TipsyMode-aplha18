@@ -1,0 +1,6 @@
+<configs>
+    
+	<set xpath="/item_modifiers/item_modifier[starts-with(@name, 'modDye')]/property[@name='Stacknumber']/@value">500</set>
+	
+
+</configs>
