@@ -1,0 +1,40 @@
+<configs>
+
+    <append xpath="//item_modifier[@name='modDyeWhite']">
+	        <property name="EconomicValue" value="500"/>
+	</append>
+	
+	<append xpath="//item_modifier[@name='modDyeRed']">
+	        <property name="EconomicValue" value="500"/>		
+	</append>
+	
+	<append xpath="//item_modifier[@name='modDyeGreen']">
+	        <property name="EconomicValue" value="500"/>		
+	</append>
+	
+	<append xpath="//item_modifier[@name='modDyeBlack']">
+	        <property name="EconomicValue" value="500"/>		
+	</append>
+	
+	<append xpath="//item_modifier[@name='modDyeBlue']">
+	        <property name="EconomicValue" value="500"/>		
+	</append>
+	
+	<append xpath="//item_modifier[@name='modDyeBrown']">
+	        <property name="EconomicValue" value="500"/>		
+	</append>
+	
+	<append xpath="//item_modifier[@name='modDyePink']">
+	        <property name="EconomicValue" value="500"/>		
+	</append>
+	
+	<append xpath="//item_modifier[@name='modDyePurple']">
+	        <property name="EconomicValue" value="500"/>		
+	</append>
+	
+	<append xpath="//item_modifier[@name='modDyeYellow']">
+	        <property name="EconomicValue" value="500"/>		
+															
+    </append>
+
+</configs>

@@ -4,6 +4,5 @@
 	  
     <setattribute xpath="/items/item[@name='resourceAcid']/property[@name='EconomicValue']" name="value">2000</setattribute>
 
-
-
+    
 </configs>
