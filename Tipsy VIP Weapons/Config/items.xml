@@ -32,7 +32,6 @@
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Magnums/44MagnumPrefab.prefab"/>
 		<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
 		<property name="NoScrapping" value="true"/>
-		<property name="RepairTools" value="AdvanceRepairKit"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -46,7 +45,8 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -76,12 +76,12 @@
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Clip"/>
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Scope"/>
 		</effect_group>
-		<effect_group name="The Colt">
+		<effect_group name="The Colt-VIP">
 			<passive_effect name="MaxRange" operation="base_set" value="80"/>
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="60"/>
 			<!-- <passive_effect name="DamageFalloffRange" operation="perc_add" value=".2,.2"/>--> <!-- random effective rng -->
 
-			<passive_effect name="EntityDamage" operation="perc_add" value="0.9"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.5"/>
 			<!--<passive_effect name="BlockDamage" operation="perc_add" value="0"/>-->
 			<!--<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>-->
 			<!-- <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/> -->
@@ -137,7 +137,7 @@
 		<property name="CustomIconTint" value="e000f5" />
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Pistol/PistolPrefab.prefab"/>
 		<property name="Material" value="MHandGunParts"/> <property name="Weight" value="4"/>
-		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -151,8 +151,9 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
+		<property name="SellableToTrader" value="false"/>
 		<property name="EconomicValue" value="5000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -178,7 +179,7 @@
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Clip"/>
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Scope"/>
 		</effect_group>
-		<effect_group name="D-Eagle">
+		<effect_group name="D-Eagle-VIP">
 			<passive_effect name="MaxRange" operation="base_set" value="100"/>
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="30"/>
 			<!-- <passive_effect name="DamageFalloffRange" operation="perc_add" value=".2,.2"/>--> <!-- random effective rng -->
@@ -242,7 +243,7 @@
 		<property name="CustomIconTint" value="e000f5" />	
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
 		<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
-		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -254,8 +255,9 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
+		<property name="SellableToTrader" value="false"/>
 		<property name="EconomicValue" value="1000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -288,7 +290,7 @@
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Clip"/>
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Scope"/>
 		</effect_group>
-		<effect_group name="Vector">
+		<effect_group name="Vector-VIP">
 			<passive_effect name="MaxRange" operation="base_set" value="80"/>
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="60"/>
 			<!-- <passive_effect name="DamageFalloffRange" operation="perc_add" value=".2,.2"/> --><!-- random effective rng -->
@@ -301,7 +303,7 @@
 			<passive_effect name="ModSlots" operation="base_set" value="4"/>
 			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 			<!-- <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/> -->
-			<passive_effect name="EntityDamage" operation="perc_add" value="2.9"/> <!-- random EntityDmg -->
+			<passive_effect name="EntityDamage" operation="perc_add" value="1.5"/> <!-- random EntityDmg -->
 			<!-- <passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> --><!-- tier bonus -->
 			<!-- <passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> --><!-- random BlockDmg -->
 			<!-- <passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> --><!-- tier bonus -->
@@ -344,7 +346,7 @@
 		<property name="CustomIconTint" value="e000f5" />	
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab.prefab"/>
 		<property name="Material" value="MShotgunParts"/> <property name="Weight" value="6"/>
-		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -359,8 +361,9 @@
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 		<property name="LightValue" value=".45"/>
+		<property name="SellableToTrader" value="false"/>
 		<property name="EconomicValue" value="1000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -391,7 +394,7 @@
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Clip"/>
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Scope"/>
 		</effect_group>
-		<effect_group name="Dickinson T1000">
+		<effect_group name="Dickinson T1000-VIP">
 			<passive_effect name="MaxRange" operation="base_set" value="20"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="3"/>
 			<!--<passive_effect name="BlockDamage" operation="perc_add" value="0"/>-->
@@ -446,7 +449,7 @@
 		<property name="CustomIconTint" value="e000f5" />
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/HuntingRifle/HuntingRiflePrefab.prefab"/>
 		<property name="Material" value="MRifleParts"/> <property name="Weight" value="4"/>
-		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="ItemNeedsRepair"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -460,8 +463,9 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
+		<property name="SellableToTrader" value="false"/>
 		<property name="EconomicValue" value="500"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -490,7 +494,7 @@
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Clip"/>
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Scope"/>
 		</effect_group>
-		<effect_group name="Kar98">
+		<effect_group name="Kar98-VIP">
 			<passive_effect name="MaxRange" operation="base_set" value="200"/>
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
 			<!--<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/>--> <!-- random effective rng -->
@@ -548,7 +552,7 @@
 		<property name="ItemTypeIcon" value="Star"/>		
 		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/SniperRifle/sniperRiflePrefab.prefab"/>
 		<property name="Material" value="MRifleParts"/> <property name="Weight" value="6"/>
-		<property name="RepairTools" value="AdvanceRepairKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 		<property name="SoundJammed" value="weapon_jam"/>
 		<property name="Attachments" value="meleeToolFlashlight02"/>
@@ -562,8 +566,9 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value=".45"/>
+		<property name="SellableToTrader" value="false"/>
 		<property name="EconomicValue" value="1000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="ShowQuality" value="false"/>
 
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
@@ -591,7 +596,7 @@
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Clip"/>
 			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Scope"/>
 		</effect_group>
-		<effect_group name="Barrett M82">
+		<effect_group name="Barrett M82-VIP">
 			<passive_effect name="MaxRange" operation="base_set" value="350"/>
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
 			<!--<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2,.2"/> --><!-- random effective rng -->
@@ -640,103 +645,7 @@
 		</effect_group>
 	</item>
 
-<!--Kalashnikova-->		
 
-	<item name="Kalashnikova-VIP"> <!-- T2 automatic rifles -->
-		<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,selfLoading,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic"/>
-		<property name="DisplayType" value="rangedGun"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="ItemTypeIcon" value="Star"/>		
-		<property name="CustomIcon" value="gunAK47"/>
-		<property name="CustomIconTint" value="e000f5" />	
-		<property name="HoldType" value="48"/>
-		<property name="Meshfile" value="#Other/Items?Weapons/Ranged/ak47/ak47Prefab.prefab"/>
-		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
-
-		<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
-		<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
-
-		<property name="RepairTools" value="resourceRepairKit"/>
-		<property name="DegradationBreaksAfter" value="false"/>
-
-		<property name="SoundJammed" value="weapon_jam"/>
-		<property name="Sound_Sight_In" value="rifle_sight_in"/>
-		<property name="Sound_Sight_Out" value="rifle_sight_out"/>
-
-		<property name="RepairExpMultiplier" value="10.8"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="ShowQuality" value="true"/>
-		<property name="Group" value="Ammo/Weapons"/>
-
-		<property class="Action0">
-			<property name="Class" value="Ranged"/>
-			<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
-			<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP"/>
-			<property name="Sound_start" value="ak47_fire"/>
-			<property name="Sound_loop" value="ak47_fire"/>
-			<property name="Sound_empty" value="dryfire"/>
-			<property name="Sound_reload" value="ak47_reload"/>
-			<property name="Sound_end" value="ak47_fire_end"/>
-			<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
-			<property name="Particles_muzzle_fire_fpv" value="gunfire_AK47_fpv"/>
-			<property name="Infinite_ammo" value="true"/>
-			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-		</property>
-		<property class="Action1">
-			<property name="Class" value="Zoom"/>
-			<property name="Zoom_max_out" value="55"/>
-			<property name="Zoom_max_in" value="55"/>
-			<property name="ScopeCameraOffset" value="-.00062,0,.055"/>
-		</property>
-		<effect_group name="Deco">
-			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Clip"/>
-			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Attachments" transform_path="Scope"/>
-		</effect_group>
-		<effect_group name="Kalashnikova">
-			<passive_effect name="MaxRange" operation="base_set" value="200"/>
-			<passive_effect name="DamageFalloffRange" operation="base_set" value="80"/>
-			<!--<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2,.2"/>--> <!-- random effective rng -->
-			<passive_effect name="EntityDamage" operation="base_add" value="70"/>
-
-			<!--<passive_effect name="EntityDamage" operation="perc_add" value=".15,.15"/>--> <!-- random EntityDmg -->
-			<!--<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/>--> <!-- tier bonus -->
-			<!--<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> --><!-- random BlockDmg -->
-			<!--<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> --><!-- tier bonus -->
-
-			<!--<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/>  --> <!-- random DegMax -->
-			<!--<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05"/> --><!-- random APM -->
-			<!--<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> --><!-- random MagazineSize -->
-			<!--<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> --><!-- random WeaponHandling -->
-
-			<passive_effect name="RoundsPerMinute" operation="base_set" value="400"/>
-			<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
-			<passive_effect name="MagazineSize" operation="base_set" value="30"/>
-			<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 3.8s -->
-
-			<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.8"/>
-			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.8"/>
-			<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15"/>
-			<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
-			<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
-			<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-
-			<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.5"/>
-			<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="1"/>
-
-			<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1"/>
-			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1"/>
-
-			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.9"/>
-			<passive_effect name="WeaponHandling" operation="base_set" value=".7"/> <!-- ak47 -->
-
-			<passive_effect name="DegradationMax" operation="base_set" value="2000" />
-			<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
-
-			<passive_effect name="ModSlots" operation="base_set" value="4"/>
-			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
-			<!-- <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>-->
-		</effect_group>
-	</item>	
 
 <!--Gun of Death-->		
 	
@@ -754,7 +663,7 @@
 		<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
 		<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 
-		<property name="RepairTools" value="GoDKit"/>
+		<property name="NoScrapping" value="true"/>
 		<property name="DegradationBreaksAfter" value="false"/>
 
 		<property name="SoundJammed" value="weapon_jam"/>
@@ -762,8 +671,9 @@
 		<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 
 		<property name="RepairExpMultiplier" value="10.8"/>
+		<property name="SellableToTrader" value="false"/>
 		<property name="EconomicValue" value="1000"/>
-		<property name="ShowQuality" value="true"/>
+		<property name="ShowQuality" value="false"/>
 		<property name="Group" value="Ammo/Weapons"/>
 
 		<property class="Action0">
@@ -845,7 +755,7 @@
 				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="VBelt5"/>
 			</effect_group>
 
-		<effect_group name="Gun of Death">
+		<effect_group name="Gun of Death-VIP">
 				<triggered_effect trigger="onReloadStart" action="StopSound" sound="VulcanWindup"/>
 				<triggered_effect trigger="onReloadStop" action="StopSound" sound="VulcanWindup"/>
 				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$vulcanCharging" operation="set" value="0"/>
@@ -881,7 +791,7 @@
 			<passive_effect name="EntityDamage" operation="base_add" value="208"/>
 
 			<!-- <passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> --><!-- random EntityDmg -->
-			<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".03" /> <!-- tier bonus -->
 			<passive_effect name="BlockDamage" operation="perc_add" value="0"/> <!-- random BlockDmg -->
 			<passive_effect name="BlockDamage" operation="perc_add" value="0" tier="2,6"/> <!-- tier bonus -->
 
@@ -919,9 +829,9 @@
 			<passive_effect name="WeaponHandling" operation="base_set" value=".83"/> <!-- M60 -->
 
 			<passive_effect name="DegradationMax" operation="base_set" value="4000"/>
-			<passive_effect name="DegradationPerUse" operation="base_set" value="2" />
+			<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
 
-			<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModSlots" operation="base_set" value="4" tier="1,2,3,4,5,6"/>
 			<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		</effect_group>
