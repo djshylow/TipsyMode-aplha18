@@ -931,6 +931,22 @@
 				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="VBelt3"/>
 				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="VBelt4"/>
 				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="VBelt5"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Base" prefab="#Other/Items?Weapons/Ranged/SniperRifle/sniperRiflePrefab.prefab" parentTransform="Handle" localPos="0,0.02,0" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Base2" prefab="#Other/Items?Weapons/Melee/TaserBaton/TaserBatonPrefab.prefab" parentTransform="Handle" localPos="0,.065,0" localRot="90,0,0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Base3" prefab="#Other/Items?Weapons/Melee/TaserBaton/TaserBatonPrefab.prefab" parentTransform="Barrel" localPos="0,-.02,0" localRot="-90,180,0"/>
+				<triggered_effect trigger="onSelfPrimaryActionUpdate" action="SetTransformActive" active="false" transform_path="ProjectileJoint"/>
+				<triggered_effect trigger="onSelfPrimaryActionUpdate" action="SetTransformActive" active="false" transform_path="crossbow_mesh"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddPart" part="Sparks" prefab="ItemModEffects/baton_electricityPrefab" parentTransform="Handle" localPos="0,.03,0" localRot="90,0,0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemovePart" part="Sparks"/>
+				<triggered_effect trigger="onSelfEquipStart" action="RemovePart" part="Sparks"/>
+				<triggered_effect trigger="onReloadStart" action="RemovePart" part="Sparks"/>
+				<triggered_effect trigger="onReloadStop" action="RemovePart" part="Sparks"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Base"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Base1"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Base2"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Sparks"/>
+				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="ProjectileJoint"/>
+				<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="true" transform_path="crossbow_mesh"/>				
 			</effect_group>
 
 		<effect_group name="Gun of Death">
