@@ -1,0 +1,12 @@
+<configs>
+
+     <!-- RECIPES-->
+	 
+	<append xpath="/recipes">
+	
+	<recipe name="Dukes" count="1" craft_area="Rabbits Stacking" craft_time="30" >
+		<ingredient name="casinoCoin" count="10000"/>
+	</recipe>
+	
+	</append>
+</configs>

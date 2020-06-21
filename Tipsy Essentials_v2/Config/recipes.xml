@@ -116,6 +116,14 @@
 		<ingredient name="AdvanceElectricParts" count="1000"/>
 	</recipe>
 	
+	<recipe name="Rabbits Stacking" count="1" craft_area="TIPSY WorkBench" craft_time="420"> 
+		<ingredient name="resourceScrapIron" count="6000"/>
+		<ingredient name="resourceWood" count="6000"/>
+		<ingredient name="resourceClayLump" count="6000"/>
+		<ingredient name="resourceScrapLead" count="6000"/>
+		<ingredient name="resourceRockSmall" count="6000"/>
+	</recipe>	
+	
 	<recipe name="TIPSY Grill" count="1" craft_area="TIPSY WorkBench" craft_time="420" tags="learnable,TIPSY WorkBench"> 
 		<ingredient name="Perfect Steel" count="50"/>
 		<ingredient name="AdvanceMechaParts" count="1000"/>

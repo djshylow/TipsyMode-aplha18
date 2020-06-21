@@ -27,6 +27,15 @@
 			<window name="windowNonPagingHeader" />
 			<window name="windowToolsMod Machine" />
 		</window_group>			
+
+		<window_group name="workstation_Rabbits Stacking" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowToolsRabbits Stacking" />
+		</window_group>		
 		
 		<window_group name="workstation_TIPSY Grill" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
