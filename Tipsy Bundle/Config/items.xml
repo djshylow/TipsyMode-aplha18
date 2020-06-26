@@ -1,13 +1,13 @@
 <configs>
  <append xpath="items">
     
-	<item name="Dukes">
+	<item name="Stack of Dukes">
 		<property name="CustomIcon" value="casinoCoin"/><property name="ItemTypeIcon" value="treasure"/>
 		<property name="HoldType" value="45"/>
 		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="5"/>
+		<property name="Stacknumber" value="6000"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="Group" value="Resources"/>
 		<property class="Action0">
@@ -16,36 +16,18 @@
 			<property name="Use_time" value="0"/>
 			<property name="Sound_start" value="close_garbage"/>
 			<property name="Create_item" value="casinoCoin"/>
-			<property name="Create_item_count" value="10000"/>
-		</property>
-	</item>
-	
-	<item name="Wood Stack">
-		<property name="CustomIcon" value="resourceWood"/><property name="ItemTypeIcon" value="treasure"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
-		<property name="SellableToTrader" value="false"/>
-		<property name="Group" value="Resources"/>
-		<property class="Action0">
-			<property name="Class" value="OpenBundle"/>
-			<property name="Delay" value="0"/>
-			<property name="Use_time" value="0"/>
-			<property name="Sound_start" value="close_garbage"/>
-			<property name="Create_item" value="resourceWood"/>
-			<property name="Create_item_count" value="10000"/>
+			<property name="Create_item_count" value="20000"/>
 		</property>
 	</item>
 
-	<item name="Clay Stack">
+
+	<item name="Stack of Clay">
 		<property name="CustomIcon" value="resourceClayLump"/><property name="ItemTypeIcon" value="treasure"/>
 		<property name="HoldType" value="45"/>
 		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
+		<property name="Stacknumber" value="6000"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="Group" value="Resources"/>
 		<property class="Action0">
@@ -54,131 +36,18 @@
 			<property name="Use_time" value="0"/>
 			<property name="Sound_start" value="close_garbage"/>
 			<property name="Create_item" value="resourceClayLump"/>
-			<property name="Create_item_count" value="10000"/>
+			<property name="Create_item_count" value="6000"/>
 		</property>
 	</item>
+			
 
-	<item name="Lead Stack">
-		<property name="CustomIcon" value="resourceScrapLead"/><property name="ItemTypeIcon" value="treasure"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
-		<property name="SellableToTrader" value="false"/>
-		<property name="Group" value="Resources"/>
-		<property class="Action0">
-			<property name="Class" value="OpenBundle"/>
-			<property name="Delay" value="0"/>
-			<property name="Use_time" value="0"/>
-			<property name="Sound_start" value="close_garbage"/>
-			<property name="Create_item" value="resourceScrapLead"/>
-			<property name="Create_item_count" value="10000"/>
-		</property>
-	</item>	
-
-	<item name="Rock Stack">
-		<property name="CustomIcon" value="resourceRockSmall"/><property name="ItemTypeIcon" value="treasure"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
-		<property name="SellableToTrader" value="false"/>
-		<property name="Group" value="Resources"/>
-		<property class="Action0">
-			<property name="Class" value="OpenBundle"/>
-			<property name="Delay" value="0"/>
-			<property name="Use_time" value="0"/>
-			<property name="Sound_start" value="close_garbage"/>
-			<property name="Create_item" value="resourceRockSmall"/>
-			<property name="Create_item_count" value="10000"/>
-		</property>
-	</item>	
-
-	<item name="Iron Stack">
-		<property name="CustomIcon" value="resourceScrapIron"/><property name="ItemTypeIcon" value="treasure"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
-		<property name="SellableToTrader" value="false"/>
-		<property name="Group" value="Resources"/>
-		<property class="Action0">
-			<property name="Class" value="OpenBundle"/>
-			<property name="Delay" value="0"/>
-			<property name="Use_time" value="0"/>
-			<property name="Sound_start" value="close_garbage"/>
-			<property name="Create_item" value="resourceScrapIron"/>
-			<property name="Create_item_count" value="10000"/>
-		</property>
-	</item>	
-	
-	<item name="Brass Stack">
-		<property name="CustomIcon" value="resourceScrapBrass"/><property name="ItemTypeIcon" value="treasure"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
-		<property name="SellableToTrader" value="false"/>
-		<property name="Group" value="Resources"/>
-		<property class="Action0">
-			<property name="Class" value="OpenBundle"/>
-			<property name="Delay" value="0"/>
-			<property name="Use_time" value="0"/>
-			<property name="Sound_start" value="close_garbage"/>
-			<property name="Create_item" value="resourceScrapBrass"/>
-			<property name="Create_item_count" value="10000"/>
-		</property>
-	</item>	
-
-	<item name="Gas Can Stack">
-		<property name="CustomIcon" value="ammoGasCan"/><property name="ItemTypeIcon" value="treasure"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
-		<property name="SellableToTrader" value="false"/>
-		<property name="Group" value="Resources"/>
-		<property class="Action0">
-			<property name="Class" value="OpenBundle"/>
-			<property name="Delay" value="0"/>
-			<property name="Use_time" value="0"/>
-			<property name="Sound_start" value="close_garbage"/>
-			<property name="Create_item" value="ammoGasCan"/>
-			<property name="Create_item_count" value="10000"/>
-		</property>
-	</item>
-	
-	<item name="Cement Stack">
-		<property name="CustomIcon" value="resourceCement"/><property name="ItemTypeIcon" value="treasure"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
-		<property name="SellableToTrader" value="false"/>
-		<property name="Group" value="Resources"/>
-		<property class="Action0">
-			<property name="Class" value="OpenBundle"/>
-			<property name="Delay" value="0"/>
-			<property name="Use_time" value="0"/>
-			<property name="Sound_start" value="close_garbage"/>
-			<property name="Create_item" value="resourceCement"/>
-			<property name="Create_item_count" value="10000"/>
-		</property>
-	</item>	
-
-	<item name="ConcreteMix Stack">
+	<item name="Stack of ConcreteMix">
 		<property name="CustomIcon" value="resourceConcreteMix"/><property name="ItemTypeIcon" value="treasure"/>
 		<property name="HoldType" value="45"/>
 		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
+		<property name="Stacknumber" value="6000"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="Group" value="Resources"/>
 		<property class="Action0">
@@ -187,17 +56,17 @@
 			<property name="Use_time" value="0"/>
 			<property name="Sound_start" value="close_garbage"/>
 			<property name="Create_item" value="resourceConcreteMix"/>
-			<property name="Create_item_count" value="10000"/>
+			<property name="Create_item_count" value="6000"/>
 		</property>
 	</item>		
 
-	<item name="Sand Stack">
+	<item name="Stack of Sand">
 		<property name="CustomIcon" value="resourceCrushedSand"/><property name="ItemTypeIcon" value="treasure"/>
 		<property name="HoldType" value="45"/>
 		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
+		<property name="Stacknumber" value="6000"/>
 		<property name="SellableToTrader" value="false"/>
 		<property name="Group" value="Resources"/>
 		<property class="Action0">
@@ -206,47 +75,11 @@
 			<property name="Use_time" value="0"/>
 			<property name="Sound_start" value="close_garbage"/>
 			<property name="Create_item" value="resourceCrushedSand"/>
-			<property name="Create_item_count" value="10000"/>
+			<property name="Create_item_count" value="6000"/>
 		</property>
 	</item>	
 	
-	<item name="Coal Stack">
-		<property name="CustomIcon" value="resourceCoal"/><property name="ItemTypeIcon" value="treasure"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
-		<property name="SellableToTrader" value="false"/>
-		<property name="Group" value="Resources"/>
-		<property class="Action0">
-			<property name="Class" value="OpenBundle"/>
-			<property name="Delay" value="0"/>
-			<property name="Use_time" value="0"/>
-			<property name="Sound_start" value="close_garbage"/>
-			<property name="Create_item" value="resourceCoal"/>
-			<property name="Create_item_count" value="10000"/>
-		</property>
-	</item>	
 
-	<item name="Nitrate Stack">
-		<property name="CustomIcon" value="resourcePotassiumNitratePowder"/><property name="ItemTypeIcon" value="treasure"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
-		<property name="SellableToTrader" value="false"/>
-		<property name="Group" value="Resources"/>
-		<property class="Action0">
-			<property name="Class" value="OpenBundle"/>
-			<property name="Delay" value="0"/>
-			<property name="Use_time" value="0"/>
-			<property name="Sound_start" value="close_garbage"/>
-			<property name="Create_item" value="resourcePotassiumNitratePowder"/>
-			<property name="Create_item_count" value="10000"/>
-		</property>
-	</item>	
 	
   </append>
 </configs>
