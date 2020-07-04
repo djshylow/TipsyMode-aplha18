@@ -1,0 +1,200 @@
+<configs>
+ <append xpath="/quests" >
+
+
+<quest id="allbooksitemspart1">
+		<property name="name_key" value="Welcome to the server" />
+		<property name="subtitle_key" value="allbookskit" />
+		<property name="description_key" value="Begin your journey!" />
+		<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="shareable" value="false" />
+		<property name="difficulty" value="hard" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="WARNING: ONLY OPEN WHEN IN YOUR BASE.
+		
+		MAKE SURE YOU HAVE LOTS OF SPACE IN INVENTORY 70 BOOKS.
+
+Thank You for Your Donation" />
+		<reward type="Item" id="bookFiremansAlmanacHeat" value="1" isfixed="true"/>
+        <reward type="Item" id="bookFiremansAlmanacAxes" value="1" isfixed="true"/>
+		<reward type="Item" id="bookFiremansAlmanacSpeed" value="1" isfixed="true"/>
+		<reward type="Item" id="bookFiremansAlmanacMolotov" value="1" isfixed="true"/>
+		<reward type="Item" id="bookFiremansAlmanacPrevention" value="1" isfixed="true"/>
+		<reward type="Item" id="bookFiremansAlmanacHarvest" value="1" isfixed="true"/>
+		<reward type="Item" id="bookFiremansAlmanacEquipment" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNightStalkerStealthDamage" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNightStalkerSilentNight" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNightStalkerBlades" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNightStalkerThiefAdrenaline" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNightStalkerArchery" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNightStalkerTwilightThief" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNightStalkerSlumberParty" value="1" isfixed="true"/>
+		<reward type="Item" id="bookLuckyLooterDukes" value="1" isfixed="true"/>
+		<reward type="Item" id="bookLuckyLooterAmmunition" value="1" isfixed="true"/>
+		<reward type="Item" id="bookLuckyLooterBrass" value="1" isfixed="true"/>
+		<reward type="Item" id="bookLuckyLooterLead" value="1" isfixed="true"/>
+		<reward type="Item" id="bookLuckyLooterBooks" value="1" isfixed="true"/>
+		<reward type="Item" id="bookLuckyLooterFood" value="1" isfixed="true"/>
+		<reward type="Item" id="bookLuckyLooterMedical" value="1" isfixed="true"/>
+		<reward type="Item" id="bookEnforcerDamage" value="1" isfixed="true"/>
+		<reward type="Item" id="bookEnforcerApparel" value="1" isfixed="true"/>
+		<reward type="Item" id="bookEnforcerPunks" value="1" isfixed="true"/>
+		<reward type="Item" id="bookEnforcerIntimidation" value="1" isfixed="true"/>
+		<reward type="Item" id="bookEnforcerAPAmmo" value="1" isfixed="true"/>
+		<reward type="Item" id="bookEnforcerHPAmmo" value="1" isfixed="true"/>
+		<reward type="Item" id="bookEnforcerCriminalPursuit" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBatterUpBigHits" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBatterUpMetalChain" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBatterUpGear" value="1" isfixed="true"/>					
+		<reward type="Item" id="bookBatterUpSlowPitch" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBatterUpKnockdown" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBatterUpMaintenance" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBatterUpBaseballBats" value="1" isfixed="true"/>
+		<reward type="Item" id="bookGreatHeistSafes" value="1" isfixed="true"/>
+		<reward type="Item" id="bookGreatHeistGems" value="1" isfixed="true"/>
+		<reward type="Item" id="bookGreatHeistTimedCharge" value="1" isfixed="true"/>
+		<reward type="Item" id="bookGreatHeistClaimed" value="1" isfixed="true"/>
+		<reward type="Item" id="bookGreatHeistAdrenalineFall" value="1" isfixed="true"/>
+		<reward type="Item" id="bookGreatHeistSprintSneak" value="1" isfixed="true"/>
+		<reward type="Item" id="bookGreatHeistMotionDetection" value="1" isfixed="true"/>
+		<reward type="Item" id="bookWasteTreasuresHoney" value="1" isfixed="true"/>
+		<reward type="Item" id="bookWasteTreasuresCoffins" value="1" isfixed="true"/>
+		<reward type="Item" id="bookWasteTreasuresAcid" value="1" isfixed="true"/>
+		<reward type="Item" id="bookWasteTreasuresWater" value="1" isfixed="true"/>
+		<reward type="Item" id="bookWasteTreasuresDoors" value="1" isfixed="true"/>
+		<reward type="Item" id="bookWasteTreasuresCloth" value="1" isfixed="true"/>
+		<reward type="Item" id="bookWasteTreasuresSinks" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNeedleAndThreadWinterWear" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNeedleAndThreadLegwear" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNeedleAndThreadFootwear" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNeedleAndThreadDesertWear" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNeedleAndThreadDusters" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNeedleAndThreadPufferCoats" value="1" isfixed="true"/>
+		<reward type="Item" id="bookNeedleAndThreadPockets" value="1" isfixed="true"/>
+		<reward type="Item" id="bookHuntingJournalBears" value="1" isfixed="true"/>
+		<reward type="Item" id="bookHuntingJournalWolves" value="1" isfixed="true"/>
+		<reward type="Item" id="bookHuntingJournalCoyotes" isfixed="true"/>
+		<reward type="Item" id="bookHuntingJournalMountainLions" value="1" isfixed="true"/>
+		<reward type="Item" id="bookHuntingJournalDeer" value="1" isfixed="true"/>
+		<reward type="Item" id="bookHuntingJournalVultures" value="1" isfixed="true"/>
+		<reward type="Item" id="bookHuntingJournalSelfDefense" value="1" isfixed="true"/>
+		<reward type="Item" id="bookArtOfMiningLuckyStrike" value="1" isfixed="true"/>
+		<reward type="Item" id="bookArtOfMiningDiamondTools" value="1" isfixed="true"/>
+		<reward type="Item" id="bookArtOfMiningPallets" value="1" isfixed="true"/>
+		<reward type="Item" id="bookArtOfMiningCoffee" value="1" isfixed="true"/>
+		<reward type="Item" id="bookArtOfMiningBlackStrap" value="1" isfixed="true"/>
+		<reward type="Item" id="bookArtOfMiningAvalanche" value="1" isfixed="true"/>
+		<reward type="Item" id="bookArtOfMiningLantern" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersArrowRecovery" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersExplodingBolts" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersCripplingShot" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersAPAmmo" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersFlamingArrows" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersForestGuide" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersKnockdown" value="1" isfixed="true"/>
+
+				
+	</quest>
+
+
+
+
+
+<quest id="allbooksitemspart2">
+		<property name="name_key" value="Welcome to the server" />
+		<property name="subtitle_key" value="allbookskit" />
+		<property name="description_key" value="Begin your journey!" />
+		<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="shareable" value="false" />
+		<property name="difficulty" value="hard" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="WARNING: ONLY OPEN WHEN IN YOUR BASE.
+		
+		MAKE SURE YOU HAVE LOTS OF SPACE IN INVENTORY 63 BOOKS.
+
+Thank You for Your Donation" />
+		
+		<reward type="Item" id="bookRangersArrowRecovery" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersExplodingBolts" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersCripplingShot" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersAPAmmo" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersFlamingArrows" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersForestGuide" value="1" isfixed="true"/>
+		<reward type="Item" id="bookRangersKnockdown" value="1" isfixed="true"/>
+		<reward type="Item" id="bookPistolPeteTakeAim" value="1" isfixed="true"/>
+		<reward type="Item" id="bookPistolPeteSwissKnees" value="1" isfixed="true"/>
+		<reward type="Item" id="bookPistolPeteSteadyHand" value="1" isfixed="true"/>
+		<reward type="Item" id="bookPistolPeteMaintenance" value="1" isfixed="true"/>
+		<reward type="Item" id="bookPistolPeteHPAmmo" value="1" isfixed="true"/>
+		<reward type="Item" id="bookPistolPeteAPAmmo" value="1" isfixed="true"/>
+		<reward type="Item" id="bookPistolPeteDamage" value="1" isfixed="true"/>
+		<reward type="Item" id="bookShotgunMessiahDamage" value="1" isfixed="true"/>
+		<reward type="Item" id="bookShotgunMessiahBreachingSlugs" value="1" isfixed="true"/>
+		<reward type="Item" id="bookShotgunMessiahLimbShot" value="1" isfixed="true"/>
+		<reward type="Item" id="bookShotgunMessiahSlugs" value="1" isfixed="true"/>
+		<reward type="Item" id="bookShotgunMessiahMaintenance" value="1" isfixed="true"/>
+		<reward type="Item" id="bookShotgunMessiahMagazine" value="1" isfixed="true"/>
+		<reward type="Item" id="bookShotgunMessiahPartyStarter" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSniperDamage" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSniperCripplingShot" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSniperHeadShot" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSniperReload" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSniperControlledBreathing" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSniperAPAmmo" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSniperHPAmmo" value="1" isfixed="true"/>
+		<reward type="Item" id="bookAutoWeaponsDamage" value="1" isfixed="true"/>
+		<reward type="Item" id="bookAutoWeaponsUncontrolledBurst" value="1" isfixed="true"/>
+		<reward type="Item" id="bookAutoWeaponsMaintenance" value="1" isfixed="true"/>
+		<reward type="Item" id="bookAutoWeaponsDrumMag" value="1" isfixed="true"/>
+		<reward type="Item" id="bookAutoWeaponsRecoil" value="1" isfixed="true"/>
+		<reward type="Item" id="bookAutoWeaponsRagdoll" value="1" isfixed="true"/>
+		<reward type="Item" id="bookAutoWeaponsMachineGuns" value="1" isfixed="true"/>
+		<reward type="Item" id="bookUrbanCombatLanding" value="1" isfixed="true"/>
+		<reward type="Item" id="bookUrbanCombatCigar" value="1" isfixed="true"/>
+		<reward type="Item" id="bookUrbanCombatSneaking" value="1" isfixed="true"/>
+		<reward type="Item" id="bookUrbanCombatJumping" value="1" isfixed="true"/>
+		<reward type="Item" id="bookUrbanCombatLandMines" value="1" isfixed="true"/>
+		<reward type="Item" id="bookUrbanCombatAdrenalineRush" value="1" isfixed="true"/>
+		<reward type="Item" id="bookUrbanCombatRoomClearing" value="1" isfixed="true"/>
+        <reward type="Item" id="bookTechJunkie1Damage" value="1" isfixed="true"/>
+		<reward type="Item" id="bookTechJunkie2Maintenance" value="1" isfixed="true"/>
+		<reward type="Item" id="bookTechJunkie3APAmmo" value="1" isfixed="true"/>
+		<reward type="Item" id="bookTechJunkie4Shells" value="1" isfixed="true"/>
+		<reward type="Item" id="bookTechJunkie5Repulsor" value="1" isfixed="true"/>
+		<reward type="Item" id="bookTechJunkie6BatonCharge" value="1" isfixed="true"/>
+		<reward type="Item" id="bookTechJunkie7Hydraulics" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBarBrawling1BasicMoves" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBarBrawling2DropABomb" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBarBrawling3KillerInstinct" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBarBrawling4FinishingMoves" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBarBrawling5AdrenalineHealing" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBarBrawling6RageMode" value="1" isfixed="true"/>
+		<reward type="Item" id="bookBarBrawling7BoozedUp" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSpearHunter1Damage" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSpearHunter2Maintenance" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSpearHunter3SteelSpears" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSpearHunter4StrongArm" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSpearHunter5RapidStrike" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSpearHunter6PuncturedLung" value="1" isfixed="true"/>
+		<reward type="Item" id="bookSpearHunter7QuickStrike" value="1" isfixed="true"/>
+				
+	</quest>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </append>
+</configs>

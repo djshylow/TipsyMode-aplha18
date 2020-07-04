@@ -1,0 +1,20 @@
+<configs>
+	<append xpath="/recipes">
+		
+		<recipe name="HellBeast" count="1" craft_time="300" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleMotorcyclePlaceable" count="1"/>
+			<ingredient name="meleeWpnSpearT3SteelSpear" count="10"/>
+			<ingredient name="resourceBone" count="100"/>
+			<ingredient name="smallEngine" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="50"/>
+		</recipe>
+		
+		<recipe name="Armored Car" count="1" craft_area="workbench" craft_time="600">
+			<ingredient name="resourceForgedSteel" count="300"/>
+			<ingredient name="resourceForgedIron" count="200"/>
+			<ingredient name="resourceElectricParts" count="45"/>
+			<ingredient name="resourceMechanicalParts" count="70"/>
+			<ingredient name="vehicleWheels" count="6"/>
+		</recipe>
+	</append>
+</configs>

@@ -1,0 +1,57 @@
+<configs>
+
+     <!-- RECIPES-->
+	 
+	<append xpath="/recipes">
+	
+	<recipe name="DiamondAxe" count="1" craft_area="workbench" craft_time="60" tags="learnable">
+		<ingredient name="resourceRawDiamond" count="10"/>
+		<ingredient name="meleeToolAxeT2SteelAxe" count="1"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+	</recipe>
+	
+	
+	<recipe name="Diamond Pickaxe" count="1" craft_area="workbench" craft_time="60" tags="learnable">
+		<ingredient name="resourceRawDiamond" count="10"/>
+		<ingredient name="meleeToolPickT2SteelPickaxe" count="1"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+	</recipe>
+	
+	
+	<recipe name="Diamond Shovel" count="1" craft_area="workbench" craft_time="60" tags="learnable">
+		<ingredient name="resourceRawDiamond" count="5"/>
+		<ingredient name="meleeToolShovelT2SteelShovel" count="1"/>
+		<ingredient name="resourceDuctTape" count="3"/>
+	</recipe>
+	
+	
+	<recipe name="Diamond Chainsaw" count="1" craft_area="workbench" craft_time="60" tags="learnable">
+		<ingredient name="resourceRawDiamond" count="20"/>
+		<ingredient name="meleeToolAxeT3Chainsaw" count="1"/>
+		<ingredient name="resourceOil" count="10"/>
+	</recipe>
+	
+	
+	<recipe name="Diamond Auger" count="1" craft_area="workbench" craft_time="60" tags="learnable">
+		<ingredient name="resourceRawDiamond" count="40"/>
+		<ingredient name="meleeToolPickT3Auger" count="1"/>
+		<ingredient name="resourceOil" count="10"/>
+	</recipe>
+	
+	
+	<recipe name="Diamond ImpactDriver" count="1" craft_area="workbench" craft_time="60" tags="learnable">
+		<ingredient name="resourceRawDiamond" count="10"/>
+		<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+		<ingredient name="resourceOil" count="10"/>
+	</recipe>
+	
+	
+	
+	<recipe name="Farmers Machete" count="1" craft_area="workbench" craft_time="60" tags="learnable">
+		<ingredient name="resourceRawDiamond" count="1"/>
+		<ingredient name="meleeWpnBladeT3Machete" count="1"/>
+	</recipe>
+	
+	
+	</append>
+</configs>

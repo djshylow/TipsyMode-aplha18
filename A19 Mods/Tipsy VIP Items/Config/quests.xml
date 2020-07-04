@@ -1,0 +1,32 @@
+<configs>
+ <append xpath="/quests" >
+
+
+<quest id="VIPitems">
+		<property name="name_key" value="Welcome to the server" />
+		<property name="subtitle_key" value="VIPKit" />
+		<property name="description_key" value="Begin your journey!" />
+		<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="shareable" value="false" />
+		<property name="difficulty" value="hard" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="Welcome to our server have fun.
+
+Thank You for Your Donation. Pro tips: VIP Token/Coin is used in a Workbench. VIPs get 1 Trader also. Running Boots make you run faster.
+VIP sunglasses has +1 every Attribute Perk and other glasses buffs into one. Use a rod and spring on Ultimate Tool and level gunslinger to make it Faster." />
+		<reward type="Item" id="Nailgun VIP" value="1" isfixed="true"/>
+        <reward type="Item" id="armorMiningHelmet" value="1" isfixed="true"/>
+		<reward type="Item" id="modArmorHelmetLight" value="1" isfixed="true"/>
+		<reward type="Item" id="SunGlasses VIP" value="1" isfixed="true"/>
+		<reward type="Item" id="Ultimate Tool VIP" isfixed="true"/>
+		<reward type="Item" id="Paint Brush VIP" value="1" isfixed="true"/>
+		<reward type="Item" id="Running Boots VIP" value="1" isfixed="true"/>
+		<reward type="Item" id="VIP Coin" value="1" isfixed="true"/>
+		<reward type="Item" id="resourceRepairKit" value="20" isfixed="true"/>
+		
+		
+	</quest>
+
+       </append>
+</configs>

@@ -1,0 +1,24 @@
+<configs>
+
+     <!-- RECIPES-->
+	 
+	<append xpath="/recipes">
+	
+	<recipe name="Stack of Dukes" count="1"  craft_time="10" >
+		<ingredient name="casinoCoin" count="20000"/>
+	</recipe>
+	
+	<recipe name="Stack of Clay" count="1"  craft_time="10" >
+		<ingredient name="resourceClayLump" count="6000"/>
+	</recipe>
+		
+	<recipe name="Stack of ConcreteMix" count="1"  craft_time="10" >
+		<ingredient name="resourceConcreteMix" count="6000"/>
+	</recipe>
+	
+	<recipe name="Stack of Sand" count="1"  craft_time="10" >
+		<ingredient name="resourceCrushedSand" count="6000"/>
+	</recipe>
+	
+	</append>
+</configs>

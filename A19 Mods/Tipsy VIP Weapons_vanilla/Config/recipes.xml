@@ -1,0 +1,117 @@
+<configs>
+
+	<append xpath="/recipes">
+
+    <recipe name="Pistol VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="Pistol VIP" count="1"/>
+	</recipe>
+
+
+
+	<recipe name="44 Magnum VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="44 Magnum VIP" count="1"/>
+	</recipe>
+
+
+
+	<recipe name="SMG VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="SMG VIP" count="1"/>
+	</recipe>
+
+
+	
+	<recipe name="DoubleBarrel Shotgun VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="DoubleBarrel Shotgun VIP" count="1"/>
+	</recipe>
+
+
+
+	<recipe name="Pump Shotgun VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="Pump Shotgun VIP" count="1"/>
+	</recipe>	
+
+
+
+	<recipe name="Hunting Rifle VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="Hunting Rifle VIP" count="1"/>
+	</recipe>
+
+
+	
+	<recipe name="Marksman Rifle VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="Marksman Rifle VIP" count="1"/>
+	</recipe>	
+
+
+
+	<recipe name="AK47 VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="AK47 VIP" count="1"/>
+	</recipe>	
+  
+
+     
+	<recipe name="M60 Machine Gun VIP" count="1" craft_area="workbench" craft_time="10">
+		<ingredient name="VIP Coin" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_add" level="6" value="4"/>
+		</effect_group>
+	</recipe>
+	<recipe name="VIP Coin" count="1" craft_area="workbench" craft_time="10" >
+		<ingredient name="M60 Machine Gun VIP" count="1"/>
+	</recipe>	
+
+
+    
+    
+
+
+	</append>
+</configs>

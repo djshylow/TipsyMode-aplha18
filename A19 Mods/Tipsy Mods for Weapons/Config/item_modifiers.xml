@@ -1,0 +1,51 @@
+<configs>
+
+  <append xpath="/item_modifiers">
+
+        <!--  Burned To Ashes -->
+
+	<item_modifier name="Lightning Bolt Mod" installable_tags="weapon" modifier_tags="elemental" type="attachment">
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
+        <property name="CustomIconTint" value="FFFF00"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="EconomicValue" value="100000"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffShocked"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
+		</effect_group>
+	</item_modifier>
+
+        <!-- I like them Medium Rare -->
+
+    <item_modifier name="Burn Them All Mod" installable_tags="weapon" modifier_tags="elemental" type="attachment">
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
+        <property name="CustomIconTint" value="FF0000"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="EconomicValue" value="100000"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffBurningMolotov"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffBurningMolotov"/>
+		</effect_group>
+	</item_modifier>
+	
+<!-- 	<item_modifier name="Testing Fire" installable_tags="aweapon" modifier_tags="elemental" type="attachment">
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/>
+        <property name="CustomIconTint" value="FF0000"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="EconomicValue" value="100000"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffBurningMolotov"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffBurningMolotov"/>
+		</effect_group>
+	</item_modifier>  -->
+
+
+
+  </append>
+</configs>
