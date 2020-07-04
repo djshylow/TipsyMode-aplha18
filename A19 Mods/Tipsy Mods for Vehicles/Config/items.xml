@@ -1,4 +1,0 @@
-<configs>
-    <append xpath="/items/item[@name='vehicleBicyclePlaceable']"><property name="Tags" value="vehicle"/></append>
-  
-</configs>

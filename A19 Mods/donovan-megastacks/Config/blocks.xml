@@ -1,8 +1,0 @@
-<configs>
-    
-	<set xpath="/blocks/block[starts-with(@name, 'officeChair01')]/property[@name='Stacknumber']/@value">500</set>
-	<set xpath="/blocks/block[starts-with(@name, 'woodChair1')]/property[@name='Stacknumber']/@value">500</set>
-	<set xpath="/blocks/block[starts-with(@name, 'oldChair1')]/property[@name='Stacknumber']/@value">500</set>
-	<set xpath="/blocks/block[starts-with(@name, 'oldChair1')]/property[@name='Stacknumber']/@value">500</set>
-
-</configs>

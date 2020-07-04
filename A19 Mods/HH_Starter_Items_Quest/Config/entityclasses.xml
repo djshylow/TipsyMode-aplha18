@@ -1,7 +1,0 @@
-<configs>
-<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">keystoneBlock,Starter Items</set>
-<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">keystoneBlock,Starter Items</set>
-<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">keystoneBlock,Starter Items</set>
-
-
-</configs>
