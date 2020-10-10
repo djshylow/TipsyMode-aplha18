@@ -19,6 +19,62 @@
 	<recipe name="Stack of Sand" count="1"  craft_time="10" >
 		<ingredient name="resourceCrushedSand" count="6000"/>
 	</recipe>
+
+<!-- * * * * * * * * * * parts for assembled weapons, tools, and vehicles * * * * * * * * * * -->	
+
+	<recipe name="Stack of MGT1AK47Parts" count="1"  craft_time="10" >
+		<ingredient name="gunMGT1AK47Parts" count="50"/>
+	</recipe>
+	<recipe name="Stack of PistolParts" count="1"  craft_time="10" >
+		<ingredient name="gunHandgunT1PistolParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of HuntingRifleParts" count="1"  craft_time="10" >
+		<ingredient name="gunRifleT1HuntingRifleParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of DoubleBarrelParts" count="1"  craft_time="10" >
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of WoodenBowParts" count="1"  craft_time="10" >
+		<ingredient name="gunBowT1WoodenBowParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of RocketLauncherParts" count="1"  craft_time="10" >
+		<ingredient name="gunExplosivesT3RocketLauncherParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of BotRoboticsParts" count="1"  craft_time="10" >
+		<ingredient name="gunBotRoboticsParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of StunBatonParts" count="1"  craft_time="10" >
+		<ingredient name="meleeWpnBatonT2StunBatonParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of SteelKnucklesParts" count="1"  craft_time="10" >
+		<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of MacheteParts" count="1"  craft_time="10" >
+		<ingredient name="meleeWpnBladeT3MacheteParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of SteelSpearParts" count="1"  craft_time="10" >
+		<ingredient name="meleeWpnSpearT3SteelSpearParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of SteelClubParts" count="1"  craft_time="10" >
+		<ingredient name="meleeWpnClubT3SteelClubParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of SteelSledgehammerParts" count="1"  craft_time="10" >
+		<ingredient name="meleeWpnSledgeT3SteelSledgehammerParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of ToolSteelParts" count="1"  craft_time="10" >
+		<ingredient name="meleeToolAllSteelParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of ArmorMilitaryParts" count="1"  craft_time="10" >
+		<ingredient name="armorMilitarySetParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of ArmorSteelParts" count="1"  craft_time="10" >
+		<ingredient name="armorSteelSetParts" count="50"/>
+	</recipe>
+	<recipe name="Stack of ChainsawParts" count="1"  craft_time="10" >
+		<ingredient name="meleeToolAxeT3ChainsawParts" count="50"/>
+	</recipe>
+	
+
 	
 	</append>
 </configs>
